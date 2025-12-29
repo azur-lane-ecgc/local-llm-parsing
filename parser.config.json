@@ -1,0 +1,12 @@
+{
+  "modelName": "openai/gpt-oss-20b",
+  "lmStudioPort": 1234,
+  "patchNotesDir": "output/patch-notes",
+  "llmOutputDir": "output/llm",
+  "promptFile": "PROMPT.md",
+  "wordpress": {
+    "baseUrl": "https://azurlane.yo-star.com/news/",
+    "pageAppendUrl": "page/",
+    "earliestDate": "2025-10-10"
+  }
+}
