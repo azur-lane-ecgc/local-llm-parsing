@@ -40,7 +40,7 @@ Create a markdown document for this date only.
 - "Exchange ship: Yorktown II available in UR Exchange"
 - "Obtainable from META Showdown for a limited-time between..."
 - "Available permanently in Dossier Analysis"
-- "War Archives Update: Violet Tempest, Blooming Lycoris has been added to the War Archives."
+- "War Archives Update: 'Violet Tempest, Blooming Lycoris' has been added to the War Archives."
 - "Augment Update: Alabama – Anchor of Fortune, Myoukou – Protector of Order"
 
 **STRICT EXCLUSION RULES:**
