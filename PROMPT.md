@@ -27,7 +27,7 @@ Create a markdown document for this date only.
 **ONLY include if the ship/equipment is mentioned in these contexts:**
 
 - **SHOPS**: PT shop, Exchange shop, Event shop, Medal shop, Core Data shop, Merit shop, etc.
-- **EVENTS**: Event construction pool, Event rewards, Event missions, Limited-time events, META Showdown, Dossier Analysis, War Archives
+- **EVENTS**: Event construction pool, Event rewards, Event missions, Limited-time events, META Showdown, Dossier Analysis, War Archives, Cruise Missions, etc.
 - **AUGMENT MODULES**: Unique Augment Modules ONLY. These are gear tied to 1 specific ship, usually added permanently but can be limited-time.
 - **GEAR LAB**: Gear Lab updates, new research projects
 
@@ -42,6 +42,7 @@ Create a markdown document for this date only.
 - "Available permanently in Dossier Analysis"
 - "War Archives Update: 'Violet Tempest, Blooming Lycoris' has been added to the War Archives."
 - "Augment Update: Alabama – Anchor of Fortune, Myoukou – Protector of Order"
+- "META ship available in Cruise Missions"
 
 **STRICT EXCLUSION RULES:**
 
@@ -52,7 +53,7 @@ Create a markdown document for this date only.
 - **SUPPLIES**: "Build Supplies", "Strategic Supplies", "Training Supplies", "Limited Build Supplies", etc.
 - **VOUCHERS/TOKENS**: "Miraculous Idea", "Medals", "Tokens" (unless exchanging for specific ship/equipment), etc.
 - **MISC CONSUMABLES**: "Wisdom Cubes", "Coins", "Oil", "Bauxite", "Cognitive Chips", etc.
-- **SKINS**: ALL skin mentions, costume mentions, L2D mentions
+- **SKINS**: ALL skin mentions, costume mentions, L2D mentions, Secret mentions, etc.
 - **DECORATIONS**: "Decor Tokens", "Furniture", "Room items", etc.
 - **GENERAL GAME CONTENT**: UI fixes, bug fixes, balance changes not tied to shops/events
 - **MATERIALS**: "Build Tickets", "Strategic Tickets", "Training Tickets", "Augment Module Core", "Augment Module Stone", "Tech Box", etc.
