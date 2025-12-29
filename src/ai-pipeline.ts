@@ -3,7 +3,7 @@ import { streamText } from "ai"
 import { mkdir } from "node:fs/promises"
 import { exec } from "node:child_process"
 import { promisify } from "node:util"
-import { loadConfig } from "./config.js"
+import { loadConfig } from "./config"
 
 const execAsync = promisify(exec)
 

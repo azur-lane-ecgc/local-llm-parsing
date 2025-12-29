@@ -3,14 +3,10 @@ import {
   groupPostsByDate,
   formatPostGroup,
   writePostGroupContent,
-} from "./src/wordpress-parser.js"
-import {
-  processWithAI,
-  writeOutputFile,
-  withLMServer,
-} from "./src/ai-pipeline.js"
+} from "./src/wordpress-parser"
+import { processWithAI, writeOutputFile, withLMServer } from "./src/ai-pipeline"
 import { readFile } from "node:fs/promises"
-import { loadConfig } from "./src/config.js"
+import { loadConfig } from "./src/config"
 
 const main = async () => {
   console.log("Starting Azur Lane Patch Notes Parser\n")

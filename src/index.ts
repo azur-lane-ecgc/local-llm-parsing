@@ -1,2 +1,2 @@
-export * from "./wordpress-parser.js"
-export * from "./ai-pipeline.js"
+export * from "./wordpress-parser"
+export * from "./ai-pipeline"
