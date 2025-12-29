@@ -2,3 +2,4 @@ pre-commit:
   commands:
     check:
       run: bun check
+      stage_fixed: true
