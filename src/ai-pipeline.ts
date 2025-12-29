@@ -1,6 +1,6 @@
 import { createOpenAICompatible } from "@ai-sdk/openai-compatible"
 import { streamText } from "ai"
-import * as fs from "node:fs/promises"
+import { mkdir } from "node:fs/promises"
 import { exec } from "node:child_process"
 import { promisify } from "node:util"
 import { loadConfig } from "./config.js"
@@ -216,7 +216,7 @@ export const writeOutputFile = async (
   const filename = `${cfg.llmOutputDir}/${dateStr}.output.md`
 
   try {
-    await fs.mkdir(cfg.llmOutputDir, { recursive: true })
+    await mkdir(cfg.llmOutputDir, { recursive: true })
   } catch (error) {
     if ((error as any).code !== "EEXIST") {
       throw error

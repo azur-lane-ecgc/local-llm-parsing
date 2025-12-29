@@ -1,5 +1,5 @@
-import * as cheerio from "cheerio"
-import * as fs from "node:fs/promises"
+import { load, type Cheerio } from "cheerio"
+import { mkdir } from "node:fs/promises"
 import { loadConfig } from "./config.js"
 import TurndownService from "turndown"
 
@@ -117,7 +117,7 @@ const parseDate = (text: string): Date | null => {
 }
 
 const cleanHTML = (html: string): string => {
-  const $ = cheerio.load(html)
+  const $ = load(html)
 
   // Remove unwanted elements
   $("img, video, iframe, style, script, noscript").remove()
@@ -129,7 +129,7 @@ const cleanHTML = (html: string): string => {
   $(".wp-caption-text, .gallery-caption").remove()
 
   // Remove all classes, styles, ids, and data-* attributes
-  $("*").each((_, element) => {
+  $("*").each((_index: number, element: any) => {
     const $el = $(element)
     $el.removeAttr("class")
     $el.removeAttr("style")
@@ -184,10 +184,10 @@ const htmlToMarkdown = (html: string): string => {
 }
 
 const parseListingPage = (html: string): PostInfo[] => {
-  const $ = cheerio.load(html)
+  const $ = load(html)
   const posts: PostInfo[] = []
 
-  $(SELECTORS.post).each((_, element) => {
+  $(SELECTORS.post).each((_index: number, element: any) => {
     const $element = $(element)
     const headerElement = $element.find(SELECTORS.header)
     const linkElement = headerElement.find(SELECTORS.link)
@@ -216,9 +216,7 @@ const parseListingPage = (html: string): PostInfo[] => {
   return posts
 }
 
-const extractLatestDate = (
-  headerElement: cheerio.Cheerio<any>,
-): Date | null => {
+const extractLatestDate = (headerElement: Cheerio<any>): Date | null => {
   const html = headerElement.html()
   if (!html) return null
   const date = parseDate(html)
@@ -299,7 +297,7 @@ export const crawlBlog = async (): Promise<PostInfo[]> => {
 
 const ensureDir = async (path: string): Promise<void> => {
   try {
-    await fs.mkdir(path, { recursive: true })
+    await mkdir(path, { recursive: true })
   } catch (error) {
     if ((error as any).code !== "EEXIST") {
       throw error

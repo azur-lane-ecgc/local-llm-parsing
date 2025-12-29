@@ -47,13 +47,13 @@ Create a markdown document for this date only.
 
 **NEVER include these - even if they mention "gear" or "ship":**
 
-- **PACKS**: "Skill Book Pack", "Limited Build Supplies", "Supply Crate", "Resource Pack"
-- **BOXES/LUCKY BOX**: "Lucky Box", "Gear Skin Box", "Mystery Box"
-- **SUPPLIES**: "Build Supplies", "Strategic Supplies", "Training Supplies"
-- **VOUCHERS/TOKENS**: "Miraculous Idea", "Medals", "Tokens" (unless exchanging for specific ship/equipment)
-- **MISC CONSUMABLES**: "Wisdom Cubes", "Coins", "Oil", "Bauxite", "Cognitive Chips"
+- **PACKS**: "Skill Book Pack", "Supply Crate", "Resource Pack", "Gift Pack", etc.
+- **BOXES/LUCKY BOX**: "Lucky Box", "Gear Skin Box", "Mystery Box", etc.
+- **SUPPLIES**: "Build Supplies", "Strategic Supplies", "Training Supplies", "Limited Build Supplies", etc.
+- **VOUCHERS/TOKENS**: "Miraculous Idea", "Medals", "Tokens" (unless exchanging for specific ship/equipment), etc.
+- **MISC CONSUMABLES**: "Wisdom Cubes", "Coins", "Oil", "Bauxite", "Cognitive Chips", etc.
 - **SKINS**: ALL skin mentions, costume mentions, L2D mentions
-- **DECORATIONS**: "Decor Tokens", "Furniture", "Room items"
+- **DECORATIONS**: "Decor Tokens", "Furniture", "Room items", etc.
 - **GENERAL GAME CONTENT**: UI fixes, bug fixes, balance changes not tied to shops/events
 - **MATERIALS**: "Build Tickets", "Strategic Tickets", "Training Tickets", "Augment Module Core", "Augment Module Stone", "Tech Box", etc.
 

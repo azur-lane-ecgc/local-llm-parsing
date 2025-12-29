@@ -1,4 +1,4 @@
-import * as fs from "node:fs/promises"
+import { readFile } from "node:fs/promises"
 
 interface Config {
   modelName: string
@@ -14,6 +14,6 @@ interface Config {
 }
 
 export const loadConfig = async (): Promise<Config> => {
-  const content = await fs.readFile("./parser.config.json", "utf-8")
+  const content = await readFile("./parser.config.json", "utf-8")
   return JSON.parse(content)
 }

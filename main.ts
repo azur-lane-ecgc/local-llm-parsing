@@ -9,7 +9,7 @@ import {
   writeOutputFile,
   withLMServer,
 } from "./src/ai-pipeline.js"
-import * as fs from "node:fs/promises"
+import { readFile } from "node:fs/promises"
 import { loadConfig } from "./src/config.js"
 
 async function main() {
@@ -24,7 +24,7 @@ async function main() {
   const postGroups = groupPostsByDate(posts)
   console.log(`Found ${postGroups.length} unique dates\n`)
 
-  const prompt = await fs.readFile(config.promptFile, "utf-8")
+  const prompt = await readFile(config.promptFile, "utf-8")
 
   await withLMServer(async () => {
     let processed = 0
