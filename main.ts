@@ -12,7 +12,7 @@ import {
 import { readFile } from "node:fs/promises"
 import { loadConfig } from "./src/config.js"
 
-async function main() {
+const main = async () => {
   console.log("Starting Azur Lane Patch Notes Parser\n")
 
   const config = await loadConfig()
