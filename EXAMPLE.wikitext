@@ -1,0 +1,179 @@
+==December 18th 2025==
+=== New Contents ===
+<ol>
+<li>'''Limited Time Event: [[A Note Through the Firmament]]'''
+*Event period: From December 18th 2025 to January 7th 2026, 11:59 P.M. (UTC-7):
+*During the event, play event stages to collect event PT to earn special rewards.
+*During the event, sortie to event stages to earn event PT '''Miraculous Idea (UR Voucher)''' and exchange them for the limited UR character [[William D. Porter]].
+*[[William D. Porter]] can be exchanged up to 2 times. '''Miraculous Idea (UR Voucher)''' can be obtained by completing SP levels, daily missions, challenge missions, event PT shop, etc.
+*During the event, sortie to event stages to earn event PT '''Council's Mark''' and exchange them for rewards including the limited character, [[Cleveland META]].
+*During the event, accumulate PT to earn rewards including the limited character [[Clarence K. Bronson]].
+*'''Event Characters:'''
+**Construction Period: From December 18th 2025 to January 7th 2026, 11:59 P.M. (UTC-7):
+**'' '''Note:''' [[Cleveland META]] will be available in the [[A Note Through the Firmament#Event_Shop|Event Shop]] and [[Clarence K. Bronson]] as a [[A Note Through the Firmament#Milestone|Point Accumulation Reward]] until January 14th, 11:59 P.M. (UTC-7)''
+<div style="display:flex; flex-wrap:wrap; margin-left:35px">
+{{ShipDisplay|6|Lexington II|CV||'''Construction (1.2%)<br>04:25:00'''|'''See Pity System'''}}
+{{ShipDisplay|6|William D. Porter|SSV||'''[[A Note Through the Firmament#Event_Shop|Event Shop]]'''}}
+{{ShipDisplay|5|Cowpens|CVL||'''Construction (2.0%)<br>02:06:40'''}}
+{{ShipDisplay|5|Cleveland META|CA||'''Construction (0.5%)<br>01:25:00'''|'''[[A Note Through the Firmament#Event_Shop|Event Shop]]<hr>[[A Note Through the Firmament#Maps|Map Drop]]'''}}
+{{ShipDisplay|4|Clarence K. Bronson|DD||'''[[A Note Through the Firmament#Milestone|Point Accumulation Reward]]'''}}
+{{ShipDisplay|4|Pasadena|CL||'''Construction (2.5%)<br>01:25:00'''}}
+</div>
+*'''UR Pity System''':
+**After every 200 event construction attempts, an additional copy of [[Lexington II]] can be obtained (limit of 4 times).
+**This process won't be affected by whether [[Lexington II]] appears in the construction attempt or not.
+**Accumulated construction attempts will not carry over to the next limited construction event.
+<li>'''Limited Time Event: [[Call to Arms: Transboundary Experiment|Call to Arms: Transboundary Experiment - Phase II]]'''
+*Event period: From December 18th 2025 to January 14th 2026, 11:59 P.M. (UTC-7):
+*Fully limit break the event characters and use [[Lexington]], [[Helena]], [[Enterprise]], [[Yorktown]], and [[Hornet II]] to complete event missions and earn Training Points.
+*Earn enough Training Points to unlock the '''???''' portrait frame.
+{| class="wikitable" style="text-align: center; margin-left:20px; margin-top:0px;"
+| class="rarity-6" |[[File:337.png|50px]]
+| class="rarity-6" |'''Ghost of the Dark Blue'''
+|}
+<li>'''Limited Time Event: [[A Note Through the Firmament#Hammann's Scrumptious Spells|Hammann's Scrumptious Spells]]'''
+*Event period: From December 18th 2025 to January 7th 2026, 11:59 P.M. (UTC-7):
+*New missions unlock every day until 12/24. Complete them all to get Hammann II's limited skin, “Hammann's Scrumptious Spells”.
+<li>'''New [[Memories#Commemorative Album|Commemorative Album]]'''
+*During the event, complete [[A Note Through the Firmament#One-Time_Missions|commemorative missions]] to collect stickers and exchange for '''Star of the Firmament Medal'''.
+{| class="wikitable" style="text-align: center; margin-left:20px; margin-top:0px;"
+| class="rarity-6" |[[File:A Note Through the Firmament Medal 1.png|50px|link=]]
+| class="rarity-6" |'''Star of the Firmament Medal'''
+|}
+<li>'''Port Fashion Collection: Heart-Throbbing Moment I'''
+*Event period: From December 18th 2025 to January 7th 2026, 11:59 P.M. (UTC-7):
+*Log in every day to get 3 unlock chances and unlock the corresponding side story.
+<li>'''New [[Retrofit]]:'''
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Maury|DD|Kai|Retrofit}}
+</div>
+<li>'''New Addition to [[War Archives]]:'''
+*[[Parallel Superimposition]]
+<li>'''Construction Pool Update:'''
+*Available in the permanent pool:
+**'''Note:''' Yorktown II will be available in UR Exchange after maintenance.
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|4|Hammann II|DD||'''Light Construction<br>00:15:00'''|||||y}}
+{{ShipDisplay|6|Yorktown II|CV||'''Heavy and Special Construction<br>04:25:00'''|||||y}}
+{{ShipDisplay|5|Northampton II|CA||'''Heavy Construction<br>02:00:00'''|||||y}}
+{{ShipDisplay|5|Hornet II|CV||'''Special Construction<br>04:25:00'''|||||y}}
+</div>
+<li>'''New [[Skins]]:'''
+*Available between December 18th 2025 and January 7th 2026, 11:59 P.M. (UTC-7):
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|6|Yorktown II|CV|Bunny|An Evening's Companionship |{{Gem}} |1|DUAL|142}}
+{{ShipDisplay|6|Lexington II|CV|Maid|The Fluffiest of Maids|{{Gem}} |1|L2D+|172}}
+{{ShipDisplay|6|William D. Porter|DD|Maid|The Daredevil's Maidly Service |{{Gem}} |1|DYN|172}}
+{{ShipDisplay|5|Cowpens|CVL|Maid|Milky Ministrations|{{Gem}} |1|L2D|172}}
+{{ShipDisplay|4|Pasadena|CL|Maid|Surprising Game|{{Gem}} |1|DYN|172}}
+{{ShipDisplay|4|Clarence K. Bronson|DD|Maid|Special Functional Testing|{{Gem}} |1|DYN|320}}
+{{ShipDisplay|4|Birmingham|CL|Maid|Briar Maid|{{Gem}} |1||142}}
+</div>
+<li>'''Rerun [[Skins]]:'''
+*Available between December 18th 2025 and January 7th 2026, 11:59 P.M. (UTC-7):
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|6|Fritz Rumey|CV|Bunny|Schwarzes Kaninchen|{{Gem}} 1180|1|L2D|145}}
+{{ShipDisplay|6|Z52|DD|Bunny|The Rapid Rabbit|{{Gem}} 980|1|DYN|145}}
+{{ShipDisplay|5|Bismarck|BB|Christmas|Unpacked Surprise|{{Gem}} 1180|1|L2D|193}}
+{{ShipDisplay|5|Ägir|CB|Home Relaxation|One-on-One Leisure Time|{{Gem}} 1180|1|L2D|145}}
+{{ShipDisplay|5|Duisburg|CL|Bunny|Endurance Training (Gone Wrong)|{{Gem}} 980|1|DYN|145}}
+{{ShipDisplay|5|Formidable|CV|Bunny|Rockin' Encore|{{Gem}} 980|1|DYN|145}}
+{{ShipDisplay|5|Janus|DD|Bunny|A Lesson in Billiards|{{Gem}} 880|1||608}}
+{{ShipDisplay|4|Z9|DD|Bunny|Teary Cocktail|{{Gem}} 780|1||608}}
+{{ShipDisplay|4|Z11|DD|Bunny|Service, Sincerity, and Insolvency|{{Gem}} 780|1||150}}
+</div>
+*Available permanently:
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|6|Yorktown II|CV|Summer|Bright-Sky Mermaid|{{Gem}} 980|1|DYN|164|y}}
+{{ShipDisplay|5|Northampton II|CA|Summer|Swimming Star|{{Gem}} 1180|1|L2D|133|y}}
+{{ShipDisplay|5|Hornet II|CV|Summer|Racing Across the Waves!|{{Gem}} 980|1|DYN|133|y}}
+{{ShipDisplay|4|Hammann II|DD|Summer|Another Rebellious Summer|{{Gem}} 780|1||106|y}}
+{{ShipDisplay|4|Langley II|CVL|Summer|On-the-Clock Vacation|{{Gem}} 780|1||164|y}}
+</div>
+<li>'''Rental Outfit System:'''
+*Available between December 18th 2025 and January 7th 2026, 11:59 P.M. (UTC-7):
+*Log in during the event period to earn 3 Rental Outfit Vouchers {{Skin ticket}}
+*Can be used to rent the following skins for a duration of 48 hours
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|6|Yorktown II|CV|Bunny|An Evening's Companionship |{{Gem}} |1|DUAL|142}}
+{{ShipDisplay|6|Lexington II|CV|Maid|The Fluffiest of Maids|{{Gem}} |1|L2D+|172}}
+{{ShipDisplay|5|Cowpens|CVL|Maid|Milky Ministrations|{{Gem}} |1|L2D|172}}
+</div>
+<li>'''New Items in [[Akashi's Shop]]:'''
+*Available between December 18th 2025 and January 7th 2026, 11:59 P.M. (UTC-7):
+**Maidly Service Lucky Box A (1 purchase limited)
+**Game Night Lucky Bag A Rerun (1 purchase limited)
+**Premium Winter Gift Pack (1 purchase limited)
+**Battle UI Pack – Maid Café(Basic) (1 purchase limited)
+**Battle UI Pack – Maid Café(Premium) (1 purchase limited)
+**'''Note:''' 1 Battle UI Pack – Maid Café(Basic) contains the Battle UI – Maid Café theme and 1,000 Coins; 1 Battle UI Pack – Maid Café (Premium) contains the Battle UI – Maid Café theme and 3,060 Gems. You can only choose to buy ONE version.
+**Limited Build Supplies (1 purchase limited)
+**Limited Strategic Supplies (5 purchases limited)
+**Decor Tokens Pack (2 purchases limited)
+**Cognitive Chip Pack (2 purchases limited)
+**Promise Crate (1 purchase limited)
+<li>'''New [[Equipment Skins|Gear Skin Box]]:'''
+*Available between December 18th 2025 and January 7th 2026, 11:59 P.M. (UTC-7):
+**[[A Note Through the Firmament#Equipment Skins|Gear Skin Box (Maid's Bar)]]
+<li>'''New [[List of Furniture Sets|Furniture Sets]]:'''
+*Available between December 18th 2025 and January 7th 2026, 11:59 P.M. (UTC-7):
+{| class="wikitable" style="text-align: center; margin-left:20px; margin-top:0px;"
+|{{Furniture|njthemeicon}}||'''[[Furniture Sets/Meowing Maid's House|Meowing Maid's House]]'''
+|}
+<li>'''Rerun [[List of Furniture Sets|Furniture Sets]]:'''
+*Available permanently:
+{| class="wikitable" style="text-align: center; margin-left:20px; margin-top:0px;"
+|{{Furniture|njthemeicon}}||'''[[Furniture Sets/Beach Cabin|Beach Cabin]]'''
+|}
+<li>'''Merit Shop Update:'''
+*Available permanently:
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|4|Langley II|CV|||||||y}}
+</div>
+<li>'''FleetChat:'''
+*Kingdom of Tulipa Group Chat
+*Lexington
+*Lexington II
+*William D. Porter
+*Cowpens
+*Pasadena
+*Clarence K. Bronson
+<li>'''Juustagram:'''
+*Available between December 18th 2025 and January 7th 2026, 11:59 P.M. (UTC-7):
+**New content added
+<li>'''Private Quarters Update:'''
+*Available between December 18th and December 24th, 11:59 P.M. (UTC-7):
+**Rerun furniture – Christmas Eve Sleigh Sofa
+<li>'''CV Update:'''
+*'''Characters'''
+**[[Lexington II/Quotes|Lexington II]] – Minami Shinoda
+**[[William D. Porter/Quotes|William D. Porter]] – Sumire Morohoshi
+**[[Cowpens/Quotes|Cowpens]] – Seria Fukagawa
+**[[Cleveland META/Quotes|Cleveland META]] – Saya Horigome
+**[[Pasadena/Quotes|Pasadena]] – Nana Hasumi
+**[[Clarence K. Bronson/Quotes|Clarence K. Bronson]] – Hiyori Miyazaki
+*'''Retrofit:'''
+**[[Shiratsuyu/Quotes|Shiratsuyu]] – Konomi Kohara
+*'''Skins'''
+**[[Yorktown II/Quotes|Yorktown II]] – An Evening's Companionship (Dual-Form) – Kana Yuuki
+**[[Lexington II/Quotes|Lexington II]] – The Fluffiest of Maids (L2D) – Minami Shinoda
+**[[Cowpens/Quotes|Cowpens]] – Milky Ministrations (L2D) – Seria Fukagawa
+**[[William D. Porter/Quotes|William D. Porter]] – The Daredevil's Maidly Service (Dynamic) – Sumire Morohoshi
+**[[Pasadena/Quotes|Pasadena]] – Surprising Game (Dynamic) – Nana Hasumi
+**[[Clarence K. Bronson/Quotes|Clarence K. Bronson]] – Special Functional Testing – Hiyori Miyazaki
+**[[Birmingham/Quotes|Birmingham]] – Briar Maid – Sayumi Watabe
+**[[Hammann II/Quotes|Hammann II]] – Hammann's Scrumptious Spells – Asuka Itou
+*'''EX (Post-Oath)'''
+**[[Lexington II/Quotes|Lexington II]] – Minami Shinoda
+**[[William D. Porter/Quotes|William D. Porter]] – Sumire Morohoshi
+**[[Cowpens/Quotes|Cowpens]] – Seria Fukagawa
+**[[Cleveland META/Quotes|Cleveland META]] – Saya Horigome
+**[[Pasadena/Quotes|Pasadena]] – Nana Hasumi
+**[[Clarence K. Bronson/Quotes|Clarence K. Bronson]] – Hiyori Miyazaki
+</ol>
+
+=== System Optimization ===
+#'''General'''
+#*Fixed an issue where dynamic outfit background resources displayed abnormally during the loading process.
+#*Fixed an issue where the effect of Yorktown META’s skill “Philosophy of the Unobserved” was abnormal when challenging her in the Dossier Analysis gameplay under certain conditions.
+#*Optimized and corrected some images, text, and other resources.

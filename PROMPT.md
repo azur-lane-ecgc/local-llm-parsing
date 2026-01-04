@@ -20,6 +20,11 @@ Create a markdown document for this date only.
 - **Equipment Name**: Shop/Event context
 - **Equipment Name**: Shop/Event context
 
+## Other
+
+- **Meowfficer Name**: Shop/Event context
+-
+
 ---
 
 **CRITICAL INCLUSION RULES:**
