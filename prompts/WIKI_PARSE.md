@@ -23,7 +23,6 @@ Create a markdown document for this date only.
 ## Other
 
 - **Meowfficer Name**: Shop/Event context
--
 
 ---
 
