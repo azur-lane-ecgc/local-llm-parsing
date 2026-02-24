@@ -1,12 +1,12 @@
 {
   "modelName": "openai/gpt-oss-20b",
   "lmStudioPort": 1234,
-  "patchNotesDir": "output/patch-notes",
+  "patchNotesDir": "output/azur_lane_patch_notes",
   "llmOutputDir": "output/llm",
   "promptFile": "prompts/WIKI_PARSE.md",
   "wordpress": {
     "baseUrl": "https://azurlane.yo-star.com/news/",
     "pageAppendUrl": "page/",
-    "earliestDate": "2025-10-10"
+    "earliestDate": "2025-10-1"
   }
 }
