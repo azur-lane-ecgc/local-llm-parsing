@@ -8,7 +8,7 @@ folder: guide
 
 **SHIPS:** `**New Characters**`, `**New Retrofit**`, `**Rerun Characters**`, `**Construction Pools Update**`, `**Merit Shop**`, `**Core Data Shop**`, `**META Shop**`, `**War Archives**` + event text with ship names
 
-**EQUIPMENT:** `**Core Data Shop**` + event weapon names
+**EQUIPMENT:** `**Core Data Shop**`, `**Gear Lab**`, + event weapon names
 
 **BLUEPRINTS:** `**Research Update**` → Prototype/Medal Shop sub-items + event "Design"/"Blueprint"
 
@@ -22,7 +22,7 @@ THERE IS ZERO OVERLAP BETWEEN ITEM NAMES IN ANY OF THESE CATEGORIES
 
 ## IGNORE
 
-`**Skins**`, `**Furniture**`, `**Gearbox**`, `**Private Quarters**`, `**FleetChat**`, `**JUUSTAGRAM**`, `**CV Update**`, `**System Optimization**`, `**Reminders**`, `**Maintenance Compensation**`, `**New Items in Shop**`, `**Call to Arms**`
+`**Skins**`, `**Furniture**`, `**Gearbox**`, `**Private Quarters**`, `**FleetChat**`, `**JUUSTAGRAM**`, `**CV Update**`, `**System Optimization**`, `**Reminders**`, `**Maintenance Compensation**`, `**New Items in Shop**`, `**Call to Arms**`, `**Island Planner**`, `**Memory**`
 
 Collab ships/equip/blueprints = include. Collab skins = ignore.
 
@@ -38,3 +38,5 @@ Collab ships/equip/blueprints = include. Collab skins = ignore.
 ```
 
 Empty = omit. No filler. One per line.
+
+If file ALREADY EXISTS - FIX INCORRECT / ADD MISSING ITEMS
