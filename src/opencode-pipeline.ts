@@ -74,6 +74,7 @@ export const processWithOpenCode = async (
   inputPath: string,
   outputPath: string,
   prompt: string,
+  model: string,
 ): Promise<void> => {
   console.log(`→ Running OpenCode on: ${inputPath}`)
 
@@ -85,7 +86,7 @@ export const processWithOpenCode = async (
       "run",
       "--attach=" + OPCODE_SERVER_URL,
       "-m",
-      "zai-coding-plan/glm-5",
+      model,
       "-f",
       inputPath,
       "--",

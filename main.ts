@@ -163,7 +163,12 @@ const processWithOpenCodeOnly = async () => {
         }
 
         console.log("  → Processing with OpenCode...")
-        await processWithOpenCode(inputPath, outputPath, prompt)
+        await processWithOpenCode(
+          inputPath,
+          outputPath,
+          prompt,
+          config.opencodeModel,
+        )
 
         console.log(`✓ Complete: ${dateStr}`)
       } catch (error) {

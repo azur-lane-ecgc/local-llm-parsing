@@ -1,5 +1,6 @@
 {
-  "modelName": "openai/gpt-oss-20b",
+  "lmStudioModel": "openai/gpt-oss-20b",
+  "opencodeModel": "opencode/big-pickle",
   "lmStudioPort": 1234,
   "patchNotesDir": "output/azur_lane_patch_notes",
   "llmOutputDir": "output/llm",

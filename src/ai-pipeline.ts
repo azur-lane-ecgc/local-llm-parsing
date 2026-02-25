@@ -153,7 +153,7 @@ export const withLMServer = async <T>(
   const cfg = await getConfig()
 
   try {
-    await loadModel(cfg.modelName)
+    await loadModel(cfg.lmStudioModel)
     await startServer(cfg.lmStudioPort)
     await waitForServer(cfg.lmStudioPort)
 
@@ -171,14 +171,14 @@ export const withLMServer = async <T>(
 
     if (errorMsg.includes("model not found")) {
       throw new Error(
-        `Model "${cfg.modelName}" not found. Run 'lms ls' to see available models.`,
+        `Model "${cfg.lmStudioModel}" not found. Run 'lms ls' to see available models.`,
       )
     }
 
     throw error
   } finally {
     try {
-      await unloadModel(cfg.modelName)
+      await unloadModel(cfg.lmStudioModel)
       await stopServer()
     } catch (cleanupError) {
       console.warn(`⚠️ Cleanup warning: ${(cleanupError as Error).message}`)
@@ -199,7 +199,7 @@ export const processWithAI = async (
   console.log(`  → Sending content to AI (${content.length} characters)...`)
 
   const result = streamText({
-    model: lmstudio(cfg.modelName),
+    model: lmstudio(cfg.lmStudioModel),
     messages: [
       { role: "system", content: prompt },
       { role: "user", content: content },
