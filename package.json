@@ -9,12 +9,13 @@
     "main": "bun main.ts",
     "scrape": "bun main.ts -s && bun check",
     "process": "bun main.ts -p && bun check",
+    "opencode-parse": "bun main.ts -o && bun check",
     "check": "oxlint --fix . && oxfmt .",
     "prepare": "lefthook install"
   },
   "dependencies": {
     "@ai-sdk/openai-compatible": "^2.0.30",
-    "ai": "^6.0.98",
+    "ai": "^6.0.99",
     "cheerio": "^1.2.0",
     "turndown": "^7.2.2",
     "zod": "^4.3.6"

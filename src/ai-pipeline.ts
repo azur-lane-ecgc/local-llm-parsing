@@ -7,7 +7,7 @@ import { loadConfig } from "./config"
 
 const execAsync = promisify(exec)
 
-const parsePromptFrontmatter = async (
+export const parsePromptFrontmatter = async (
   promptPath: string,
 ): Promise<{ folder?: string }> => {
   try {

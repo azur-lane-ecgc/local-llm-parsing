@@ -4,15 +4,26 @@ import {
   formatPostGroup,
   writePostGroupContent,
 } from "./src/wordpress-parser"
-import { processWithAI, writeOutputFile, withLMServer } from "./src/ai-pipeline"
+import {
+  processWithAI,
+  writeOutputFile,
+  withLMServer,
+  parsePromptFrontmatter,
+} from "./src/ai-pipeline"
+import {
+  withOpenCodeServer,
+  processWithOpenCode,
+} from "./src/opencode-pipeline"
+import { mkdir } from "node:fs/promises"
 import { readFile, readdir } from "node:fs/promises"
 import { loadConfig } from "./src/config"
 import { join } from "node:path"
 
-const parseArgs = (): { mode: "all" | "scrape" | "process" } => {
+const parseArgs = (): { mode: "all" | "scrape" | "process" | "opencode" } => {
   const args = process.argv.slice(2)
   if (args.includes("-s")) return { mode: "scrape" }
   if (args.includes("-p")) return { mode: "process" }
+  if (args.includes("-o")) return { mode: "opencode" }
   return { mode: "all" }
 }
 
@@ -101,6 +112,80 @@ const processOnly = async () => {
   console.log("Processing complete!")
 }
 
+const processWithOpenCodeOnly = async () => {
+  console.log("Starting OpenCode-only mode\n")
+
+  const config = await loadConfig()
+  const prompt = await readFile(config.promptFile, "utf-8")
+
+  // Read existing content files
+  const files = await readdir(config.patchNotesDir)
+  const contentFiles = files
+    .filter((f) => f.endsWith("_content.md"))
+    .sort()
+    .reverse()
+
+  if (contentFiles.length === 0) {
+    console.log("No content files found. Run with -s first.")
+    return
+  }
+
+  console.log(`Found ${contentFiles.length} content files\n`)
+
+  await withOpenCodeServer(async () => {
+    let processed = 0
+    let failed = 0
+
+    for (const file of contentFiles) {
+      const dateStr = file.replace("_content.md", "")
+      processed++
+
+      console.log(`${"=".repeat(50)}`)
+      console.log(`Processing ${dateStr} (${processed}/${contentFiles.length})`)
+      console.log(`${"=".repeat(50)}`)
+
+      try {
+        const inputPath = join(config.patchNotesDir, file)
+
+        // Build output path following writeOutputFile pattern
+        const { folder } = await parsePromptFrontmatter(config.promptFile)
+        const baseDir = "output/llm"
+        const outputDir = folder ? `${baseDir}/${folder}` : `${baseDir}/default`
+        const outputPath = `${outputDir}/${dateStr}.output.md`
+
+        // Create output directory if needed
+        try {
+          await mkdir(outputDir, { recursive: true })
+        } catch (error) {
+          if ((error as any).code !== "EEXIST") {
+            throw error
+          }
+        }
+
+        console.log("  → Processing with OpenCode...")
+        await processWithOpenCode(inputPath, outputPath, prompt)
+
+        console.log(`✓ Complete: ${dateStr}`)
+      } catch (error) {
+        failed++
+        console.error(`❌ Failed: ${dateStr}`)
+        console.error(`   ${(error as Error).message}`)
+      }
+    }
+
+    console.log(`\n${"=".repeat(50)}`)
+    console.log(
+      `Done! Processed ${processed - failed}/${contentFiles.length} dates`,
+    )
+    if (failed > 0) {
+      console.log(`Failed: ${failed} dates`)
+    }
+    console.log(`${"=".repeat(50)}\n`)
+  })
+
+  console.log("Processing complete!")
+}
+
 const runAll = async () => {
   console.log("Starting Azur Lane Patch Notes Parser\n")
 
@@ -165,6 +250,9 @@ const main = async () => {
       break
     case "process":
       await processOnly()
+      break
+    case "opencode":
+      await processWithOpenCodeOnly()
       break
     case "all":
       await runAll()
