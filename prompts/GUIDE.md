@@ -1,3 +1,7 @@
+---
+folder: guide
+---
+
 **Azur Lane patch notes.** Extract SHIPS, EQUIPMENT, BLUEPRINTS.
 
 ## SCAN THESE HEADINGS (NOT ALL EXIST PER DATE; IGNORE NOT-PRESENT ONES)
@@ -8,6 +12,8 @@
 
 **BLUEPRINTS:** `**Research Update**` → Prototype/Medal Shop sub-items + event "Design"/"Blueprint"
 
+THERE IS ZERO OVERLAP BETWEEN ITEM NAMES IN ANY OF THESE CATEGORIES
+
 ## SOURCE & AVAILABILITY
 
 - Pool: Light/Heavy/Special/Event | Shop: PT/UR/Core/Merit/Medal/Prototype/META
@@ -16,7 +22,7 @@
 
 ## IGNORE
 
-`**Skins**`, `**Furniture**`, `**Gearbox**`, `**Private Quarters**`, `**FleetChat**`, `**JUUSTAGRAM**`, `**CV Update**`, `**System Optimization**`, `**Reminders**`, `**Maintenance Compensation**`, `**New Items in Shop**`
+`**Skins**`, `**Furniture**`, `**Gearbox**`, `**Private Quarters**`, `**FleetChat**`, `**JUUSTAGRAM**`, `**CV Update**`, `**System Optimization**`, `**Reminders**`, `**Maintenance Compensation**`, `**New Items in Shop**`, `**Call to Arms**`
 
 Collab ships/equip/blueprints = include. Collab skins = ignore.
 
