@@ -3,7 +3,8 @@
   "lmStudioPort": 1234,
   "patchNotesDir": "output/azur_lane_patch_notes",
   "llmOutputDir": "output/llm",
-  "promptFile": "prompts/WIKI_PARSE.md",
+  "promptFile": "prompts/GUIDE.md",
+  "detailedSkin": false,
   "wordpress": {
     "baseUrl": "https://azurlane.yo-star.com/news/",
     "pageAppendUrl": "page/",

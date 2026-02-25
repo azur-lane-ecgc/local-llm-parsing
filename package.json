@@ -7,8 +7,8 @@
   "module": "main.ts",
   "scripts": {
     "main": "bun main.ts",
-    "scrape": "bun main.ts -s",
-    "process": "bun main.ts -p",
+    "scrape": "bun main.ts -s && bun check",
+    "process": "bun main.ts -p && bun check",
     "check": "oxlint --fix . && oxfmt .",
     "prepare": "lefthook install"
   },

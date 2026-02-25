@@ -116,14 +116,28 @@ const parseDate = (text: string): Date | null => {
   )
 }
 
-const cleanHTML = (html: string): string => {
+const cleanHTML = (
+  html: string,
+  options?: { includeSkins?: boolean },
+): string => {
   const $ = load(html)
+  const includeSkins = options?.includeSkins ?? true
 
   // Remove unwanted elements
   $("img, video, iframe, style, script, noscript").remove()
-  $(
-    ".ad, .advertisement, .sidebar, .footer, .navigation, .menu, .header-image",
-  ).remove()
+  const removeSelectors = [
+    ".ad",
+    ".advertisement",
+    ".sidebar",
+    ".footer",
+    ".navigation",
+    ".menu",
+    ".header-image",
+  ]
+  if (!includeSkins) {
+    removeSelectors.push(".wp-block-verse")
+  }
+  $(removeSelectors.join(", ")).remove()
 
   // Remove image captions
   $(".wp-caption-text, .gallery-caption").remove()
@@ -228,14 +242,20 @@ const extractLatestDate = (headerElement: Cheerio<any>): Date | null => {
   return date
 }
 
-const fetchPostContent = async (url: string): Promise<string> => {
+const fetchPostContent = async (
+  url: string,
+  options?: { includeSkins?: boolean },
+): Promise<string> => {
   const html = await fetchWithRetry(url)
   const text = await html.text()
-  return extractMainContent(text)
+  return extractMainContent(text, options)
 }
 
-const extractMainContent = (html: string): string => {
-  const cleanedHTML = cleanHTML(html)
+const extractMainContent = (
+  html: string,
+  options?: { includeSkins?: boolean },
+): string => {
+  const cleanedHTML = cleanHTML(html, options)
   return htmlToMarkdown(cleanedHTML)
 }
 
@@ -282,7 +302,9 @@ export const crawlBlog = async (): Promise<PostInfo[]> => {
       }
 
       console.log(`  → Fetching: ${post.title}`)
-      post.content = await fetchPostContent(post.url)
+      post.content = await fetchPostContent(post.url, {
+        includeSkins: cfg.detailedSkin,
+      })
       allPosts.push(post)
     }
 

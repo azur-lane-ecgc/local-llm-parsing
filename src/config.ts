@@ -6,6 +6,7 @@ interface Config {
   patchNotesDir: string
   llmOutputDir: string
   promptFile: string
+  detailedSkin: boolean
   wordpress: {
     baseUrl: string
     pageAppendUrl: string
