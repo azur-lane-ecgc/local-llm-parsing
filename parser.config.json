@@ -8,6 +8,6 @@
   "wordpress": {
     "baseUrl": "https://azurlane.yo-star.com/news/",
     "pageAppendUrl": "page/",
-    "earliestDate": "2025-10-1"
+    "earliestDate": "2025-10-01"
   }
 }

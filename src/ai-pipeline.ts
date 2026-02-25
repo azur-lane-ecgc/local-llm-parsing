@@ -1,11 +1,27 @@
 import { createOpenAICompatible } from "@ai-sdk/openai-compatible"
 import { streamText } from "ai"
-import { mkdir } from "node:fs/promises"
+import { mkdir, readFile } from "node:fs/promises"
 import { exec } from "node:child_process"
 import { promisify } from "node:util"
 import { loadConfig } from "./config"
 
 const execAsync = promisify(exec)
+
+const parsePromptFrontmatter = async (
+  promptPath: string,
+): Promise<{ folder?: string }> => {
+  try {
+    const content = await readFile(promptPath, "utf-8")
+    const match = content.match(/^---\n([\s\S]*?)\n---/)
+    if (!match) return {}
+
+    const frontmatter = match[1]
+    const folderMatch = frontmatter?.match(/^folder:\s*(.+)$/m)
+    return { folder: folderMatch?.[1]?.trim() }
+  } catch {
+    return {}
+  }
+}
 
 let config: Awaited<ReturnType<typeof loadConfig>> | null = null
 
@@ -212,11 +228,17 @@ export const writeOutputFile = async (
   date: Date,
 ): Promise<void> => {
   const cfg = await getConfig()
+  const { folder } = await parsePromptFrontmatter(cfg.promptFile)
+
+  // Build output dir: output/llm/<folder> or output/llm/default
+  const baseDir = "output/llm"
+  const outputDir = folder ? `${baseDir}/${folder}` : `${baseDir}/default`
+
   const dateStr = date.toISOString().split("T")[0]
-  const filename = `${cfg.llmOutputDir}/${dateStr}.output.md`
+  const filename = `${outputDir}/${dateStr}.output.md`
 
   try {
-    await mkdir(cfg.llmOutputDir, { recursive: true })
+    await mkdir(outputDir, { recursive: true })
   } catch (error) {
     if ((error as any).code !== "EEXIST") {
       throw error
