@@ -1,7 +1,5 @@
 {
-  "lmStudioModel": "openai/gpt-oss-20b",
-  "opencodeModel": "opencode/kimi-k2.5-free",
-  "lmStudioPort": 1234,
+  "opencodeModel": "zai-coding-plan/glm-5-turbo",
   "patchNotesDir": "output/azur_lane_patch_notes",
   "llmOutputDir": "output/llm",
   "promptFile": "prompts/GUIDE.md",

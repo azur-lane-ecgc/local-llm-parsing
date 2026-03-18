@@ -5,12 +5,6 @@ import {
   writePostGroupContent,
 } from "./src/wordpress-parser"
 import {
-  processWithAI,
-  writeOutputFile,
-  withLMServer,
-  parsePromptFrontmatter,
-} from "./src/ai-pipeline"
-import {
   withOpenCodeServer,
   processWithOpenCode,
 } from "./src/opencode-pipeline"
@@ -19,10 +13,24 @@ import { readFile, readdir } from "node:fs/promises"
 import { loadConfig } from "./src/config"
 import { join } from "node:path"
 
-const parseArgs = (): { mode: "all" | "scrape" | "process" | "opencode" } => {
+const parsePromptFrontmatter = async (
+  promptPath: string,
+): Promise<{ folder?: string }> => {
+  try {
+    const content = await readFile(promptPath, "utf-8")
+    const match = content.match(/^---\n([\s\S]*?)\n---/)
+    if (!match) return {}
+    const frontmatter = match[1]
+    const folderMatch = frontmatter?.match(/^folder:\s*(.+)$/m)
+    return { folder: folderMatch?.[1]?.trim() }
+  } catch {
+    return {}
+  }
+}
+
+const parseArgs = (): { mode: "all" | "scrape" | "opencode" } => {
   const args = process.argv.slice(2)
   if (args.includes("-s")) return { mode: "scrape" }
-  if (args.includes("-p")) return { mode: "process" }
   if (args.includes("-o")) return { mode: "opencode" }
   return { mode: "all" }
 }
@@ -46,70 +54,6 @@ const scrapeOnly = async () => {
   }
 
   console.log("\nScraping complete!")
-}
-
-const processOnly = async () => {
-  console.log("Starting process-only mode\n")
-
-  const config = await loadConfig()
-  const prompt = await readFile(config.promptFile, "utf-8")
-
-  // Read existing content files
-  const files = await readdir(config.patchNotesDir)
-  const contentFiles = files
-    .filter((f) => f.endsWith("_content.md"))
-    .sort()
-    .reverse()
-
-  if (contentFiles.length === 0) {
-    console.log("No content files found. Run with -s first.")
-    return
-  }
-
-  console.log(`Found ${contentFiles.length} content files\n`)
-
-  await withLMServer(async () => {
-    let processed = 0
-    let failed = 0
-
-    for (const file of contentFiles) {
-      const dateStr = file.replace("_content.md", "")
-      const date = new Date(dateStr)
-      processed++
-
-      console.log(`${"=".repeat(50)}`)
-      console.log(`Processing ${dateStr} (${processed}/${contentFiles.length})`)
-      console.log(`${"=".repeat(50)}`)
-
-      try {
-        const content = await readFile(
-          join(config.patchNotesDir, file),
-          "utf-8",
-        )
-
-        console.log("  → Analyzing with AI...")
-        const result = await processWithAI(content, prompt)
-        await writeOutputFile(result, date)
-
-        console.log(`✓ Complete: ${dateStr}`)
-      } catch (error) {
-        failed++
-        console.error(`❌ Failed: ${dateStr}`)
-        console.error(`   ${(error as Error).message}`)
-      }
-    }
-
-    console.log(`\n${"=".repeat(50)}`)
-    console.log(
-      `Done! Processed ${processed - failed}/${contentFiles.length} dates`,
-    )
-    if (failed > 0) {
-      console.log(`Failed: ${failed} dates`)
-    }
-    console.log(`${"=".repeat(50)}\n`)
-  })
-
-  console.log("Processing complete!")
 }
 
 const processWithOpenCodeOnly = async () => {
@@ -205,7 +149,7 @@ const runAll = async () => {
 
   const prompt = await readFile(config.promptFile, "utf-8")
 
-  await withLMServer(async () => {
+  await withOpenCodeServer(async () => {
     let processed = 0
     let failed = 0
 
@@ -221,9 +165,29 @@ const runAll = async () => {
         const content = formatPostGroup(group)
         await writePostGroupContent(content, group.date)
 
-        console.log("  → Analyzing with AI...")
-        const result = await processWithAI(content, prompt)
-        await writeOutputFile(result, group.date)
+        const inputPath = join(config.patchNotesDir, `${dateStr}_content.md`)
+
+        const { folder } = await parsePromptFrontmatter(config.promptFile)
+        const baseDir = "output/llm"
+        const outputDir = folder ? `${baseDir}/${folder}` : `${baseDir}/default`
+        const outputPath = `${outputDir}/${dateStr}.output.md`
+
+        // Create output directory if needed
+        try {
+          await mkdir(outputDir, { recursive: true })
+        } catch (error) {
+          if ((error as any).code !== "EEXIST") {
+            throw error
+          }
+        }
+
+        console.log("  → Processing with OpenCode...")
+        await processWithOpenCode(
+          inputPath,
+          outputPath,
+          prompt,
+          config.opencodeModel,
+        )
 
         console.log(`✓ Complete: ${dateStr}`)
       } catch (error) {
@@ -252,9 +216,6 @@ const main = async () => {
   switch (mode) {
     case "scrape":
       await scrapeOnly()
-      break
-    case "process":
-      await processOnly()
       break
     case "opencode":
       await processWithOpenCodeOnly()

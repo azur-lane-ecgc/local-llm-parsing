@@ -1,9 +1,7 @@
 import { readFile } from "node:fs/promises"
 
 interface Config {
-  lmStudioModel: string
   opencodeModel: string
-  lmStudioPort: number
   patchNotesDir: string
   llmOutputDir: string
   promptFile: string
