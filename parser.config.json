@@ -2,7 +2,7 @@
   "opencodeModel": "zai-coding-plan/glm-5-turbo",
   "patchNotesDir": "output/azur_lane_patch_notes",
   "llmOutputDir": "output/llm",
-  "promptFile": "prompts/GUIDE.md",
+  "promptFile": "prompts/test/GUIDE.md",
   "detailedSkin": false,
   "wordpress": {
     "baseUrl": "https://azurlane.yo-star.com/news/",
