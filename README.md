@@ -21,7 +21,8 @@ Configure `parser.config.json`:
 
 - `opencodeModel`: Model for OpenCode processing
 - `wordpress.baseUrl`: Patch notes URL to crawl
-- `wordpress.earliestDate`: Start date for fetching (YYYY-MM-DD)
+- `wordpress.earliestDate`: Earliest date to fetch (YYYY-MM-DD)
+- `wordpress.latestDate`: Latest date to fetch (YYYY-MM-DD), or `false` to start from page 1
 
 ## Output
 

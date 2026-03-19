@@ -10,6 +10,7 @@ interface Config {
     baseUrl: string
     pageAppendUrl: string
     earliestDate: string
+    latestDate?: string | false
   }
 }
 

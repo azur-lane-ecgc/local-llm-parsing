@@ -266,9 +266,13 @@ const extractMainContent = (
 export const crawlBlog = async (): Promise<PostInfo[]> => {
   const cfg = await getConfig()
   const earliestDate = new Date(cfg.wordpress.earliestDate)
+  const latestDate = cfg.wordpress.latestDate
+    ? new Date(cfg.wordpress.latestDate)
+    : null
   const allPosts: PostInfo[] = []
   let page = 1
   let cutoffReached = false
+  let foundLatestDate = latestDate === null
 
   while (!cutoffReached) {
     console.log(`📰 Crawling page ${page}...`)
@@ -299,6 +303,22 @@ export const crawlBlog = async (): Promise<PostInfo[]> => {
         )
         cutoffReached = true
         break
+      }
+
+      if (latestDate && post.date > latestDate) {
+        console.log(`  → Skipping (after latestDate): ${post.title}`)
+        continue
+      }
+
+      if (latestDate && !foundLatestDate && post.date <= latestDate) {
+        foundLatestDate = true
+        console.log(
+          `✓ Found latestDate: ${post.date.toISOString().split("T")[0]}`,
+        )
+      }
+
+      if (!foundLatestDate) {
+        continue
       }
 
       console.log(`  → Fetching: ${post.title}`)
