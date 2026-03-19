@@ -1,16 +1,19 @@
 import { readFile } from "node:fs/promises"
 
 interface Config {
-  opencodeModel: string
-  patchNotesDir: string
-  llmOutputDir: string
-  promptFile: string
-  detailedSkin: boolean
+  earliestDate: string
+  latestDate?: string | false
   wordpress: {
     baseUrl: string
     pageAppendUrl: string
-    earliestDate: string
-    latestDate?: string | false
+    outputDir: string
+    outputFileExtension: string
+  }
+  llm: {
+    model: string
+    outputDir: string
+    promptFile: string
+    outputFileExtension: string
   }
 }
 

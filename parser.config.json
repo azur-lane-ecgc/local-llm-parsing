@@ -1,13 +1,16 @@
 {
-  "opencodeModel": "zai-coding-plan/glm-5-turbo",
-  "patchNotesDir": "output/azur_lane_patch_notes",
-  "llmOutputDir": "output/llm",
-  "promptFile": "prompts/optimized-patch-notes/prompt.md",
-  "detailedSkin": false,
+  "earliestDate": "2026-2-13",
+  "latestDate": false,
   "wordpress": {
     "baseUrl": "https://azurlane.yo-star.com/news/",
     "pageAppendUrl": "page/",
-    "earliestDate": "2026-2-13",
-    "latestDate": false
+    "outputDir": "output/azur_lane_patch_notes",
+    "outputFileExtension": "md"
+  },
+  "llm": {
+    "model": "zai-coding-plan/glm-5-turbo",
+    "outputDir": "output/llm",
+    "promptFile": "prompts/optimized-patch-notes/prompt.md",
+    "outputFileExtension": "md"
   }
 }

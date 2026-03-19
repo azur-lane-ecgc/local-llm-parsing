@@ -69,18 +69,17 @@ const processWithOpenCodeOnly = async () => {
   console.log("Starting OpenCode-only mode\n")
 
   const config = await loadConfig()
-  const prompt = await readFile(config.promptFile, "utf-8")
+  const prompt = await readFile(config.llm.promptFile, "utf-8")
 
-  const earliestDate = new Date(config.wordpress.earliestDate)
-  const latestDate = config.wordpress.latestDate
-    ? new Date(config.wordpress.latestDate)
-    : null
+  const earliestDate = new Date(config.earliestDate)
+  const latestDate = config.latestDate ? new Date(config.latestDate) : null
 
-  const files = await readdir(config.patchNotesDir)
+  const ext = config.wordpress.outputFileExtension
+  const files = await readdir(config.wordpress.outputDir)
   const contentFiles = files
-    .filter((f) => f.endsWith("_content.md"))
+    .filter((f) => f.endsWith(`_content.${ext}`))
     .filter((f) => {
-      const dateStr = f.replace("_content.md", "")
+      const dateStr = f.replace(`_content.${ext}`, "")
       const fileDate = new Date(dateStr)
       if (fileDate < earliestDate) return false
       if (latestDate && fileDate > latestDate) return false
@@ -106,7 +105,7 @@ const processWithOpenCodeOnly = async () => {
     let failed = 0
 
     for (const file of contentFiles) {
-      const dateStr = file.replace("_content.md", "")
+      const dateStr = file.replace(`_content.${ext}`, "")
       processed++
 
       console.log(`${"=".repeat(50)}`)
@@ -114,12 +113,13 @@ const processWithOpenCodeOnly = async () => {
       console.log(`${"=".repeat(50)}`)
 
       try {
-        const inputPath = join(config.patchNotesDir, file)
+        const inputPath = join(config.wordpress.outputDir, file)
 
-        const { folder } = await parsePromptFrontmatter(config.promptFile)
-        const baseDir = config.llmOutputDir
+        const { folder } = await parsePromptFrontmatter(config.llm.promptFile)
+        const outputExt = config.llm.outputFileExtension
+        const baseDir = config.llm.outputDir
         const outputDir = folder ? `${baseDir}/${folder}` : `${baseDir}/default`
-        const outputPath = `${outputDir}/${dateStr}.output.md`
+        const outputPath = `${outputDir}/${dateStr}.output.${outputExt}`
 
         try {
           await mkdir(outputDir, { recursive: true })
@@ -135,7 +135,7 @@ const processWithOpenCodeOnly = async () => {
           inputPath,
           outputPath,
           prompt,
-          config.opencodeModel,
+          config.llm.model,
         )
 
         console.log(`✓ Complete: ${dateStr}`)

@@ -265,10 +265,8 @@ const extractMainContent = (
  */
 export const crawlBlog = async (): Promise<PostInfo[]> => {
   const cfg = await getConfig()
-  const earliestDate = new Date(cfg.wordpress.earliestDate)
-  const latestDate = cfg.wordpress.latestDate
-    ? new Date(cfg.wordpress.latestDate)
-    : null
+  const earliestDate = new Date(cfg.earliestDate)
+  const latestDate = cfg.latestDate ? new Date(cfg.latestDate) : null
   const allPosts: PostInfo[] = []
   let page = 1
   let cutoffReached = false
@@ -323,7 +321,7 @@ export const crawlBlog = async (): Promise<PostInfo[]> => {
 
       console.log(`  → Fetching: ${post.title}`)
       post.content = await fetchPostContent(post.url, {
-        includeSkins: cfg.detailedSkin,
+        includeSkins: true,
       })
       allPosts.push(post)
     }
@@ -408,9 +406,10 @@ export const writePostGroupContent = async (
 ): Promise<void> => {
   const cfg = await getConfig()
   const dateStr = date.toISOString().split("T")[0]
-  const filename = `${cfg.patchNotesDir}/${dateStr}_content.md`
+  const ext = cfg.wordpress.outputFileExtension
+  const filename = `${cfg.wordpress.outputDir}/${dateStr}_content.${ext}`
 
-  await ensureDir(cfg.patchNotesDir)
+  await ensureDir(cfg.wordpress.outputDir)
 
   await Bun.write(filename, content)
   console.log(`  ✓ Saved raw content: ${filename}`)

@@ -19,10 +19,24 @@ bun run main -o       # Process with OpenCode only
 
 Configure `parser.config.json`:
 
-- `opencodeModel`: Model for OpenCode processing
-- `wordpress.baseUrl`: Patch notes URL to crawl
-- `wordpress.earliestDate`: Earliest date to fetch (YYYY-MM-DD)
-- `wordpress.latestDate`: Latest date to fetch (YYYY-MM-DD), or `false` to start from page 1
+```typescript
+interface Config {
+  earliestDate: string
+  latestDate?: string | false
+  wordpress: {
+    baseUrl: string
+    pageAppendUrl: string
+    outputDir: string
+    outputFileExtension: string
+  }
+  llm: {
+    model: string
+    outputDir: string
+    promptFile: string
+    outputFileExtension: string
+  }
+}
+```
 
 ## Output
 
