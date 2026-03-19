@@ -9,6 +9,7 @@
     "main": "bun run scrape && bun run process",
     "scrape": "bun main.ts -s && bun check",
     "process": "bun main.ts -o && bun check",
+    "wiki": "bun main.ts -w",
     "check": "oxlint --fix . && oxfmt --no-error-on-unmatched-pattern .",
     "submodule": "git submodule update --recursive --remote",
     "prepare": "lefthook install"
@@ -16,6 +17,7 @@
   "dependencies": {
     "@opencode-ai/sdk": "^1.2.27",
     "cheerio": "^1.2.0",
+    "mwn": "^3.0.1",
     "turndown": "^7.2.2"
   },
   "devDependencies": {

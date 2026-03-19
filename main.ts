@@ -8,6 +8,7 @@ import {
   withOpenCodeServer,
   processWithOpenCode,
 } from "./src/opencode-pipeline"
+import { testWikiLogin } from "./src/wiki"
 import { mkdir, writeFile } from "node:fs/promises"
 import { readFile, readdir } from "node:fs/promises"
 import { existsSync } from "node:fs"
@@ -35,10 +36,11 @@ const emptyFile = async (filePath: string): Promise<void> => {
   }
 }
 
-const parseArgs = (): { mode: "scrape" | "opencode" } | null => {
+const parseArgs = (): { mode: "scrape" | "opencode" | "wiki" } | null => {
   const args = process.argv.slice(2)
   if (args.includes("-s")) return { mode: "scrape" }
   if (args.includes("-o")) return { mode: "opencode" }
+  if (args.includes("-w")) return { mode: "wiki" }
   return null
 }
 
@@ -157,6 +159,12 @@ const processWithOpenCodeOnly = async () => {
   console.log("Processing complete!")
 }
 
+const wikiOnly = async () => {
+  console.log("Testing wiki login...\n")
+  await testWikiLogin()
+  console.log("\nWiki test complete!")
+}
+
 const main = async () => {
   const parsed = parseArgs()
 
@@ -165,9 +173,11 @@ const main = async () => {
     console.error("Usage:")
     console.error("  bun main.ts -s    Scrape patch notes")
     console.error("  bun main.ts -o    Process with OpenCode")
+    console.error("  bun main.ts -w    Test wiki login")
     console.error("\nOr use npm scripts:")
     console.error("  bun run scrape    Scrape only")
     console.error("  bun run process   Process only")
+    console.error("  bun run wiki      Test wiki")
     console.error("  bun run main      Scrape + process")
     process.exit(1)
   }
@@ -178,6 +188,9 @@ const main = async () => {
       break
     case "opencode":
       await processWithOpenCodeOnly()
+      break
+    case "wiki":
+      await wikiOnly()
       break
   }
 }
