@@ -11,6 +11,7 @@
     "process": "bun main.ts -p && bun check",
     "opencode-parse": "bun main.ts -o && bun check",
     "check": "oxlint --fix . && oxfmt --no-error-on-unmatched-pattern .",
+    "submodule": "git submodule update --recursive --remote",
     "prepare": "lefthook install"
   },
   "dependencies": {

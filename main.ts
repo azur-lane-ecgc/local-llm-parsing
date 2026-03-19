@@ -8,8 +8,9 @@ import {
   withOpenCodeServer,
   processWithOpenCode,
 } from "./src/opencode-pipeline"
-import { mkdir } from "node:fs/promises"
+import { mkdir, writeFile } from "node:fs/promises"
 import { readFile, readdir } from "node:fs/promises"
+import { existsSync } from "node:fs"
 import { loadConfig } from "./src/config"
 import { join } from "node:path"
 
@@ -25,6 +26,12 @@ const parsePromptFrontmatter = async (
     return { folder: folderMatch?.[1]?.trim() }
   } catch {
     return {}
+  }
+}
+
+const emptyFile = async (filePath: string): Promise<void> => {
+  if (existsSync(filePath)) {
+    await writeFile(filePath, "")
   }
 }
 
@@ -107,6 +114,7 @@ const processWithOpenCodeOnly = async () => {
         }
 
         console.log("  → Processing with OpenCode...")
+        await emptyFile(outputPath)
         await processWithOpenCode(
           inputPath,
           outputPath,
@@ -182,6 +190,7 @@ const runAll = async () => {
         }
 
         console.log("  → Processing with OpenCode...")
+        await emptyFile(outputPath)
         await processWithOpenCode(
           inputPath,
           outputPath,
