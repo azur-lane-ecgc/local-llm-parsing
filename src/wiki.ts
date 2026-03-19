@@ -18,3 +18,9 @@ export const testWikiLogin = async () => {
     throw err
   }
 }
+
+export const runWiki = async () => {
+  console.log("Testing wiki login...\n")
+  await testWikiLogin()
+  console.log("\nWiki test complete!")
+}

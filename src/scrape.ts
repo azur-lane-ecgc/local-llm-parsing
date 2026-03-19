@@ -414,3 +414,24 @@ export const writePostGroupContent = async (
   await Bun.write(filename, content)
   console.log(`  ✓ Saved raw content: ${filename}`)
 }
+
+export const runScrape = async () => {
+  console.log("Starting scrape-only mode\n")
+
+  console.log("Crawling WordPress blog...")
+  const posts = await crawlBlog()
+  console.log(`Collected ${posts.length} posts\n`)
+
+  const postGroups = groupPostsByDate(posts)
+  console.log(`Found ${postGroups.length} unique dates\n`)
+
+  for (const group of postGroups) {
+    const dateStr = group.date.toISOString().split("T")[0]
+    console.log(`Scraping ${dateStr}...`)
+    const content = formatPostGroup(group)
+    await writePostGroupContent(content, group.date)
+    console.log(`✓ Scraped: ${dateStr}`)
+  }
+
+  console.log("\nScraping complete!")
+}
