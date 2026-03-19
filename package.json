@@ -6,10 +6,9 @@
   "type": "module",
   "module": "main.ts",
   "scripts": {
-    "main": "bun main.ts",
+    "main": "bun run scrape && bun run process",
     "scrape": "bun main.ts -s && bun check",
-    "process": "bun main.ts -p && bun check",
-    "opencode-parse": "bun main.ts -o && bun check",
+    "process": "bun main.ts -o && bun check",
     "check": "oxlint --fix . && oxfmt --no-error-on-unmatched-pattern .",
     "submodule": "git submodule update --recursive --remote",
     "prepare": "lefthook install"

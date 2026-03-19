@@ -35,11 +35,11 @@ const emptyFile = async (filePath: string): Promise<void> => {
   }
 }
 
-const parseArgs = (): { mode: "all" | "scrape" | "opencode" } => {
+const parseArgs = (): { mode: "scrape" | "opencode" } | null => {
   const args = process.argv.slice(2)
   if (args.includes("-s")) return { mode: "scrape" }
   if (args.includes("-o")) return { mode: "opencode" }
-  return { mode: "all" }
+  return null
 }
 
 const scrapeOnly = async () => {
@@ -69,7 +69,6 @@ const processWithOpenCodeOnly = async () => {
   const config = await loadConfig()
   const prompt = await readFile(config.promptFile, "utf-8")
 
-  // Read existing content files
   const files = await readdir(config.patchNotesDir)
   const contentFiles = files
     .filter((f) => f.endsWith("_content.md"))
@@ -98,13 +97,11 @@ const processWithOpenCodeOnly = async () => {
       try {
         const inputPath = join(config.patchNotesDir, file)
 
-        // Build output path following writeOutputFile pattern
         const { folder } = await parsePromptFrontmatter(config.promptFile)
         const baseDir = config.llmOutputDir
         const outputDir = folder ? `${baseDir}/${folder}` : `${baseDir}/default`
         const outputPath = `${outputDir}/${dateStr}.output.md`
 
-        // Create output directory if needed
         try {
           await mkdir(outputDir, { recursive: true })
         } catch (error) {
@@ -143,94 +140,27 @@ const processWithOpenCodeOnly = async () => {
   console.log("Processing complete!")
 }
 
-const runAll = async () => {
-  console.log("Starting Azur Lane Patch Notes Parser\n")
-
-  const config = await loadConfig()
-
-  console.log("Crawling WordPress blog...")
-  const posts = await crawlBlog()
-  console.log(`Collected ${posts.length} posts\n`)
-
-  const postGroups = groupPostsByDate(posts)
-  console.log(`Found ${postGroups.length} unique dates\n`)
-
-  const prompt = await readFile(config.promptFile, "utf-8")
-
-  await withOpenCodeServer(async () => {
-    let processed = 0
-    let failed = 0
-
-    for (const group of postGroups) {
-      const dateStr = group.date.toISOString().split("T")[0]
-      processed++
-
-      console.log(`${"=".repeat(50)}`)
-      console.log(`Processing ${dateStr} (${processed}/${postGroups.length})`)
-      console.log(`${"=".repeat(50)}`)
-
-      try {
-        const content = formatPostGroup(group)
-        await writePostGroupContent(content, group.date)
-
-        const inputPath = join(config.patchNotesDir, `${dateStr}_content.md`)
-
-        const { folder } = await parsePromptFrontmatter(config.promptFile)
-        const baseDir = config.llmOutputDir
-        const outputDir = folder ? `${baseDir}/${folder}` : `${baseDir}/default`
-        const outputPath = `${outputDir}/${dateStr}.output.md`
-
-        // Create output directory if needed
-        try {
-          await mkdir(outputDir, { recursive: true })
-        } catch (error) {
-          if ((error as any).code !== "EEXIST") {
-            throw error
-          }
-        }
-
-        console.log("  → Processing with OpenCode...")
-        await emptyFile(outputPath)
-        await processWithOpenCode(
-          inputPath,
-          outputPath,
-          prompt,
-          config.opencodeModel,
-        )
-
-        console.log(`✓ Complete: ${dateStr}`)
-      } catch (error) {
-        failed++
-        console.error(`❌ Failed: ${dateStr}`)
-        console.error(`   ${(error as Error).message}`)
-      }
-    }
-
-    console.log(`\n${"=".repeat(50)}`)
-    console.log(
-      `Done! Processed ${processed - failed}/${postGroups.length} dates`,
-    )
-    if (failed > 0) {
-      console.log(`Failed: ${failed} dates`)
-    }
-    console.log(`${"=".repeat(50)}\n`)
-  })
-
-  console.log("Complete!")
-}
-
 const main = async () => {
-  const { mode } = parseArgs()
+  const parsed = parseArgs()
 
-  switch (mode) {
+  if (!parsed) {
+    console.error("Error: No mode specified\n")
+    console.error("Usage:")
+    console.error("  bun main.ts -s    Scrape patch notes")
+    console.error("  bun main.ts -o    Process with OpenCode")
+    console.error("\nOr use npm scripts:")
+    console.error("  bun run scrape    Scrape only")
+    console.error("  bun run process   Process only")
+    console.error("  bun run main      Scrape + process")
+    process.exit(1)
+  }
+
+  switch (parsed.mode) {
     case "scrape":
       await scrapeOnly()
       break
     case "opencode":
       await processWithOpenCodeOnly()
-      break
-    case "all":
-      await runAll()
       break
   }
 }
