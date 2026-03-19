@@ -100,7 +100,7 @@ const processWithOpenCodeOnly = async () => {
 
         // Build output path following writeOutputFile pattern
         const { folder } = await parsePromptFrontmatter(config.promptFile)
-        const baseDir = "output/llm"
+        const baseDir = config.llmOutputDir
         const outputDir = folder ? `${baseDir}/${folder}` : `${baseDir}/default`
         const outputPath = `${outputDir}/${dateStr}.output.md`
 
@@ -176,7 +176,7 @@ const runAll = async () => {
         const inputPath = join(config.patchNotesDir, `${dateStr}_content.md`)
 
         const { folder } = await parsePromptFrontmatter(config.promptFile)
-        const baseDir = "output/llm"
+        const baseDir = config.llmOutputDir
         const outputDir = folder ? `${baseDir}/${folder}` : `${baseDir}/default`
         const outputPath = `${outputDir}/${dateStr}.output.md`
 
