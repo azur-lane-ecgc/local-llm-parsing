@@ -1,13 +1,12 @@
-import { spawn } from "bun"
+import { spawn, ChildProcess } from "node:child_process"
 
 const OPCODE_SERVER_URL = "http://localhost:4096"
 
-export const startOpenCodeServer = async (): Promise<Bun.Subprocess> => {
+export const startOpenCodeServer = async (): Promise<ChildProcess> => {
   console.log(`→ Starting OpenCode server...`)
 
-  const proc = spawn(["opencode", "serve"], {
-    stdout: "inherit",
-    stderr: "inherit",
+  const proc = spawn("opencode", ["serve"], {
+    stdio: "inherit",
   })
 
   await waitForOpenCodeServer()
@@ -43,15 +42,15 @@ const waitForOpenCodeServer = async (
   throw new Error(`OpenCode server not ready after ${timeoutMs}ms`)
 }
 
-export const stopOpenCodeServer = (process: Bun.Subprocess): void => {
+export const stopOpenCodeServer = (proc: ChildProcess): void => {
   console.log(`→ Stopping OpenCode server...`)
-  process.kill()
+  proc.kill()
 }
 
 export const withOpenCodeServer = async <T>(
   callback: () => Promise<T>,
 ): Promise<T> => {
-  let proc: Bun.Subprocess | undefined
+  let proc: ChildProcess | undefined
 
   try {
     proc = await startOpenCodeServer()
@@ -80,9 +79,9 @@ export const processWithOpenCode = async (
 
   const fullPrompt = `${prompt}\n\nWrite your output to: ${outputPath}`
 
-  const proc = Bun.spawn(
+  const proc = spawn(
+    "opencode",
     [
-      "opencode",
       "run",
       "--attach=" + OPCODE_SERVER_URL,
       "-m",
@@ -93,12 +92,13 @@ export const processWithOpenCode = async (
       fullPrompt,
     ],
     {
-      stdout: "inherit",
-      stderr: "inherit",
+      stdio: "inherit",
     },
   )
 
-  const exitCode = await proc.exited
+  const exitCode = await new Promise<number>((resolve) => {
+    proc.on("close", resolve)
+  })
   if (exitCode !== 0) {
     throw new Error(`OpenCode command failed with exit code ${exitCode}`)
   }
