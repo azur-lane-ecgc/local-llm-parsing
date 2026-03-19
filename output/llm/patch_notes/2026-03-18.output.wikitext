@@ -1,0 +1,65 @@
+<div style="clear: right; margin-bottom: .5em; float: right; padding: .5em 0 .8em 1.4em; background: none; width: auto;">{{TOC Limit|2}}</div>
+==March 19th 2026==
+=== New Contents ===
+<ol>
+<li>'''Project Identity Update:'''
+*Project Identity 3.0: Explorer added (Unlocked after reaching Commander level 30)
+*You can influence Explorer's personality, stats, ending, and more by choosing different bonus effects, planning their itinerary, visiting other characters, and triggering random events. During Explorer's growth journey, she will also obtain various bonus effects such as Tarot Cards, Readings, and Abilities. Making good use of these bonuses will make it easier to achieve your development goals.
+*When random events occur, selecting certain options will also unlock mini-games.
+*A new Tarot Card system has been added to Project Identity. Obtain cards and meet certain conditions to influence the development of Explorer's personality in various ways.
+*After 20 turns of growth, depending on Explorer's stats, personality, and abilities, different endings can be unlocked. After unlocking an ending, you can choose to enter "Endless Mode" or "Hard Mode".
+*Endless Mode allows you to keep living in the virtual town even after reaching the ending. However, Assessments will also appear at a higher frequency while playing this mode. If you're unable to meet the Assessment's requirements, your Endless Mode run ends.
+*You can select to play on Hard Mode after reaching any ending. More Tarot Cards and Readings appear on Hard Mode.
+*Finish the character's growth process 1 time and complete the Island Planner main mission Off Into the Distance to unlock the mission Importing Data. Finish that mission to get TB, Oceana or Explorer as a character in Island Planner.
+*After you complete the introduction story chapter, the special secretary function will be unlocked and you can choose Explorer as your special secretary on the main page. By collecting more Moments and Endings, you can unlock more Modules that change her appearance.
+<li>'''Limited Time Event: [[Party Dress Series Rerun Campaign]]'''
+*Event period: From March 19th to April 8th, 11:59 P.M. (UTC-7):
+*During the campaign, you will earn 1 Coupon for each "Party Dress" series skin or skin pack you purchase at regular price.
+*Log in to the game to obtain rewards.
+<li>'''Limited Time Rerun Event: [[Today's Conducting Practice]]'''
+*Event period: From March 19th to April 1st, 11:59 P.M. (UTC-7):
+*Clear Main Campaign stages after [[Chapter 3]] or event stages (EX not included) to earn Trust.
+*If [[Little Friedrich]] is afloat in a fleet that defeats the Boss of a stage that grants Trust, you will gain twice as much Trust. Accumulate enough Trust to complete milestone missions.
+*Milestone missions will unlock over 7 days. Complete them all to have [[Little Friedrich]] permanently join your fleet.
+*'''Event Characters:'''
+<div style="display:flex; flex-wrap:wrap; margin-left:35px">
+{{ShipDisplay|4|Little Friedrich|BB||'''[[Today's Conducting Practice|Event Reward]]'''}}
+</div>
+<li>'''Construction Pool Update:'''
+*Available in the permanent pool:
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Attilio Regolo|DD||'''Light Construction'''|||||y}}
+{{ShipDisplay|5|Gorizia|CA||'''Heavy Construction'''|||||y}}
+{{ShipDisplay|4|Andrea Doria|BB||'''Heavy Construction'''|||||y}}
+</div>
+<li>'''New [[Skins]]:'''
+*Available between March 19th and April 1st, 11:59 P.M. (UTC-7):
+**TB – Data Set: My Countless Selves (Dynamic)
+**Explorer – Closeness on a Holiday (Dynamic)
+<li>'''Rerun [[Skins]]:'''
+*Available between March 19th and April 1st, 11:59 P.M. (UTC-7):
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|1|Navi|DD|Home Relaxation|Imp of the Bathtub|{{Gem}} 880|1|DYN|220|y}}
+</div>
+*Available permanently:
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Gorizia|CA||Unrequited Office Love?|{{Gem}} 1180|1|L2D|169|y}}
+{{ShipDisplay|4|London|CA||The Sterling Secretary|{{Gem}} 880|1|DYN|169|y}}
+{{ShipDisplay|5|Essex|CV||Crossbones Especial|{{Gem}} 980|1|DYN|169|y}}
+{{ShipDisplay|5|Attilio Regolo|DD||Castle of Inspiration|{{Gem}} 880|1||109|y}}
+{{ShipDisplay|4|Andrea Doria|BB||Have a Safe Flight|{{Gem}} 780|1||170|y}}
+{{ShipDisplay|5|Hood|BC||Gentlewoman and Stallion|{{Gem}} 880|1||155|y}}
+{{ShipDisplay|5|Littorio|BB||Sitting in the Rain|{{Gem}} 880|1||169|y}}
+</div>
+<li>'''New Items in [[Akashi's Shop]]:'''
+*Available between March 19th and April 8th, 11:59 P.M. (UTC-7):
+**Party Dress Return Lucky Box (2 purchases limited)
+</ol>
+
+=== System Optimization ===
+#'''General'''
+#*Clearing mode has been added to Chapter 16;
+#*In Project Identity 1.0, ending CGs and profile stickers can now be unlocked directly through purchase after meeting certain conditions;
+#*Optimized the overall flow length of Project Identity 1.0 and reduced the number of unskippable animations;
+#*Increased the amount of character stats gained from lessons in Project Identity 1.0;
+#*Optimized and fixed some UI, text and bugs.
