@@ -3,5 +3,11 @@
   "env": {
     "builtin": true
   },
-  "ignorePatterns": ["**/node_modules/**", "bun.lock", "package.json"]
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "bun.lock",
+    "package.json",
+    "AzurLaneData",
+    "prompts/vj-patch-notes"
+  ]
 }

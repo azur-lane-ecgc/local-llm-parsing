@@ -6,5 +6,12 @@
   "trailingComma": "all",
   "useTabs": false,
   "tabWidth": 2,
-  "endOfLine": "lf"
+  "endOfLine": "lf",
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "bun.lock",
+    "package.json",
+    "AzurLaneData",
+    "prompts/vj-patch-notes"
+  ]
 }
