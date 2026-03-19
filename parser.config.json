@@ -1,5 +1,5 @@
 {
-  "earliestDate": "2026-2-13",
+  "earliestDate": "2026-3-14",
   "latestDate": false,
   "wordpress": {
     "baseUrl": "https://azurlane.yo-star.com/news/",
@@ -11,6 +11,6 @@
     "model": "zai-coding-plan/glm-5-turbo",
     "outputDir": "output/llm",
     "promptFile": "prompts/optimized-patch-notes/prompt.md",
-    "outputFileExtension": "md"
+    "outputFileExtension": "wikitext"
   }
 }
