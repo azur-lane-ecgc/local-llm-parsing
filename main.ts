@@ -69,16 +69,33 @@ const processWithOpenCodeOnly = async () => {
   const config = await loadConfig()
   const prompt = await readFile(config.promptFile, "utf-8")
 
+  const earliestDate = new Date(config.wordpress.earliestDate)
+  const latestDate = config.wordpress.latestDate
+    ? new Date(config.wordpress.latestDate)
+    : null
+
   const files = await readdir(config.patchNotesDir)
   const contentFiles = files
     .filter((f) => f.endsWith("_content.md"))
+    .filter((f) => {
+      const dateStr = f.replace("_content.md", "")
+      const fileDate = new Date(dateStr)
+      if (fileDate < earliestDate) return false
+      if (latestDate && fileDate > latestDate) return false
+      return true
+    })
     .sort()
     .reverse()
 
   if (contentFiles.length === 0) {
-    console.log("No content files found. Run with -s first.")
+    console.log("No content files found in date range. Run with -s first.")
     return
   }
+
+  console.log(
+    `Date range: ${earliestDate.toISOString().split("T")[0]} to ${latestDate?.toISOString().split("T")[0] ?? "now"}`,
+  )
+  console.log(`Found ${contentFiles.length} content files in range\n`)
 
   console.log(`Found ${contentFiles.length} content files\n`)
 
