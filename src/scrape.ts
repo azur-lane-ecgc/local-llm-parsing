@@ -379,11 +379,10 @@ export const formatPostGroup = (group: PostGroup): string => {
 
   for (const post of group.posts) {
     const separator = [
-      "",
-      "----------------------------------------",
-      `DATE: ${dateStr}`,
-      `TITLE: ${post.title}`,
-      "----------------------------------------",
+      "---",
+      `date: ${dateStr}`,
+      `title: ${post.title}`,
+      "---",
       "",
       post.content || "",
       "",
