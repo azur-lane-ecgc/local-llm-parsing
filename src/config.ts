@@ -17,7 +17,6 @@ interface Config {
   }
   wikitext: {
     page: string
-    filePath: string
   }
 }
 

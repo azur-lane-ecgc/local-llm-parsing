@@ -1,5 +1,5 @@
 import { Mwn } from "mwn"
-import { readFile } from "node:fs/promises"
+import { readFile, readdir } from "node:fs/promises"
 import { loadConfig } from "./config"
 
 let config: Awaited<ReturnType<typeof loadConfig>> | null = null
@@ -58,8 +58,17 @@ export const runWikiEdit = async () => {
   try {
     await testWikiLogin()
     const cfg = await getConfig()
-    const fileContent = await readFile(cfg.wikitext.filePath, "utf-8")
-    await editPage(cfg.wikitext.page, fileContent)
+    const allFiles = await readdir("output/llm/patch_notes")
+    const wikitextFiles = allFiles
+      .filter((f) => f.endsWith(".wikitext"))
+      .sort((a, b) => b.localeCompare(a))
+    const contents = await Promise.all(
+      wikitextFiles.map((f) =>
+        readFile(`output/llm/patch_notes/${f}`, "utf-8"),
+      ),
+    )
+    const combinedContent = contents.join("\n\n")
+    await editPage(cfg.wikitext.page, combinedContent)
     console.log("Wiki edit complete!")
   } catch (err) {
     console.error("Wiki edit failed:", err)
