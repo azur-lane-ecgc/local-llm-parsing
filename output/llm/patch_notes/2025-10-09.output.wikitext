@@ -1,0 +1,74 @@
+==October 9th 2025==
+=== New Contents ===
+<ol>
+<li>'''Limited Time Event: [[An Encounter Beneath Clear Skies]] ([[:wikipedia:Is It Wrong to Try to Pick Up Girls in a Dungeon?|DanMachi]] Collab)'''
+*Event period: From October 9th to October 22nd, 11:59 P.M. (UTC-7):
+*During the event, participate to earn great rewards, including limited characters, furniture, gear skins, and augments.
+*'''Event Characters:'''
+**Available as a reward for participating in the collab event for a limited-time between October 9th to October 22nd, 11:59 P.M. (UTC-7):
+<div style="display:flex; flex-wrap:wrap; margin-left:35px">
+{{ShipDisplay|5|Hestia|AR||'''[[An Encounter Beneath Clear Skies#Eternal Sacred Flame|Eternal Sacred Flame]] Event Reward'''}}
+{{ShipDisplay|5|Ryu Lion|CL||'''[[An Encounter Beneath Clear Skies#Unstoppable Gale|Unstoppable Gale]] Event Reward'''}}
+</div>
+<li>'''Limited Time Event: [[An Encounter Beneath Clear Skies#Eternal Sacred Flame|Eternal Sacred Flame]]'''
+*Event period: From October 9th to October 22nd, 11:59 P.M. (UTC-7):
+*Clear Main Campaign stages after Chapter 3 or event stages (EX not included) to earn Trust. If Hestia is afloat in a fleet that defeats the Boss of a stage that grants Trust, you will gain twice as much Trust. Accumulate enough Trust and complete all milestone missions to have Hestia permanently join your fleet.
+<li>'''Limited Time Event: [[An Encounter Beneath Clear Skies#Unstoppable Gale|Unstoppable Gale]]'''
+*Event period: From October 9th to October 15th, 11:59 P.M. (UTC-7):
+*A new event mission will unlock every day until 10/15. Complete them all to obtain Ryu Lion.
+<li>'''Limited Time Event: [[An Encounter Beneath Clear Skies#A Journey of Encounters|A Journey of Encounters]]'''
+*Event period: From October 9th to October 22nd, 11:59 P.M. (UTC-7):
+*During the event, complete the event story to get great rewards, including the commemorative furniture, "Bonfire of Victory".
+<li>'''Limited Time Event: 3x Core Data Campaign'''
+*Event period: From October 10th to October 15th, 11:59 P.M. (UTC-7):
+*During this campaign, clear Hard Mode maps daily to earn triple the Core Data.
+<li>'''New [[Skins]]:'''
+*Available between October 9th and October 22nd, 11:59 P.M. (UTC-7):
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Hestia|AR|Summer|Godly Vacation!|{{Gem}} 1000|1|DYN|539}}
+{{ShipDisplay|5|Ryu Lion|CL|Maid|Night at the Pub|{{Gem}} 1000|1|DYN|163}}
+</div>
+<li>'''New [[List of Furniture Sets|Furniture Sets]]:'''
+*Available between October 9th and October 22nd, 11:59 P.M. (UTC-7):
+{| class="wikitable" style="text-align: center; margin-left:20px; margin-top:0px;"
+||'''Labyrinth City'''
+|}
+<li>'''[[Augmentation|Augment Modules]] Update:'''
+*These augment modules can be obtained by participating in the limited collab event:
+**[[Hestia's String|Hestia – Hestia's String]]
+**[[Alf's Justitia|Ryu Lion – Alf's Justitia]]
+*Available permanently:
+**[[Anchor of Fortune|Alabama – Anchor of Fortune]]
+**[[Protector of Order|Myoukou – Protector of Order]]
+<li>'''Private Quarters Update:'''
+*''New items:''
+**Available permanently:
+***New Jersey's furniture – Sanctuary Beyond Heavens
+<li>'''Juustagram:'''
+*Available between October 9th and October 22nd, 11:59 P.M. (UTC-7):
+*New content added
+<li>'''CV Update:'''
+*'''Characters'''
+**[[Hestia/Quotes|Hestia]] – Inori Minase
+**[[Ryu Lion/Quotes|Ryu Lion]] – Saori Hayami
+*'''Skins'''
+**[[Hestia/Quotes|Hestia – Godly Vacation!]] – Inori Minase
+**[[Ryu Lion/Quotes|Ryu Lion – Night at the Pub]] – Saori Hayami
+*'''EX (Post-Oath)'''
+**[[Hestia/Quotes|Hestia]] – Inori Minase
+**[[Ryu Lion/Quotes|Ryu Lion]] – Saori Hayami
+</ol>
+
+=== System Optimization ===
+#'''General'''
+#*Comics were updated;
+#*Fixed an issue where interactive actions in Island Planner failed to display properly under certain circumstances;
+#*Fixed an issue where claimable achievements in Island Planner were not properly visible under specific conditions;
+#*Fixed abnormal prompts when performing specific actions in Island Planner;
+#*Adjusted the selling price of Floral and Fruity in Island Planner;
+#*Fixed an issue where Iced Coffee could not be unlocked normally in Island Planner;
+#*Removed the Corn Cup Recipe from Island Tech. The resources have been refunded via In-Game Mail to Commanders who had already unlocked the Recipe before the maintenance.
+#*Fixed an issue where the progress of certain development areas in Island Planner was abnormal under specific conditions;
+#*Fixed an issue where the quantity of remaining materials displayed incorrectly after upgrading character skills in Island Planner;
+#*Fixed an issue where Fushun's Great Adventure III could not be played properly;
+#*Fixed some images, texts, and bugs.
