@@ -8,5 +8,15 @@
     "bun.lock",
     "package.json",
     "AzurLaneData"
+  ],
+  "plugins": [
+    "eslint",
+    "typescript",
+    "unicorn",
+    "oxc",
+    "import",
+    "jsdoc",
+    "node",
+    "promise"
   ]
 }
