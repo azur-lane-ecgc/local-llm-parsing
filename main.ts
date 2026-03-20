@@ -1,14 +1,13 @@
 import { runScrape } from "./src/scrape"
 import { runOpenCode } from "./src/opencode"
-import { runWiki, runWikiEdit } from "./src/wiki"
+import { runWikiEdit } from "./src/wiki"
 
 const parseArgs = (): {
-  mode: "scrape" | "opencode" | "wiki" | "wiki-edit"
+  mode: "scrape" | "opencode" | "wiki"
 } | null => {
   const args = process.argv.slice(2)
   if (args.includes("-s")) return { mode: "scrape" }
   if (args.includes("-o")) return { mode: "opencode" }
-  if (args.includes("-e")) return { mode: "wiki-edit" }
   if (args.includes("-w")) return { mode: "wiki" }
   return null
 }
@@ -20,13 +19,13 @@ const main = async () => {
     console.error("Usage:")
     console.error("  bun main.ts -s    Scrape patch notes")
     console.error("  bun main.ts -o    Process with OpenCode")
-    console.error("  bun main.ts -w    Test wiki login + read page")
-    console.error("  bun main.ts -e    Edit wiki page")
+    console.error("  bun main.ts -w    Edit wiki page")
     console.error("\nOr use npm scripts:")
     console.error("  bun run scrape      Scrape only")
     console.error("  bun run process     Process only")
-    console.error("  bun run wiki-test   Test wiki")
     console.error("  bun run wiki        Edit wiki page")
+    console.error("\nTo preview without editing:")
+    console.error("  bun test            Run wiki tests")
     process.exit(1)
   }
   switch (parsed.mode) {
@@ -37,9 +36,6 @@ const main = async () => {
       await runOpenCode()
       break
     case "wiki":
-      await runWiki()
-      break
-    case "wiki-edit":
       await runWikiEdit()
       break
   }

@@ -6,10 +6,10 @@
   "type": "module",
   "module": "main.ts",
   "scripts": {
+    "test": "vitest run",
     "scrape": "bun main.ts -s && bun check",
     "process": "bun main.ts -o && bun check",
-    "wiki-test": "bun main.ts -w",
-    "wiki": "bun main.ts -e",
+    "wiki": "bun main.ts -w",
     "check": "oxlint --fix . && oxfmt --no-error-on-unmatched-pattern .",
     "submodule": "git submodule update --recursive --remote",
     "prepare": "lefthook install"
@@ -26,7 +26,8 @@
     "@types/turndown": "^5.0.6",
     "lefthook": "^2.1.4",
     "oxfmt": "^0.41.0",
-    "oxlint": "^1.56.0"
+    "oxlint": "^1.56.0",
+    "vitest": "^4.1.0"
   },
   "peerDependencies": {
     "typescript": "^5.9.3"

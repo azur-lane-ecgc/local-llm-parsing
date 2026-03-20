@@ -18,7 +18,7 @@ const api = new Mwn({
   userAgent: process.env.WIKI_USER_AGENT,
 })
 
-export const testWikiLogin = async () => {
+const testWikiLogin = async () => {
   try {
     await api.login()
     const userInfo = await api.userinfo()
@@ -26,17 +26,6 @@ export const testWikiLogin = async () => {
     console.log(userInfo)
   } catch (err) {
     console.error("Login failed:", err)
-    throw err
-  }
-}
-
-export const readPage = async (title: string): Promise<string> => {
-  try {
-    const content = await new api.Page(title).text()
-    console.log("Read page:", title)
-    return content
-  } catch (err) {
-    console.error("Failed to read page:", err)
     throw err
   }
 }
@@ -74,13 +63,4 @@ export const runWikiEdit = async () => {
     console.error("Wiki edit failed:", err)
     throw err
   }
-}
-
-export const runWiki = async () => {
-  console.log("Testing wiki login...\n")
-  await testWikiLogin()
-  const cfg = await getConfig()
-  const content = await readPage(cfg.wikitext.page)
-  console.log(content)
-  console.log("\nWiki test complete!")
 }
