@@ -4,7 +4,8 @@ Parses Azur Lane patch notes using AI. Scrapes official patch note blog posts, p
 
 ## Prerequisites
 
-- [Bun](https://bun.sh) (recommended) or Node.js 18+ with npm
+- [Bun](https://bun.sh) (recommended)
+  - You can also use Node.js 18+ with npm, but you would need to update `package.json` accordingly. All logic files are package-manager agnostic.
 - [OpenCode](https://github.com/opencode-ai/opencode) - AI orchestration CLI
 
 ## Usage
