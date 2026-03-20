@@ -1,28 +1,38 @@
 # Azur Lane Parser
 
-Parses Azur Lane patch notes using AI. Fetches official posts and extracts ships/equipment updates.
+Parses Azur Lane patch notes using AI. Scrapes official patch note blog posts, processes with LLM, and publishes to wiki.
 
 ## Prerequisites
 
-- [Bun](https://bun.sh) - Runtime and package manager
-- [OpenCode](https://github.com/opencode-ai/opencode) - AI Harness / TUI
+- [Bun](https://bun.sh) (recommended) or Node.js 18+ with npm
+- [OpenCode](https://github.com/opencode-ai/opencode) - AI orchestration CLI
 
 ## Usage
 
+Install deps:
+
 ```bash
-bun run main          # Scrape + process with OpenCode
-bun run main -s       # Scrape only
-bun run main -o       # Process with OpenCode only
+bun install
 ```
 
-## Setup
+Scripts:
 
-Configure `parser.config.json`:
+```bash
+bun run scrape       # Scrape patch notes from blog
+bun run process      # Process scraped content with OpenCode
+bun run wiki         # Publish processed output to wiki
+bun run check        # Lint + format (oxlint, oxfmt)
+bun test             # Run tests (vitest)
+```
+
+## Configuration
+
+### parser.config.json
 
 ```typescript
 interface Config {
-  earliestDate: string
-  latestDate?: string | false
+  earliestDate: string // Start date (YYYY-M-D)
+  latestDate?: string | false // End date, false = now
   wordpress: {
     baseUrl: string
     pageAppendUrl: string
@@ -35,13 +45,35 @@ interface Config {
     promptFile: string
     outputFileExtension: string
   }
+  wikitext: {
+    page: string // Wiki page to edit
+  }
 }
 ```
 
-## Output
+### Environment Variables
 
-Generates markdown files in `output/` with:
+Copy `.env.example` to `.env.local`:
 
-- Ships added/modified (new, limited, retrofits, events)
-- Equipment updates (limited gear, unlocks, balance changes)
-- Structured by date with concise descriptions
+```bash
+WIKI_USERNAME=     # Wiki account username
+WIKI_PASSWORD=     # Wiki account password
+WIKI_API_URL=      # MediaWiki API endpoint
+WIKI_USER_AGENT=   # User agent string
+```
+
+## Project Structure
+
+```
+├── src/
+│   ├── scrape.ts      # WordPress blog scraper
+│   ├── opencode.ts    # OpenCode server + batch processor
+│   ├── wiki.ts        # MediaWiki editor
+│   └── config.ts      # Config loader
+├── prompts/           # LLM prompt templates
+│   ├── optimized-patch-notes/
+├── output/
+│   ├── azur_lane_patch_notes/  # Web scraped patch notes
+│   └── llm/patch_notes/        # LLM-processed output
+└── AzurLaneData/               # Game data submodule
+```

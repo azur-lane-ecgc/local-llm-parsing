@@ -12,7 +12,7 @@
     "wiki": "bun main.ts -w",
     "check": "oxlint --fix . && oxfmt --no-error-on-unmatched-pattern .",
     "submodule": "git submodule update --recursive --remote",
-    "prepare": "lefthook install"
+    "prepare": "bun run submodule && lefthook install"
   },
   "dependencies": {
     "@opencode-ai/sdk": "^1.2.27",
