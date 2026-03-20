@@ -1,5 +1,5 @@
 import { load, type Cheerio } from "cheerio"
-import { mkdir } from "node:fs/promises"
+import { mkdir, writeFile } from "node:fs/promises"
 import { loadConfig } from "./config"
 import TurndownService from "turndown"
 
@@ -410,7 +410,7 @@ export const writePostGroupContent = async (
 
   await ensureDir(cfg.wordpress.outputDir)
 
-  await Bun.write(filename, content)
+  await writeFile(filename, content, "utf-8")
   console.log(`Saved raw content: ${filename}`)
 }
 
