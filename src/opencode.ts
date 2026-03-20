@@ -139,8 +139,6 @@ export const runOpenCode = async () => {
   console.log(
     `Date range: ${earliestDate.toISOString().split("T")[0]} to ${latestDate?.toISOString().split("T")[0] ?? "now"}`,
   )
-  console.log(`Found ${contentFiles.length} content files in range\n`)
-
   console.log(`Found ${contentFiles.length} content files\n`)
 
   await withOpenCodeServer(async () => {
@@ -151,7 +149,7 @@ export const runOpenCode = async () => {
       const dateStr = file.replace(`_content.${ext}`, "")
       processed++
 
-      console.log(`${"=".repeat(50)}`)
+      console.log(`\n${"=".repeat(50)}`)
       console.log(`Processing ${dateStr} (${processed}/${contentFiles.length})`)
       console.log(`${"=".repeat(50)}`)
 
@@ -191,13 +189,8 @@ export const runOpenCode = async () => {
 
     console.log(`\n${"=".repeat(50)}`)
     console.log(
-      `Done! Processed ${processed - failed}/${contentFiles.length} dates`,
+      `Done! Processed ${processed - failed}/${contentFiles.length} dates (${failed} failed)`,
     )
-    if (failed > 0) {
-      console.log(`Failed: ${failed} dates`)
-    }
     console.log(`${"=".repeat(50)}\n`)
   })
-
-  console.log("Processing complete!")
 }
