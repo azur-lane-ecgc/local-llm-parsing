@@ -1,0 +1,78 @@
+==November 6th 2025==
+=== New Contents ===
+<ol>
+<li>'''Limited Time Rerun Event: [[Anthem of Remembrance]]'''
+*Event period: From November 6th to November 12th, 11:59 P.M. (UTC-7):
+*During the event, play event stages to collect PT to earn special rewards, including the limited character [[Marseillaise]].
+*'''Event Characters:'''
+*Event period: From November 6th to November 12th, 11:59 P.M. (UTC-7):
+**'' '''Note:''' [[Marseillaise]] will be available as a [[Anthem of Remembrance#Milestone|Point Accumulation Reward]] until November 19th, 11:59 P.M. (UTC-7)''
+<div style="display:flex; flex-wrap:wrap; margin-left:35px">
+{{ShipDisplay|5|Marseillaise|CL||'''Light Construction (1.4%)<br>01:26:00'''|'''[[Anthem of Remembrance|Event Reward]]'''}}
+</div>
+<li>'''New Addition to [[War Archives]]:'''
+*[[Violet Tempest, Blooming Lycoris]]
+<li>'''Construction Pool Update:'''
+*Available in the permanent pool:
+**'''Note:''' Musashi will be available in UR Exchange after maintenance.
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Wakatsuki|DD||'''Light Construction<br>00:29:00'''|||||y}}
+{{ShipDisplay|5|Sakawa|CL||'''Light Construction<br>01:20:00'''|||||y}}
+{{ShipDisplay|6|Musashi|BB||'''Heavy and Special Construction<br>05:15:00'''|||||y}}
+{{ShipDisplay|4|Haguro|CA||'''Heavy Construction<br>01:55:00'''|||||y}}
+</div>
+<li>'''Rerun [[Skins]]:'''
+*Available between November 6th and November 12th, 11:59 P.M. (UTC-7):
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Marseillaise|CL|Sport|Fighting Angel's Regimen|{{Gem}} 980|1|DYN|109}}
+</div>
+*Available permanently:
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Sakawa|CL|Maid|The Colors of Love|{{Gem}} 1180|1|L2D|160|y}}
+{{ShipDisplay|6|Musashi|BB|Maid|Violet Moonglow|{{Gem}} 800|1|||y}}
+{{ShipDisplay|5|Mikasa|BB|Maid|A Romantic Respite|{{Gem}} 880|1||160|y}}
+{{ShipDisplay|5|Wakatsuki|DD|Maid|Slapdash Blue Sparrow|{{Gem}} 880|1||160|y}}
+{{ShipDisplay|4|Haguro|CA|Maid|A Blessing in Disguise?|{{Gem}} 780|1||160|y}}
+{{ShipDisplay|4|Miyuki|DD|Maid|Shopping Rendezvous|{{Gem}} 780|1||160|y}}
+{{ShipDisplay|4|Mutsu|BB|Maid|A Maid's Mis-service?|{{Gem}} 780|1||160|y}}
+{{ShipDisplay|3|Hamakaze|DD|Maid|The Secret Ingredient is Love?!|{{Gem}} 780|1||160|y}}
+{{ShipDisplay|3|Tanikaze|DD|Maid|Sparkly-Clean|{{Gem}} 780|1||160|y}}
+</div>
+<li>'''New Items in [[Akashi's Shop]]:'''
+*Available between November 6th and November 12th, 11:59 P.M. (UTC-7):
+**Outfit Selection Pack (Musashi) (1 purchase limited)
+**Limited Strategic Supplies (2 purchases limited)
+<li>'''[[Shops#Merit Shop|Merit Shop]] Update:'''
+*Available permanently:
+**[[Miyuki]]
+<li>'''Rerun [[Decorations#Other_Furniture|Furniture]]:'''
+*Available permanently:
+{| class="wikitable" style="text-align: center; margin-left:20px; margin-top:0px;"
+|{{Furniture|wutaixyicon}}||'''Manjuu Academy Festival'''
+|}
+<li>'''[[Augmentation|Augment Modules]] Update:'''
+*Available permanently:
+**[[Alarmtauchen!|U-81 – Alarmtauchen!]]
+**[[Going for the Bullseye|Independence – Going for the Bullseye]]
+<li>'''New [[Memories|Memory]]:'''
+*[[De Zeven Provinciën/Questline#Character Story|De Zeven Provinciën]]
+<li>'''FleetChat:'''
+*[[Alsace]]
+*[[Bremerton]]
+</ol>
+
+=== System Optimization ===
+#'''General'''
+#*Comics were updated;
+#*Fixed an issue where the estimated and actual revenue in Island Planner were inconsistent under certain conditions;
+#*Fixed an issue where the hexagon attribute chart displayed abnormally when acquiring characters in Island Planner;
+#*Fixed an issue where the chat history in the Guild chat section of Island Planner scrolled abnormally under certain conditions;
+#*Fixed an issue where Akashi had incorrect movement paths in specific scenarios of Island Planner under certain conditions;
+#*Fixed an issue where the bus stop displayed abnormally in Island Planner under certain conditions;
+#*Fixed an issue where product filtering in the Warehouse of Island Planner functioned abnormally under certain conditions;
+#*Fixed an issue where the notification red dot in Island Planner displayed abnormally under certain conditions;
+#*Fixed an issue where character models displayed abnormally in Island Planner under certain conditions;
+#*Corrected the Fleet Technology classification for Lyme;
+#*Fixed an issue where the illustration of Andrea Doria META caused resource errors under certain conditions;
+#*Fixed an issue with abnormal Live2D Plus resource display for Pearl's skin "Fallen Angel in the Dark Castle";
+#*Fixed UI, text, and other resources.

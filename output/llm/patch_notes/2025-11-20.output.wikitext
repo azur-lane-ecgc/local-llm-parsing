@@ -1,0 +1,139 @@
+==November 20th 2025==
+=== New Contents ===
+<ol>
+<li>'''Limited Time Event: [[DATE A LANE]]'''
+*Event period: From November 20th to December 3rd, 11:59 P.M. (UTC-7):
+*During the event, play event stages to collect event PT to earn special rewards.
+*During the event, sortie to event stages to earn event PT and exchange them for rewards including the limited character [[Kaguya Yamai・Yuzuru Yamai]].
+*During the event, accumulate PT to earn rewards including the limited character [[Yoshino]].
+*'''Event Characters:'''
+**Construction Period: From November 20th to December 3rd, 11:59 P.M. (UTC-7):
+**'' '''Note:''' [[Kaguya Yamai・Yuzuru Yamai]] will be available in the Event Shop and [[Yoshino]] as a Point Accumulation Reward until December 10th, 11:59 P.M. (UTC-7)''
+<div style="display:flex; flex-wrap:wrap; margin-left:35px">
+{{ShipDisplay|5|Tohka Yatogami|CA||'''Construction (2.0%)<br>01:08:20'''}}
+{{ShipDisplay|5|Origami Tobiichi|CV||'''Construction (2.0%)<br>02:13:50'''}}
+{{ShipDisplay|5|Kotori Itsuka|BB||'''Construction (2.0%)<br>03:05:10'''}}
+{{ShipDisplay|5|Kaguya Yamai・Yuzuru Yamai|CL||'''Construction (0.5%)<br>02:50:40'''|'''Event Shop<hr>Map Drop'''}}
+{{ShipDisplay|5|Yoshino|CVL||'''Point Accumulation Reward'''}}
+{{ShipDisplay|5|Kurumi Tokisaki|CL||'''[[DATE A LANE#Nightmare Rhapsody|Nightmare Rhapsody Reward]]'''}}
+</div>
+<li>'''Limited Time Event: [[DATE A LANE#Nightmare Rhapsody|Nightmare Rhapsody]]'''
+*Event period: From November 20th to December 3rd, 11:59 P.M. (UTC-7):
+*Clear Main Campaign stages after Chapter 3 or event stages to earn event PT. Earn bonus event PT for clearing stages with [[Kurumi Tokisaki]] in the fleet.
+*Milestone missions will unlock over 7 days. Complete them all to have [[Kurumi Tokisaki]] permanently join your fleet. You can earn up to 3 additional copies of [[Kurumi Tokisaki]] by accumulating more event PT.
+<li>'''Limited Time Event: [[DATE A LANE#Side Stories|Side Stories]]'''
+*Event period: From November 20th to December 3rd, 11:59 P.M. (UTC-7):
+*Read the side stories to get limited collab gear skins. Complete all side stories to get the limited collab auxiliary, Michael.
+<li>'''Limited Time Event: [[Rapid Training Campaign]]'''
+*Event period: From November 20th to December 10th, 11:59 P.M. (UTC-7):
+*During the campaign, log in to obtain Skill Books and 20 Wisdom Cubes. Each day during the campaign, you will be able to finish 10 classes immediately when using Skill Books in the Tactical Class.
+<li>'''Limited Time Event: [[Cruise Missions|Cruise Missions Season 26]]'''
+*Event period: From December 1st 2025 to January 31st 2026, 11:59 P.M., (UTC-7)
+*During the campaign season, accumulate progress points to earn rewards.
+**'''Cruise Missions Rewards''' will consist of '''Regular Rewards''' and '''Fair Winds Rewards'''. '''Regular Rewards''' will be available to all while '''Fair Winds Rewards''' will require the purchase of the '''Fair Winds Cruise Pass'''.
+**During the campaign season, complete missions and accumulate progress points to get Regular Rewards including the limited character '''[[Boise META]]''' and '''[[Specialized Bulin Custom MKIII]]'''.
+**Purchasing the '''Fair Winds Cruise Pass''' for $9.99 will grant 1,500 progress points immediately. Additionally, accumulate progress points to get '''Fair Winds Rewards''' including [[I-13|I-13's]] limited outfit '''[[I-13/Gallery#tabber-After-School Observations|After-School Observations]]''' and a Battle UI.
+**The campaign missions, progress points, '''Fair Winds Cruise Pass''' and rewards will only be available during the campaign season.
+<li>'''New Character:'''
+*Obtainable from [[Cruise Missions]] for a limited-time between December 1st 2025 to January 31st 2026, 11:59 P.M. (UTC-7)
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|4|Boise META|CL||'''[[Cruise Missions|Cruise Missions Reward]]'''}}
+</div>
+<li>'''[[Augmentation|Augment Modules]] Update:'''
+*Available permanently:
+**[[Sandalphon|Tohka Yatogami – Sandalphon]]
+**[[Metatron|Origami Tobiichi – Metatron]]
+**[[Camael|Kotori Itsuka – Camael]]
+**[[Zadkiel|Yoshino – Zadkiel]]
+**[[Zafkiel|Kurumi Tokisaki – Zafkiel]]
+**[[Raphael|Kaguya Yamai・Yuzuru Yamai – Raphael]]
+<li>'''New [[Skins]]:'''
+*Available between November 20th and December 3rd, 11:59 P.M. (UTC-7):
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Tohka Yatogami|CA|Summer|Break Time|{{Gem}} 1000|1|DYN|168}}
+{{ShipDisplay|5|Origami Tobiichi|CV|Summer|The Spirit of Allure|{{Gem}} 1000|1|DYN|106}}
+{{ShipDisplay|5|Kotori Itsuka|BB|Summer|Waterside Goddess|{{Gem}} 920|1|DYN}}
+{{ShipDisplay|5|Yoshino|CVL|Summer|Secret Base|{{Gem}} 1000|1|DYN|106}}
+{{ShipDisplay|5|Kurumi Tokisaki|CL|Summer|Twin Rose|{{Gem}} 1000|1|DYN|109}}
+{{ShipDisplay|5|Kaguya Yamai・Yuzuru Yamai|CL|Summer|Blue Ocean Rendezvous|{{Gem}} 1000|1|DYN|539}}
+</div>
+*New Cruise Pass Skin:
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|I-13|SSV|Casual|After-School Observations|'''[[Cruise Missions#Event Skins|Fair Winds Cruise Pass Reward]]'''|2||105}}
+</div>
+<li>'''Rental Outfit System:'''
+*Available between November 20th and December 3rd, 11:59 P.M. (UTC-7):
+*Log in during the event period to earn 3 Rental Outfit Vouchers {{Skin ticket}}
+*Can be used to rent the following skins for a duration of 48 hours
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Tohka Yatogami|CA|Summer|Break Time|{{Skin ticket}} 1|1|DYN|168}}
+{{ShipDisplay|5|Kurumi Tokisaki|CL|Summer|Twin Rose|{{Skin ticket}} 1|1|DYN|109}}
+{{ShipDisplay|5|Kotori Itsuka|BB|Summer|Waterside Goddess|{{Skin ticket}} 1|1|DYN}}
+</div>
+<li>'''New Items in [[Akashi's Shop]]:'''
+*Available between November 20th 2025 and April 15th 2026, 11:59 P.M. (UTC-7):
+**Skill Book Pack (4 purchases limited)
+**Limited Build Supplies II (2 purchases limited)
+*Available between November 20th and December 3rd, 11:59 P.M. (UTC-7):
+**Limited Build Supplies (1 purchase limited)
+**Limited Strategic Supplies (5 purchases limited)
+**Decor Tokens Pack (2 purchases limited)
+**Cognitive Chip Pack (2 purchases limited)
+<li>'''New [[Equipment Skins|Gear Skin Box]]:'''
+*Available between November 20th and December 3rd, 11:59 P.M. (UTC-7):
+**[[DATE A LANE#Equipment Skins|Gear Skin Box (Date A Live)]]
+<li>'''New [[List of Furniture Sets|Furniture Sets]]:'''
+*Available between November 20th and December 3rd, 11:59 P.M. (UTC-7):
+{| class="wikitable" style="text-align: center; margin-left:20px; margin-top:0px;"
+|'''[[Furniture Sets/Airship Interior|Airship Interior]]'''
+|}
+<li>'''New Monthly Login Reward (December):'''
+*Furniture:
+{| class="wikitable" style="text-align: center; margin-left:20px; margin-top:0px;"
+|'''Pillow of War'''
+|}
+<li>'''Limited Time Event: [[Extreme_Challenge#Sagittarius|Extreme Challenge – Sagittarius]]'''
+*Event period: From December 1st to December 31st, 11:59 P.M. (UTC-7):
+*The next boss, [[Warspite]], will automatically rotate when the month changes to December.
+*Assemble the best fleet you can and clear challenge stages to earn limited portrait and chat frames of Sagittarius.
+<li>'''[[Cruise_Missions#Revisitor_Shop|Cruise Pass Revisitor Shop]] Update:'''
+*Available permanently after December 1st, 12:00 A.M. (UTC-7):
+**Character: [[La Galissonnière META]]
+**Character skin: [[Vauquelin/Gallery#tabber-Otherworldly Adventure|Vauquelin – Otherworldly Adventure]]
+**Gear skins: Ice Cannonball, Thunder's Fury, Eye of the Storm, Aurora Wings.
+<li>'''Juustagram:'''
+*Available between November 20th and December 3rd, 11:59 P.M. (UTC-7):
+*New content added
+<li>'''CV Update:'''
+*'''Characters'''
+**[[Tohka Yatogami/Quotes|Tohka Yatogami]] – Marina Inoue
+**[[Origami Tobiichi/Quotes|Origami Tobiichi]] – Misuzu Togashi
+**[[Kotori Itsuka/Quotes|Kotori Itsuka]] – Ayana Taketatsu
+**[[Yoshino/Quotes|Yoshino]] – Iori Nomizu
+**[[Kurumi Tokisaki/Quotes|Kurumi Tokisaki]] – Asami Sanada
+**[[Kaguya Yamai・Yuzuru Yamai/Quotes|Kaguya Yamai・Yuzuru Yamai]] – Uchida Maaya & Sarah Emi Bridcutt
+**[[Boise META/Quotes|Boise META]] – Sasahara Yuu
+*'''Skins'''
+**[[Tohka Yatogami/Quotes|Tohka Yatogami – Break Time (Dynamic)]] – Marina Inoue
+**[[Origami Tobiichi/Quotes|Origami Tobiichi – The Spirit of Allure (Dynamic)]] – Misuzu Togashi
+**[[Kotori Itsuka/Quotes|Kotori Itsuka – Waterside Goddess (Dynamic)]] – Ayana Taketatsu
+**[[Yoshino/Quotes|Yoshino – Secret Base (Dynamic)]] – Iori Nomizu
+**[[Kurumi Tokisaki/Quotes|Kurumi Tokisaki – Twin Rose (Dynamic)]] – Asami Sanada
+**[[Kaguya Yamai・Yuzuru Yamai/Quotes|Kaguya Yamai・Yuzuru Yamai – Blue Ocean Rendezvous (Dynamic)]] – Uchida Maaya & Sarah Emi Bridcutt
+**[[I-13/Quotes|I-13 – After-School Observations]] – Kanako Yanagihara
+*'''EX (Post-Oath)'''
+**[[Tohka Yatogami/Quotes|Tohka Yatogami]] – Marina Inoue
+**[[Origami Tobiichi/Quotes|Origami Tobiichi]] – Misuzu Togashi
+**[[Kotori Itsuka/Quotes|Kotori Itsuka]] – Ayana Taketatsu
+**[[Yoshino/Quotes|Yoshino]] – Iori Nomizu
+**[[Kurumi Tokisaki/Quotes|Kurumi Tokisaki]] – Asami Sanada
+**[[Kaguya Yamai・Yuzuru Yamai/Quotes|Kaguya Yamai・Yuzuru Yamai]] – Uchida Maaya & Sarah Emi Bridcutt
+**[[I-13/Quotes|I-13]] – Kanako Yanagihara
+</ol>
+
+=== System Optimization ===
+#'''General'''
+#*Optimized the stocking display effect in Private Quarters;
+#*Fixed an issue where the in-game BGM switching function did not work properly under certain conditions;
+#*Fixed an issue where the attribute panel in Island Planner displayed abnormally under certain conditions;
+#*Optimized and fixed some images and texts.
