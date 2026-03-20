@@ -5,7 +5,6 @@
     "": {
       "name": "parser",
       "dependencies": {
-        "@opencode-ai/sdk": "^1.2.27",
         "cheerio": "^1.2.0",
         "mwn": "^3.0.1",
         "turndown": "^7.2.2",
@@ -36,8 +35,6 @@
     "@mixmark-io/domino": ["@mixmark-io/domino@2.2.0", "", {}, "sha512-Y28PR25bHXUg88kCV7nivXrP2Nj2RueZ3/l/jdx6J9f8J4nsEGcgX0Qe6lt7Pa+J79+kPiJU3LguR6O/6zrLOw=="],
 
     "@napi-rs/wasm-runtime": ["@napi-rs/wasm-runtime@1.1.1", "", { "dependencies": { "@emnapi/core": "^1.7.1", "@emnapi/runtime": "^1.7.1", "@tybys/wasm-util": "^0.10.1" } }, "sha512-p64ah1M1ld8xjWv3qbvFwHiFVWrq1yFvV4f7w+mzaqiR4IlSgkqhcRdHwsGgomwzBH51sRY4NEowLxnaBjcW/A=="],
-
-    "@opencode-ai/sdk": ["@opencode-ai/sdk@1.2.27", "", {}, "sha512-Wk0o/I+Fo+wE3zgvlJDs8Fb67KlKqX0PrV8dK5adSDkANq6r4Z25zXJg2iOir+a8ntg3rAcpel1OY4FV/TwRUA=="],
 
     "@oxc-project/types": ["@oxc-project/types@0.120.0", "", {}, "sha512-k1YNu55DuvAip/MGE1FTsIuU3FUCn6v/ujG9V7Nq5Df/kX2CWb13hhwD0lmJGMGqE+bE1MXvv9SZVnMzEXlWcg=="],
 
