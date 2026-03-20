@@ -1,6 +1,3 @@
-[submodule "prompts/vj-patch-notes"]
-	path = prompts/vj-patch-notes
-	url = https://git.cadaeri.me/tukaunu/patchnotes
 [submodule "AzurLaneData"]
 	path = AzurLaneData
 	url = https://github.com/MrLar/AzurLaneData.git
