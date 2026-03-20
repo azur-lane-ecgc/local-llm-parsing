@@ -58,7 +58,7 @@ const fetchWithRetry = async (
       }
 
       const delay = 1000 * Math.pow(2, i)
-      console.log(`⚠️ Retry ${i + 1}/${attempts} in ${delay}ms...`)
+      console.log(`Retry ${i + 1}/${attempts} in ${delay}ms...`)
       await new Promise((resolve) => setTimeout(resolve, delay))
     }
   }
@@ -236,7 +236,7 @@ const extractLatestDate = (headerElement: Cheerio<any>): Date | null => {
   const date = parseDate(html)
 
   if (!date) {
-    console.warn("⚠️ Could not extract date from header")
+    console.warn("Could not extract date from header")
   }
 
   return date
@@ -273,7 +273,7 @@ export const crawlBlog = async (): Promise<PostInfo[]> => {
   let foundLatestDate = latestDate === null
 
   while (!cutoffReached) {
-    console.log(`📰 Crawling page ${page}...`)
+    console.log(`Crawling page ${page}...`)
 
     const url =
       page === 1
@@ -285,33 +285,33 @@ export const crawlBlog = async (): Promise<PostInfo[]> => {
     const posts = parseListingPage(text)
 
     if (posts.length === 0) {
-      console.log(`✓ No more posts found`)
+      console.log("No more posts found")
       break
     }
 
     for (const post of posts) {
       if (post.date === null) {
-        console.log(`⚠️ Skipping post without date: ${post.title}`)
+        console.log(`Skipping post without date: ${post.title}`)
         continue
       }
 
       if (post.date <= earliestDate) {
         console.log(
-          `✓ Date cutoff reached: ${post.date.toISOString().split("T")[0]}`,
+          `Date cutoff reached: ${post.date.toISOString().split("T")[0]}`,
         )
         cutoffReached = true
         break
       }
 
       if (latestDate && post.date > latestDate) {
-        console.log(`  → Skipping (after latestDate): ${post.title}`)
+        console.log(`Skipping (after latestDate): ${post.title}`)
         continue
       }
 
       if (latestDate && !foundLatestDate && post.date <= latestDate) {
         foundLatestDate = true
         console.log(
-          `✓ Found latestDate: ${post.date.toISOString().split("T")[0]}`,
+          `Found latestDate: ${post.date.toISOString().split("T")[0]}`,
         )
       }
 
@@ -319,7 +319,7 @@ export const crawlBlog = async (): Promise<PostInfo[]> => {
         continue
       }
 
-      console.log(`  → Fetching: ${post.title}`)
+      console.log(`Fetching: ${post.title}`)
       post.content = await fetchPostContent(post.url, {
         includeSkins: true,
       })
@@ -380,10 +380,10 @@ export const formatPostGroup = (group: PostGroup): string => {
   for (const post of group.posts) {
     const separator = [
       "",
-      "─".repeat(40),
+      "----------------------------------------",
       `DATE: ${dateStr}`,
       `TITLE: ${post.title}`,
-      "─".repeat(40),
+      "----------------------------------------",
       "",
       post.content || "",
       "",
@@ -412,7 +412,7 @@ export const writePostGroupContent = async (
   await ensureDir(cfg.wordpress.outputDir)
 
   await Bun.write(filename, content)
-  console.log(`  ✓ Saved raw content: ${filename}`)
+  console.log(`Saved raw content: ${filename}`)
 }
 
 export const runScrape = async () => {
@@ -430,7 +430,7 @@ export const runScrape = async () => {
     console.log(`Scraping ${dateStr}...`)
     const content = formatPostGroup(group)
     await writePostGroupContent(content, group.date)
-    console.log(`✓ Scraped: ${dateStr}`)
+    console.log(`Scraped: ${dateStr}`)
   }
 
   console.log("\nScraping complete!")

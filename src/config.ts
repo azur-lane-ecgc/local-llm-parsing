@@ -15,6 +15,9 @@ interface Config {
     promptFile: string
     outputFileExtension: string
   }
+  wikitext: {
+    page: string
+  }
 }
 
 export const loadConfig = async (): Promise<Config> => {

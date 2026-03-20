@@ -7,7 +7,7 @@ import { parsePromptFrontmatter, emptyFile } from "./utils"
 const OPCODE_SERVER_URL = "http://localhost:4096"
 
 export const startOpenCodeServer = async (): Promise<ChildProcess> => {
-  console.log(`→ Starting OpenCode server...`)
+  console.log("Starting OpenCode server...")
 
   const proc = spawn("opencode", ["serve"], {
     stdio: "inherit",
@@ -21,7 +21,7 @@ export const startOpenCodeServer = async (): Promise<ChildProcess> => {
 const waitForOpenCodeServer = async (
   timeoutMs: number = 30000,
 ): Promise<void> => {
-  console.log(`  → Waiting for OpenCode server to be ready...`)
+  console.log("Waiting for OpenCode server to be ready...")
 
   const maxAttempts = timeoutMs / 1000
   const attemptDelay = 1000
@@ -33,7 +33,7 @@ const waitForOpenCodeServer = async (
       })
 
       if (response.ok) {
-        console.log(`  ✓ OpenCode server ready`)
+        console.log("OpenCode server ready")
         return
       }
     } catch {}
@@ -47,7 +47,7 @@ const waitForOpenCodeServer = async (
 }
 
 export const stopOpenCodeServer = (proc: ChildProcess): void => {
-  console.log(`→ Stopping OpenCode server...`)
+  console.log("Stopping OpenCode server...")
   proc.kill()
 }
 
@@ -60,14 +60,14 @@ export const withOpenCodeServer = async <T>(
     proc = await startOpenCodeServer()
     return await callback()
   } catch (error) {
-    console.error(`❌ OpenCode Error: ${(error as Error).message}`)
+    console.error(`OpenCode Error: ${(error as Error).message}`)
     throw error
   } finally {
     if (proc) {
       try {
         stopOpenCodeServer(proc)
       } catch (cleanupError) {
-        console.warn(`⚠️ Cleanup warning: ${(cleanupError as Error).message}`)
+        console.warn(`Cleanup warning: ${(cleanupError as Error).message}`)
       }
     }
   }
@@ -79,7 +79,7 @@ export const processWithOpenCode = async (
   prompt: string,
   model: string,
 ): Promise<void> => {
-  console.log(`→ Running OpenCode on: ${inputPath}`)
+  console.log(`Running OpenCode on: ${inputPath}`)
 
   const fullPrompt = `${prompt}\n\nWrite your output to: ${outputPath}`
 
@@ -172,7 +172,7 @@ export const runOpenCode = async () => {
           }
         }
 
-        console.log("  → Processing with OpenCode...")
+        console.log("Processing with OpenCode...")
         await emptyFile(outputPath)
         await processWithOpenCode(
           inputPath,
@@ -181,11 +181,11 @@ export const runOpenCode = async () => {
           config.llm.model,
         )
 
-        console.log(`✓ Complete: ${dateStr}`)
+        console.log(`Complete: ${dateStr}`)
       } catch (error) {
         failed++
-        console.error(`❌ Failed: ${dateStr}`)
-        console.error(`   ${(error as Error).message}`)
+        console.error(`Failed: ${dateStr}`)
+        console.error(`  ${(error as Error).message}`)
       }
     }
 
