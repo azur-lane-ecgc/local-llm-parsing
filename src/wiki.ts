@@ -35,7 +35,7 @@ export const editPage = async (
   content: string,
 ): Promise<void> => {
   try {
-    await api.save(title, content, "Automated edit")
+    await api.save(title, content, "(automated edit) patch notes added")
     console.log("Edited page:", title)
   } catch (err) {
     console.error("Failed to edit page:", err)
