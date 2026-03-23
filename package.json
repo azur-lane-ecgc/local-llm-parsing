@@ -8,7 +8,7 @@
     "test": "vitest run",
     "scrape": "bun src/scrape/scrape.ts && bun check",
     "process": "bun src/opencode/opencode.ts && bun check",
-    "wiki": "bun src/wiki/wiki-patch-notes.ts",
+    "wiki-patch-notes": "bun src/wiki/wiki-patch-notes.ts",
     "check": "oxlint --fix . && oxfmt --no-error-on-unmatched-pattern .",
     "submodule": "git submodule update --recursive --remote",
     "prepare": "bun run submodule && lefthook install"
