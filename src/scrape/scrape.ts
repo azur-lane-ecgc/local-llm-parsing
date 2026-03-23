@@ -1,7 +1,7 @@
 import { load, type Cheerio } from "cheerio"
 import type { AnyNode } from "domhandler"
 import { mkdir, writeFile } from "node:fs/promises"
-import { loadConfig } from "./config"
+import { loadConfig } from "../config"
 import TurndownService from "turndown"
 
 let config: Awaited<ReturnType<typeof loadConfig>> | null = null

@@ -1,8 +1,8 @@
 import { spawn, ChildProcess } from "node:child_process"
 import { readFile, readdir, mkdir } from "node:fs/promises"
 import { join } from "node:path"
-import { loadConfig } from "./config"
-import { parsePromptFrontmatter, emptyFile } from "./utils"
+import { loadConfig } from "../config"
+import { parsePromptFrontmatter, emptyFile } from "../utils"
 
 const OPCODE_SERVER_URL = "http://localhost:4096"
 

@@ -1,17 +1,7 @@
 import { Mwn } from "mwn"
 import { readFile, readdir } from "node:fs/promises"
-import { loadConfig } from "./config"
 
 const WIKITEXT_PAGE = "User:Samheart564/Sandbox"
-
-let config: Awaited<ReturnType<typeof loadConfig>> | null = null
-
-const getConfig = async () => {
-  if (!config) {
-    config = await loadConfig()
-  }
-  return config
-}
 
 const api = new Mwn({
   apiUrl: process.env.WIKI_API_URL,
@@ -48,7 +38,6 @@ export const editPage = async (
 export const runWikiEdit = async () => {
   try {
     await testWikiLogin()
-    const cfg = await getConfig()
     const allFiles = await readdir("output/llm/patch_notes")
     const wikitextFiles = allFiles
       .filter((f) => f.endsWith(".wikitext"))
