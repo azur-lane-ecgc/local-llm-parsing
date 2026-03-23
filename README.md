@@ -86,7 +86,7 @@ The `folder` key is appended to `llm.outputDir` from config (e.g., `folder: patc
 │   ├── wiki.ts        # MediaWiki editor
 │   └── config.ts      # Config loader
 ├── prompts/           # LLM prompt templates
-│   ├── optimized-patch-notes/
+│   ├── patch-notes/
 ├── output/
 │   ├── azur_lane_patch_notes/  # Web scraped patch notes
 │   └── llm/patch_notes/        # LLM-processed output

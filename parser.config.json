@@ -10,7 +10,7 @@
   "llm": {
     "model": "zai-coding-plan/glm-5-turbo",
     "outputDir": "output/llm",
-    "promptFile": "prompts/optimized-patch-notes/prompt.md",
+    "promptFile": "prompts/patch-notes/prompt.md",
     "outputFileExtension": "wikitext"
   }
 }
