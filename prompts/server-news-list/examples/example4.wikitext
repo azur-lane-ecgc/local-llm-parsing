@@ -1,0 +1,74 @@
+<div class="col col-8 col-special" style="margin-bottom:20px;">
+<!----- SECTION: Recent News ----->{{ServerNewsList
+| scheme = blue
+| logo = Home_head_enterprise.png
+| title = News
+| timeCurrent = <span class="time_title">Current Time</span><span class="time_values_box"><span>EN: <span class="js_time_placeholder" id="serverDateEN"></span> UTC-7</span><span>JP: <span class="js_time_placeholder" id="serverDateJP"></span> UTC+9</span><span>CN: <span class="js_time_placeholder" id="serverDateCN"></span> UTC+8</span></span>
+| content =
+{{NewsItemEN
+| type = update
+| link = Recent News#June 20th 2024
+| month = Jun
+| day = 20
+| title = June 20th Patch Notes
+| message = Event rerun, returning skins, bug fixes and more
+| image = [[File:ElbingVampireBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Rondo at Rainbow's End
+| month = Jun
+| day = 20
+| title = [ONGOING] Rondo at Rainbow's End Rerun
+| message = (June 20th - June 26th) Iron Blood event featuring Emden, Lützow and more
+| image = [[File:EmdenBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Golden Conductor
+| month = Jun
+| day = 13
+| title = [ONGOING] Golden Conductor Rerun
+| message = (June 13th - June 26th) New missions unlock every day until June 19. Complete them all to get a limited skin Golden Conductor for Cleveland.
+| image = [[File:ClevelandParty2Banner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Invitation to Jade Seas
+| month = Jun
+| day = 6
+| title = [ENDED] Invitation to Jade Seas
+| message = (June 6th - June 19th) From June 6th, 2 missions unlock every day at midnight. Complete them all to get a limited skin for Lung Wu, Invitation to Jade Seas.
+| image = [[File:Lung WuSummerBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Today's Conducting Practice
+| month = May
+| day = 30
+| title = [ENDED] Today's Conducting Practice
+| message = (May 30th - June 12th) Complete event missions to earn great rewards and have Little Friedrich formally join your fleet.
+| image = [[File:Little FriedrichBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Light of the Martyrium
+| month = May
+| day = 21
+| title = [ENDED] Light of the Martyrium
+| message = (May 21st - June 12th) A major Iris Libre and Vichya Dominion-themed event featuring six new shipgirls, and the third event to feature an event gacha META shipgirl.
+| image = [[File:AlsaceBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+}}</div>

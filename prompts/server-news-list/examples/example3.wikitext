@@ -1,0 +1,85 @@
+<div class="col col-8 col-special" style="margin-bottom:20px;">
+<!----- SECTION: Recent News ----->{{ServerNewsList
+| scheme = blue
+| logo = Home_head_enterprise.png
+| title = News
+| timeCurrent = Current Time - EN: <strong><span id="serverDateEN"></span> UTC-7</strong> · JP: <strong><span id="serverDateJP"></span> UTC+9</strong> · CN: <strong><span id="serverDateCN"></span> UTC+8</strong>
+| content = 
+{{NewsItemEN
+| type = update
+| link = Recent News#December 15th 2022
+| month = Dec
+| day = 15
+| title = December 15th Patch Notes
+| message = Preparation for upcoming major event, Champagne blueprint catch-up, U-110 added to permanent pool, new Augment Modules, bug fixes and more
+| image = [[File:U-110Banner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Parallel Superimposition
+| month = Dec
+| day = 22
+| title = [UPCOMING] Parallel Superimposition
+| message = (December 22th - January 4th) Major UR event featuring Yorktown II, Hornet II and more.
+| image = [[File:YorktownBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Call to Arms: Sea of Stars
+| month = Dec
+| day = 15
+| title = [ONGOING] Call to Arms: Sea of Stars – Phase I
+| message = (December 15th - December 21st) During the event, Memphis, Helena, Vestal, Anchorage, Memphis META, and Helena META will gain bonus EXP from sorties and can be used during Phase II to complete event missions
+| image = [[File:AnchorageBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Causality Transposition
+| month = Dec
+| day = 15
+| title = [ONGOING] Causality Transposition
+| message = (December 15th - January 11th) Leadup event story to the Parallel Superimposition event.
+| image = [[File:TBBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Blueprint Completion Plan#Champagne
+| month = Dec
+| day = 15
+| title = [ONGOING] Blueprint Completion Plan – Champagne
+| message = (December 15th - January 11th) During the event, earn up to a total of 30 bonus blueprints for Champagne when completing research projects.
+| image = [[File:ChampagneBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Tonic_and_Tea#Manjuu_Curling
+| month = Dec
+| day = 15
+| title = [ONGOING] Manjuu Curling Rerun
+| message = (December 15th - January 4th) Minigame to unlock Southampton's "Afternoon Impromptu" skin
+| image = [[File:SouthamptonMaidBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = The Alchemist and the Archipelago of Secrets
+| month = Nov
+| day = 24
+| title = [ENDED] The Alchemist and the Archipelago of Secrets
+| message = (November 24th - December 7th) Atelier Ryza 2/3 collab featuring Reisalin Stout, Lila Decyrus and more
+| image = [[File:Reisalin StoutBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+}}</div>

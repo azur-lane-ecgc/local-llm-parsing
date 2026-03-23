@@ -1,0 +1,74 @@
+<div class="col col-8 col-special" style="margin-bottom:20px;">
+<!----- SECTION: Recent News ----->{{ServerNewsList
+| scheme = blue
+| logo = Home_head_enterprise.png
+| title = News
+| timeCurrent = Current Time - EN: <strong><span id="serverDateEN"></span> UTC-7</strong> · JP: <strong><span id="serverDateJP"></span> UTC+9</strong> · CN: <strong><span id="serverDateCN"></span> UTC+8</strong>
+| content = 
+{{NewsItemEN
+| type = update
+| link = Recent News#February 9th 2023
+| month = Feb
+| day = 9
+| title = February 9th Patch Notes
+| message = Valentines Day events, new skins and more
+| image = [[File:Pamiat MerkuriaHome Relaxation.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Sweet Workshop
+| month = Feb
+| day = 9
+| title = [ONGOING] Sweet Workshop
+| message = (February 9th - February 22nd) During the event, a new stage opens every day until February 15th. Commanders can complete them all to get a limited gear skin.
+| image = [[File:HaguroCasualBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Lantern Festival
+| month = Feb
+| day = 2
+| title = [ONGOING] Lantern Festival
+| message = (February 2nd - February 15th) A riddle attempt will be unlocked every day at midnight. Answer 7 correctly to earn rewards.
+| image = [[File:EssexSpringBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Spring Breeze Leisure
+| month = Feb
+| day = 2
+| title = [ONGOING] Spring Breeze Leisure
+| message = (February 2nd - February 15th) 2 event missions unlock every day until February 8th. Complete all to get a limited skin, Spring Breeze Leisure, for Nagara.
+| image = [[File:NagaraSpringBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Winter Pathfinder
+| month = Jan
+| day = 18
+| title = [ENDED] Joint Operation – Winter Pathfinder
+| message = (January 18th - February 1st) During the event, complete Joint Operation to earn Contribution PT. Accumulate PT to receive Personal Rewards and Phase Rewards. 
+| image = [[File:KuybyshevBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Happy Lunar New Year 2023
+| month = Jan
+| day = 18
+| title = [ENDED] Happy Lunar New Year 2023
+| message = (January 18th - February 1st) During the event, clear limited-time missions to earn PT. Accumulate PT to get "Spring Festival Invitation", which can be used to invite one character to join your fleet.
+| image = [[File:Hwah JahSpringBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+}}</div>
