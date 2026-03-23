@@ -63,6 +63,20 @@ WIKI_API_URL=      # MediaWiki API endpoint
 WIKI_USER_AGENT=   # User agent string
 ```
 
+## Creating Prompts
+
+Prompts live in `prompts/` and must include YAML frontmatter:
+
+```markdown
+---
+folder: patch_notes
+---
+
+Your prompt content here...
+```
+
+The `folder` key is appended to `llm.outputDir` from config (e.g., `folder: patch_notes` → `{outputDir}/patch_notes/`).
+
 ## Project Structure
 
 ```

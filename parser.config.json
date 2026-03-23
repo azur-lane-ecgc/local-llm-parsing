@@ -4,7 +4,7 @@
   "wordpress": {
     "baseUrl": "https://azurlane.yo-star.com/news/",
     "pageAppendUrl": "page/",
-    "outputDir": "output/azur_lane_patch_notes",
+    "outputDir": "output/scrape/patch_notes",
     "outputFileExtension": "md"
   },
   "llm": {
