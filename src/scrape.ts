@@ -1,4 +1,5 @@
 import { load, type Cheerio } from "cheerio"
+import type { AnyNode } from "domhandler"
 import { mkdir, writeFile } from "node:fs/promises"
 import { loadConfig } from "./config"
 import TurndownService from "turndown"
@@ -143,7 +144,7 @@ const cleanHTML = (
   $(".wp-caption-text, .gallery-caption").remove()
 
   // Remove all classes, styles, ids, and data-* attributes
-  $("*").each((_index: number, element: any) => {
+  $("*").each((_index: number, element: AnyNode) => {
     const $el = $(element)
     $el.removeAttr("class")
     $el.removeAttr("style")
@@ -184,7 +185,8 @@ const htmlToMarkdown = (html: string): string => {
     strongDelimiter: "**",
     emDelimiter: "*",
     linkStyle: "inlined",
-    blankReplacement: (content, node: any) => (node.isBlock ? "\n\n" : ""),
+    blankReplacement: (content, node: { isBlock: boolean }) =>
+      node.isBlock ? "\n\n" : "",
   })
 
   turndownService.addRule("removeImages", {
@@ -201,7 +203,7 @@ const parseListingPage = (html: string): PostInfo[] => {
   const $ = load(html)
   const posts: PostInfo[] = []
 
-  $(SELECTORS.post).each((_index: number, element: any) => {
+  $(SELECTORS.post).each((_index: number, element: AnyNode) => {
     const $element = $(element)
     const headerElement = $element.find(SELECTORS.header)
     const linkElement = headerElement.find(SELECTORS.link)
@@ -230,7 +232,7 @@ const parseListingPage = (html: string): PostInfo[] => {
   return posts
 }
 
-const extractLatestDate = (headerElement: Cheerio<any>): Date | null => {
+const extractLatestDate = (headerElement: Cheerio<AnyNode>): Date | null => {
   const html = headerElement.html()
   if (!html) return null
   const date = parseDate(html)
