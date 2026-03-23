@@ -1,6 +1,6 @@
 import { runScrape } from "./src/scrape"
 import { runOpenCode } from "./src/opencode"
-import { runWikiEdit } from "./src/wiki"
+import { runPatchNotesWikiEdit } from "./src/wiki"
 
 const parseArgs = (): {
   mode: "scrape" | "opencode" | "wiki"
@@ -36,7 +36,7 @@ const main = async () => {
       await runOpenCode()
       break
     case "wiki":
-      await runWikiEdit()
+      await runPatchNotesWikiEdit()
       break
   }
 }
