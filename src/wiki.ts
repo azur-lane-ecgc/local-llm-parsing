@@ -2,6 +2,8 @@ import { Mwn } from "mwn"
 import { readFile, readdir } from "node:fs/promises"
 import { loadConfig } from "./config"
 
+const WIKITEXT_PAGE = "User:Samheart564/Sandbox"
+
 let config: Awaited<ReturnType<typeof loadConfig>> | null = null
 
 const getConfig = async () => {
@@ -57,7 +59,7 @@ export const runWikiEdit = async () => {
       ),
     )
     const combinedContent = contents.join("\n\n")
-    await editPage(cfg.wikitext.page, combinedContent)
+    await editPage(WIKITEXT_PAGE, combinedContent)
     console.log("Wiki edit complete!")
   } catch (err) {
     console.error("Wiki edit failed:", err)

@@ -12,8 +12,5 @@
     "outputDir": "output/llm",
     "promptFile": "prompts/optimized-patch-notes/prompt.md",
     "outputFileExtension": "wikitext"
-  },
-  "wikitext": {
-    "page": "User:Samheart564/Sandbox"
   }
 }
