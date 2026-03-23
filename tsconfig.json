@@ -15,7 +15,8 @@
     "noImplicitOverride": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "types": ["node"]
+    "types": ["node"],
+    "rootDir": "./src"
   },
   "include": ["*.ts", "src/**/*.ts"],
   "exclude": ["node_modules"]

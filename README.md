@@ -16,12 +16,20 @@ Install deps:
 bun install
 ```
 
-Scripts:
+Run directly:
 
 ```bash
-bun run scrape       # Scrape patch notes from blog
-bun run process      # Process scraped content with OpenCode
-bun run wiki         # Publish processed output to wiki
+bun src/scrape/scrape.ts        # Scrape patch notes from blog
+bun src/opencode/opencode.ts    # Process scraped content with OpenCode
+bun src/wiki/wiki-patch-notes.ts # Publish processed output to wiki
+```
+
+Or use npm scripts:
+
+```bash
+bun run scrape       # Scrape + lint/format
+bun run process      # Process + lint/format
+bun run wiki         # Publish to wiki
 bun run check        # Lint + format (oxlint, oxfmt)
 bun test             # Run tests (vitest)
 ```
@@ -81,14 +89,18 @@ The `folder` key is appended to `llm.outputDir` from config (e.g., `folder: patc
 
 ```
 ├── src/
-│   ├── scrape.ts      # WordPress blog scraper
-│   ├── opencode.ts    # OpenCode server + batch processor
-│   ├── wiki.ts        # MediaWiki editor
-│   └── config.ts      # Config loader
-├── prompts/           # LLM prompt templates
+│   ├── scrape/           # WordPress blog scraper
+│   │   └── scrape.ts
+│   ├── opencode/         # OpenCode server + batch processor
+│   │   └── opencode.ts
+│   ├── wiki/             # MediaWiki editor
+│   │   └── wiki-patch-notes.ts
+│   ├── config.ts         # Config loader
+│   └── utils.ts          # Shared utilities
+├── prompts/              # LLM prompt templates
 │   ├── patch-notes/
 ├── output/
 │   ├── azur_lane_patch_notes/  # Web scraped patch notes
 │   └── llm/patch_notes/        # LLM-processed output
-└── AzurLaneData/               # Game data submodule
+└── AzurLaneData/                # Game data submodule
 ```

@@ -194,3 +194,15 @@ export const runOpenCode = async () => {
     console.log(`${"=".repeat(50)}\n`)
   })
 }
+
+if (import.meta.main) {
+  runOpenCode().catch((error) => {
+    console.error("\nFatal Error:")
+    console.error((error as Error).message)
+    if ((error as Error).stack) {
+      console.error("\nStack trace:")
+      console.error((error as Error).stack)
+    }
+    process.exit(1)
+  })
+}

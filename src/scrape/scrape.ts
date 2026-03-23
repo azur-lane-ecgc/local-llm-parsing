@@ -436,3 +436,15 @@ export const runScrape = async () => {
 
   console.log("\nScraping complete!")
 }
+
+if (import.meta.main) {
+  runScrape().catch((error) => {
+    console.error("\nFatal Error:")
+    console.error((error as Error).message)
+    if ((error as Error).stack) {
+      console.error("\nStack trace:")
+      console.error((error as Error).stack)
+    }
+    process.exit(1)
+  })
+}

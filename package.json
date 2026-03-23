@@ -4,12 +4,11 @@
   "private": true,
   "description": "Standalone patch notes parser for Azur Lane - fetches and processes official patch notes",
   "type": "module",
-  "module": "main.ts",
   "scripts": {
     "test": "vitest run",
-    "scrape": "bun main.ts -s && bun check",
-    "process": "bun main.ts -o && bun check",
-    "wiki": "bun main.ts -w",
+    "scrape": "bun src/scrape/scrape.ts && bun check",
+    "process": "bun src/opencode/opencode.ts && bun check",
+    "wiki": "bun src/wiki/wiki-patch-notes.ts",
     "check": "oxlint --fix . && oxfmt --no-error-on-unmatched-pattern .",
     "submodule": "git submodule update --recursive --remote",
     "prepare": "bun run submodule && lefthook install"
