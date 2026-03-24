@@ -1,0 +1,74 @@
+<div class="col col-8 col-special" style="margin-bottom:20px;">
+<!----- SECTION: Recent News ----->{{ServerNewsList
+| scheme = blue
+| logo = Home_head_enterprise.png
+| title = News
+| timeCurrent = <span class="time_title">Current Time</span><span class="time_values_box"><span>EN: <span class="js_time_placeholder" id="serverDateEN"></span> UTC-7</span><span>JP: <span class="js_time_placeholder" id="serverDateJP"></span> UTC+9</span><span>CN: <span class="js_time_placeholder" id="serverDateCN"></span> UTC+8</span></span>
+| content =
+{{NewsItemEN
+| type = update
+| link = Recent News#January 23rd 2025
+| month = Jan
+| day = 23
+| title = January 23rd Patch Notes
+| message = New Project Identity, Updated Lunar New Year 2025 event, new skins and secrets, bug fixes and more.
+| image = [[File:New JerseySpringBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Spring Fashion Festa
+| month = Jan
+| day = 16
+| title = [ONGOING] Spring Fashion Festa
+| message = (January 16th - February 5th) Joint Operation event, accumulate PT to receive many Rewards
+| image = [[File:Chien WuBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Happy Lunar New Year 2025
+| month = Jan
+| day = 16
+| title = [ONGOING] Happy Lunar New Year 2025
+| message = (January 16th - February 5th) Lunar New Year 2025 event introducing new shipgirls.
+| image = [[File:Hwah JahKaiBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Parallel Superimposition
+| month = Jan
+| day = 9
+| title = [ENDED] Parallel Superimposition Rerun
+| message = (January 9th - January 15th) Eagle Union event introducing Yorktown II rerun.
+| image = [[File:Yorktown IIBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Commission Exchange Plan
+| month = Jan
+| day = 2
+| title = [ONGOING] Commission Exchange Plan IV
+| message = (January 2nd - February 26th) During the event, complete Commissions to earn Commission Merits based on the duration of the completed Commission. Collect Commission Merits to exchange for great rewards.
+| image = [[File:MemphisBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Substellar Crepuscule
+| month = Dec
+| day = 19
+| title = [ENDED] Substellar Crepuscule
+| message = (December 12th - January 8th) Iron Blood major event introducing 2 new UR shipgirls.
+| image = [[File:Fritz RumeyBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+}}</div>

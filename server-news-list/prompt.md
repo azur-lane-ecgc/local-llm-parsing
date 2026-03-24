@@ -24,6 +24,7 @@ Things to note:
   - 1 new event / mechanic (either ongoing or just started)
 - This should include at maximum:
   - 1 skin-related event (either ended or just ended recently).
+- Project Identity events should NOT get their own section, they should only be mentioned within the description of the Patch Notes, similar to `example7.wikitext`.
 - Sort all events from latest to earliest.
 
 The task is fundamentally natural language to natural language, so unless you possess incredible knowledge in heuristics I'd recommend doing this by hand rather than writing a python script. Never guess any information. You are writing for a wiki, all the text you write must be directly supported by the sources given.
