@@ -1,18 +1,8 @@
-import { readFile, mkdir, readdir } from "node:fs/promises"
+import { readFile, mkdir, readdir, writeFile } from "node:fs/promises"
+import { existsSync } from "node:fs"
 import { join } from "node:path"
-import {
-  withOpenCodeServer,
-  processWithOpenCode,
-  loadConfig,
-  emptyFile,
-} from "../utils"
-
-interface Config {
-  earliestDate: string
-  latestDate?: string | false
-  model: string
-  wiki: { page: string }
-}
+import { withOpenCodeServer, processWithOpenCode } from "../utils"
+import config from "./config.json" with { type: "json" }
 
 const INPUT_DIR = "scrape/outputs"
 const INPUT_EXT = "md"
@@ -20,14 +10,20 @@ const OUTPUT_DIR = "patch-notes/outputs"
 const OUTPUT_EXT = "wikitext"
 const PROMPT_FILE = "patch-notes/prompt.md"
 
+const emptyFile = async (filePath: string): Promise<void> => {
+  if (existsSync(filePath)) {
+    await writeFile(filePath, "")
+  }
+}
+
 export const runPatchNotes = async () => {
   console.log("Starting patch notes processing\n")
 
-  const config = await loadConfig<Config>("patch-notes/config.json")
   const prompt = await readFile(PROMPT_FILE, "utf-8")
 
   const earliestDate = new Date(config.earliestDate)
-  const latestDate = config.latestDate ? new Date(config.latestDate) : null
+  const latestDate =
+    typeof config.latestDate === "string" ? new Date(config.latestDate) : null
 
   const ext = INPUT_EXT
   const files = await readdir(INPUT_DIR)

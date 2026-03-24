@@ -1,26 +1,17 @@
 import { load, type Cheerio } from "cheerio"
 import type { AnyNode } from "domhandler"
 import { mkdir, writeFile } from "node:fs/promises"
-import { loadConfig } from "../utils"
 import TurndownService from "turndown"
-
-interface Config {
-  earliestDate: string
-  latestDate?: string | false
-  wordpress: { baseUrl: string }
-}
+import config from "./config.json" with { type: "json" }
 
 const SCRAPE_OUTPUT_DIR = "scrape/outputs"
 const SCRAPE_OUTPUT_EXT = "md"
 const PAGE_APPEND_URL = "page/"
 
-let config: Config | null = null
-
-const getConfig = async (): Promise<Config> => {
-  if (!config) {
-    config = await loadConfig<Config>("scrape/config.json")
-  }
-  return config
+const SELECTORS = {
+  post: 'article[id^="post-"]',
+  header: "header",
+  link: "header a",
 }
 
 export interface PostInfo {
@@ -33,12 +24,6 @@ export interface PostInfo {
 export interface PostGroup {
   date: Date
   posts: PostInfo[]
-}
-
-const SELECTORS = {
-  post: 'article[id^="post-"]',
-  header: "header",
-  link: "header a",
 }
 
 const fetchWithRetry = async (
@@ -150,16 +135,13 @@ const cleanHTML = (
   }
   $(removeSelectors.join(", ")).remove()
 
-  // Remove image captions
   $(".wp-caption-text, .gallery-caption").remove()
 
-  // Remove all classes, styles, ids, and data-* attributes
   $("*").each((_index: number, element: AnyNode) => {
     const $el = $(element)
     $el.removeAttr("class")
     $el.removeAttr("style")
     $el.removeAttr("id")
-    // Remove data-* attributes
     if ("attribs" in element && element.attribs) {
       Object.keys(element.attribs).forEach((attr) => {
         if (attr.startsWith("data-")) {
@@ -276,9 +258,9 @@ const extractMainContent = (
  * Returns posts sorted by date (newest first).
  */
 export const crawlBlog = async (): Promise<PostInfo[]> => {
-  const cfg = await getConfig()
-  const earliestDate = new Date(cfg.earliestDate)
-  const latestDate = cfg.latestDate ? new Date(cfg.latestDate) : null
+  const earliestDate = new Date(config.earliestDate)
+  const latestDate =
+    typeof config.latestDate === "string" ? new Date(config.latestDate) : null
   const allPosts: PostInfo[] = []
   let page = 1
   let cutoffReached = false
@@ -289,8 +271,8 @@ export const crawlBlog = async (): Promise<PostInfo[]> => {
 
     const url =
       page === 1
-        ? cfg.wordpress.baseUrl
-        : `${cfg.wordpress.baseUrl}${PAGE_APPEND_URL}${page}`
+        ? config.wordpress.baseUrl
+        : `${config.wordpress.baseUrl}${PAGE_APPEND_URL}${page}`
 
     const html = await fetchWithRetry(url)
     const text = await html.text()

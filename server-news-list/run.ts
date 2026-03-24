@@ -1,17 +1,7 @@
 import { readdir, readFile, mkdir } from "node:fs/promises"
 import { join } from "node:path"
-import {
-  withOpenCodeServer,
-  processWithOpenCode,
-  loadConfig,
-  getLastThursday,
-} from "../utils"
-
-interface Config {
-  latestDate: string
-  model: string
-  wiki: { page: string }
-}
+import { withOpenCodeServer, processWithOpenCode } from "../utils"
+import config from "./config.json" with { type: "json" }
 
 const INPUT_DIR = "scrape/outputs"
 const INPUT_EXT = "md"
@@ -19,10 +9,18 @@ const OUTPUT_DIR = "server-news-list/outputs"
 const OUTPUT_EXT = "wikitext"
 const PROMPT_FILE = "server-news-list/prompt.md"
 
+const getLastThursday = (date: Date): Date => {
+  const result = new Date(date.toISOString().slice(0, 10) + "T12:00:00")
+  const dayOfWeek = result.getDay()
+  const daysToGoBack = (dayOfWeek + 7 - 4) % 7
+  result.setDate(result.getDate() - daysToGoBack)
+  result.setHours(0, 0, 0, 0)
+  return result
+}
+
 export const runServerNewsList = async () => {
   console.log("Starting server-news-list runner\n")
 
-  const config = await loadConfig<Config>("server-news-list/config.json")
   const promptBase = await readFile(PROMPT_FILE, "utf-8")
 
   const latestDate = new Date(config.latestDate)

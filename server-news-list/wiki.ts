@@ -1,12 +1,6 @@
 import { Mwn } from "mwn"
 import { readFile, readdir } from "node:fs/promises"
-import { loadConfig } from "../utils"
-
-interface Config {
-  latestDate: string
-  model: string
-  wiki: { page: string }
-}
+import config from "./config.json" with { type: "json" }
 
 const OUTPUT_DIR = "server-news-list/outputs"
 
@@ -44,7 +38,6 @@ export const editServerNewsListPage = async (
 
 export const runServerNewsListWikiEdit = async () => {
   try {
-    const config = await loadConfig<Config>("server-news-list/config.json")
     const wikitextPage = config.wiki.page
     await testServerNewsListWikiLogin()
     const allFiles = await readdir(OUTPUT_DIR)

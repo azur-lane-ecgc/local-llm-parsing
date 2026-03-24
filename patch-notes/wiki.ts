@@ -1,13 +1,6 @@
 import { Mwn } from "mwn"
 import { readFile, readdir } from "node:fs/promises"
-import { loadConfig } from "../utils"
-
-interface Config {
-  earliestDate: string
-  latestDate?: string | false
-  model: string
-  wiki: { page: string }
-}
+import config from "./config.json" with { type: "json" }
 
 const OUTPUT_DIR = "patch-notes/outputs"
 
@@ -45,7 +38,6 @@ export const editPatchNotesPage = async (
 
 export const runPatchNotesWikiEdit = async () => {
   try {
-    const config = await loadConfig<Config>("patch-notes/config.json")
     const wikitextPage = config.wiki.page
     await testPatchNotesWikiLogin()
     const allFiles = await readdir(OUTPUT_DIR)
