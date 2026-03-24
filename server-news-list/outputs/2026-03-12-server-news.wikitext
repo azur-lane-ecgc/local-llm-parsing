@@ -12,7 +12,7 @@
 | day = 19
 | title = March 19th Patch Notes
 | message = Project Identity 3.0 update with Explorer, Today's Conducting Practice rerun, new permanent construction ships, new outfits, bug fixes and more.
-| image = [[File:ExplorerBanner.png|x110px]]
+| image = [[File:LoraBanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
 }}
@@ -45,7 +45,7 @@
 | day = 12
 | title = [ENDED] Snowrealm Peregrination Rerun
 | message = (March 12th – March 18th) Northern Parliament rerun event featuring Pamiat' Merkuria META and Svirepy.
-| image = [[File:Pamiat Merkuria METABanner.png|x110px]]
+| image = [[File:Pamiat' Merkuria METABanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
 }}
