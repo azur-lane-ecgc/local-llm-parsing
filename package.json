@@ -5,15 +5,15 @@
   "description": "Standalone patch notes parser for Azur Lane - fetches and processes official patch notes",
   "type": "module",
   "scripts": {
-    "test": "vitest run",
-    "scrape": "bun scrape/scrape.ts && bun check",
-    "process:patch-notes": "bun patch-notes/run.ts && bun check",
-    "process:server-news-list": "bun server-news-list/run.ts && bun check",
-    "wiki:patch-notes": "bun patch-notes/wiki.ts",
-    "wiki:server-news-list": "bun server-news-list/wiki.ts",
+    "prepare": "bun run submodule && lefthook install",
     "check": "oxlint --fix . && oxfmt --no-error-on-unmatched-pattern .",
     "submodule": "git submodule update --recursive --remote",
-    "prepare": "bun run submodule && lefthook install"
+    "test": "vitest run",
+    "scrape": "bun scrape/scrape.ts && bun check",
+    "patch-notes:p": "bun patch-notes/run.ts && bun check",
+    "patch-notes:w": "bun patch-notes/wiki.ts",
+    "server-news:p": "bun server-news-list/run.ts && bun check",
+    "server-news:w": "bun server-news-list/wiki.ts"
   },
   "dependencies": {
     "cheerio": "^1.2.0",
