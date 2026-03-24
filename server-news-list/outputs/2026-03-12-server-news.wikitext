@@ -7,45 +7,45 @@
 | content =
 {{NewsItemEN
 | type = update
-| link = Recent News#March 12th 2026
+| link = Recent News#March 19th 2026
 | month = Mar
-| day = 12
-| title = March 12th Patch Notes
-| message = Snowrealm Peregrination rerun, new META shipgirl Regensburg META, returning characters, new Augment Modules, new Memory, returning skins, bug fixes and more.
-| image = [[File:AlbionBanner.png|x110px]]
+| day = 19
+| title = March 19th Patch Notes
+| message = Project Identity 3.0 update, Today's Conducting Practice rerun, Party Dress Series Rerun Campaign, new skins, system optimizations and more.
+| image = [[File:ExplorerBanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
 }}
 {{NewsItemEN
 | type = event
-| link = Snowrealm Peregrination
+| link = Today's Conducting Practice
 | month = Mar
-| day = 12
-| title = [ONGOING] Snowrealm Peregrination Rerun
-| message = (March 12th - March 18th) Northern Parliament rerun event. Sortie to event stages to earn PT and exchange them for rewards including the limited character Pamiat' Merkuria META and Svirepy.
-| image = [[File:Pamiat Merkuria METABanner.png|x110px]]
+| day = 19
+| title = [ONGOING] Today's Conducting Practice Rerun
+| message = (March 19th – April 1st) Clear Main Campaign stages after Chapter 3 to earn Trust. Accumulate enough Trust to complete milestone missions and have Little Friedrich permanently join your fleet.
+| image = [[File:Little FriedrichBanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
 }}
 {{NewsItemEN
 | type = event
-| link = Call to Arms: Antarctica
+| link = Party Dress
 | month = Mar
-| day = 12
-| title = [ONGOING] Call to Arms: Antarctica Rerun
-| message = (March 12th - March 18th) During the event, Saratoga, Clemenceau, Tallinn, and Königsberg will gain bonus EXP from sorties. Use these ships to complete event missions, earn enough Training Points to get the "Star of the Snowrealm" portrait frame.
-| image = [[File:ClemenceauBanner.png|x110px]]
+| day = 19
+| title = [ONGOING] Party Dress Series Rerun Campaign
+| message = (March 19th – April 8th) Purchase Party Dress series skins or skin packs at regular price to earn Coupons. Log in to the game to obtain rewards.
+| image = [[File:EnterpriseBanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
 }}
 {{NewsItemEN
 | type = event
-| link = Rental Outfits
+| link = Project Identity
 | month = Mar
-| day = 12
-| title = [ONGOING] Rental Outfits
-| message = (March 12th - March 18th) Log in during the event period to earn 3 rental outfit vouchers, which can be used on skins for Sovetsky Soyuz, Allen M. Sumner, and Ognevoy.
-| image = [[File:OgnevoyBanner.png|x110px]]
+| day = 19
+| title = [ONGOING] Project Identity 3.0 – Explorer
+| message = (March 19th) Project Identity 3.0 update featuring Explorer, a new Tarot Card system, Endless Mode and Hard Mode.
+| image = [[File:TBBanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
 }}
@@ -54,31 +54,20 @@
 | link = META Showdown
 | month = Mar
 | day = 12
-| title = [ONGOING] META Showdown
-| message = (March 12th - June 4th) New META shipgirl Regensburg META available from META Showdown for a limited time.
+| title = [ONGOING] META Showdown – Regensburg META
+| message = (March 12th – June 4th) New META ship available from META Showdown.
 | image = [[File:Regensburg METABanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
 }}
 {{NewsItemEN
 | type = event
-| link = Springtide Inn Online
-| month = Feb
-| day = 26
-| title = [ENDED] Springtide Inn Online
-| message = (February 26th - March 11th) Northern Parliament event introducing Gangut META and Bogatyr.
-| image = [[File:Gangut METABanner.png|x110px]]
-| imageTop = 0px
-| imageLeft = -160px
-}}
-{{NewsItemEN
-| type = event
-| link = Lantern Festival
-| month = Feb
-| day = 26
-| title = [ENDED] Lantern Festival
-| message = (February 26th - March 11th) A riddle attempt will be unlocked every day at midnight. Answer 7 correctly to earn rewards.
-| image = [[File:EssexSpringBanner.png|x110px]]
+| link = Snowrealm Peregrination
+| month = Mar
+| day = 12
+| title = [ENDED] Snowrealm Peregrination Rerun
+| message = (March 12th – March 18th) Northern Parliament event rerun featuring Pamiat' Merkuria META and Svirepy.
+| image = [[File:Pamiat' Merkuria METABanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
 }}
