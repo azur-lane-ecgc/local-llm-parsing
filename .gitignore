@@ -6,6 +6,11 @@ out
 dist
 *.tgz
 
+# domain outputs
+scrape/outputs
+patch-notes/outputs
+server-news-list/outputs
+
 # code coverage
 coverage
 *.lcov

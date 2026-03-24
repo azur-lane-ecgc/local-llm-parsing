@@ -6,9 +6,12 @@
   "type": "module",
   "scripts": {
     "test": "vitest run",
-    "scrape": "bun src/scrape/scrape.ts && bun check",
-    "process": "bun src/opencode/opencode.ts && bun check",
-    "wiki-patch-notes": "bun src/wiki/wiki-patch-notes.ts",
+    "scrape": "bun scrape/scrape.ts && bun check",
+    "process": "bun patch-notes/run.ts && bun check",
+    "process:patch-notes": "bun patch-notes/run.ts && bun check",
+    "process:server-news-list": "bun server-news-list/run.ts && bun check",
+    "wiki:patch-notes": "bun patch-notes/wiki.ts",
+    "wiki:server-news-list": "bun server-news-list/wiki.ts",
     "check": "oxlint --fix . && oxfmt --no-error-on-unmatched-pattern .",
     "submodule": "git submodule update --recursive --remote",
     "prepare": "bun run submodule && lefthook install"

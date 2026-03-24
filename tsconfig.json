@@ -16,8 +16,14 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "types": ["node"],
-    "rootDir": "./src"
+    "rootDir": "."
   },
-  "include": ["*.ts", "src/**/*.ts"],
+  "include": [
+    "*.ts",
+    "utils/**/*.ts",
+    "scrape/**/*.ts",
+    "patch-notes/**/*.ts",
+    "server-news-list/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
