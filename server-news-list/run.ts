@@ -46,8 +46,9 @@ export const runServerNewsList = async () => {
 
   const latestFiles = contentFiles.slice(0, 3)
   console.log(`Latest date: ${latestDate.toISOString().split("T")[0]}`)
+  const latestDates = latestFiles.map((f) => f.replace(/_content\.\w+$/, ""))
   console.log(
-    `Found ${contentFiles.length} files, using latest ${latestFiles.length}\n`,
+    `Found ${contentFiles.length} files, using latest ${latestFiles.length} (${latestDates.join(", ")})\n`,
   )
 
   await mkdir(OUTPUT_DIR, { recursive: true })
