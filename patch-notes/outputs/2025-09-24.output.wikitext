@@ -1,0 +1,73 @@
+==September 25th 2025==
+=== New Contents ===
+<ol>
+<li>'''Limited Time Rerun Event: [[Extreme Challenge#Libra|Extreme Challenge – Libra]]'''
+*Event period: From October 1st to October 31st, 11:59 P.M., (UTC-7):
+*The next boss, [[Enterprise]], will automatically rotate when the month changes to October.
+*Assemble the best fleet you can and clear challenge stages to earn limited portrait and chat frames of Libra.
+<li>'''Limited Time Event: [[Cruise Missions|Cruise Missions Season 25]]'''
+*Event period: From October 1st to November 30th, 11:59 P.M., (UTC-7)
+*During the campaign season, accumulate progress points to earn rewards.
+**'''Cruise Missions Rewards''' will consist of '''Regular Rewards''' and '''Fair Winds Rewards'''. '''Regular Rewards''' will be available to all while '''Fair Winds Rewards''' will require the purchase of the '''Fair Winds Cruise Pass'''.
+**During the campaign season, complete missions and accumulate progress points to get Regular Rewards including the limited character '''[[Dewey META]]''' and '''[[Specialized Bulin Custom MKIII]]'''.
+**Purchasing the '''Fair Winds Cruise Pass''' for $9.99 will grant 1500 progress points immediately. Additionally, accumulate progress points to get '''Fair Winds Rewards''' including [[Kawakaze|Kawakaze's]] limited outfit '''[[Kawakaze/Gallery#tabber-Guardian Fox, Forever Loyal|Guardian Fox, Forever Loyal]]''', new gear skins, and Battle UI.
+**The campaign missions, progress points, '''Fair Winds Cruise Pass''' and rewards will only be available during the campaign season.
+<li>'''New Character:'''
+*Obtainable from [[Cruise Missions]] for a limited-time between October 1st and November 30th, 11:59 P.M. (UTC-7)
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|4|Dewey META|DD||'''[[Cruise Missions|Cruise Missions Reward]]'''}}
+</div>
+<li>'''New Cruise Pass Skin:'''
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Kawakaze|DD|Travel|Guardian Fox, Forever Loyal|'''[[Cruise Missions#Event Skins|Fair Winds Cruise Pass Reward]]'''|2||}}
+</div>
+<li>'''Limited Time Event: Sports Time & Race Queen Series Rerun Campaign'''
+*Event period: From September 25th to October 22nd, 11:59 P.M., (UTC-7):
+*During the campaign, you will earn 1 Coupon for each "Sports Time" or "Race Queen" series skin or skin pack you purchase at regular price. Log in to the game to obtain rewards.
+<li>'''New Oath Skins:'''
+*Available permanently:
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|6|Amagi(CV)|CV|Wedding|Moonlit Blossom on Placid Seas}}
+{{ShipDisplay|6|Ulrich von Hutten|BB|Wedding|Liebestrank}}
+{{ShipDisplay|4|Black Prince|CL|Wedding|Love's Greeting}}
+</div>
+<li>'''New Items in [[Akashi's Shop]]:'''
+*Available between September 25th and October 22nd, 11:59 P.M. (UTC-7):
+**Sports & Race Return Lucky Box (2 purchases limited)
+*Available between September 25th and October 8th, 11:59 P.M. (UTC-7):
+**Promise Crate (1 purchase limited)
+<li>'''[[Cruise_Missions#Revisitor_Shop|Cruise Pass Revisitor Shop]] Update:'''
+*Available for purchase after October 1st, 12:00 A.M. (UTC-7):
+**Character: [[Sheffield META]]
+**Character skin: [[Yuugure/Gallery#tabber-Fun in the Sun|Yuugure – Fun in the Sun]]
+**Gear skins: Hailstorm Shell, Ball Lightning Shell, Fire Whirl Torpedo, After the Rain.
+<li>'''New [[Decorations#Monthly_Login_Rewards|Monthly Login Reward (October)]]:'''
+*Furniture:
+{| class="wikitable" style="text-align: center; margin-left:20px; margin-top:0px;"
+|'''The Two Heads'''
+|}
+<li>'''Private Quarters Update:'''
+*''New character:''
+**'''[[Taihou]]'''
+***Interact with Taihou in her Bedroom;
+***Unlock Taihou's Café Invitation and invite Taihou to the Common Area to unlock her new Interaction, Minigame, and 3D outfit.
+*''New items:''
+**Available permanently:
+***Taihou's exclusive furniture – Love Nest
+***Taihou's exclusive gift – Love Enshackled
+*''PrivateChat Update:''
+**'''[[Taihou]]'''
+***You can check Taihou's info, calls, and posts through "Private Quarters" – "PrivateChat".
+<li>'''CV Update:'''
+*'''Characters'''
+**[[Dewey META/Quotes|Dewey META]] – Miyuri Shimabukuro
+*'''Skins'''
+**[[Amagi(CV)/Quotes|Amagi(CV) – Moonlit Blossom on Placid Seas]] – Miyuki Sawashiro
+**[[Ulrich von Hutten/Quotes|Ulrich von Hutten – Liebestrank]] – Hibiku Yamamura
+**[[Black Prince/Quotes|Black Prince – Love's Greeting]] – Hisako Kanemoto
+**[[Kawakaze/Quotes|Kawakaze – Guardian Fox, Forever Loyal]] – Yuka Iguchi
+</ol>
+
+=== System Optimization ===
+#'''General'''
+#*Fixed some UI, texts, and images.

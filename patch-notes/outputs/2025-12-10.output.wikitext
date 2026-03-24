@@ -1,0 +1,39 @@
+==December 11th 2025==
+=== New Contents ===
+<ol>
+<li>'''Limited Time Event: [[Call to Arms: Transboundary Experiment|Call to Arms: Transboundary Experiment - Phase I]]'''
+*Event period: From December 11th to December 17th, 11:59 P.M. (UTC-7):
+*[[Lexington]], [[Helena]], [[Enterprise]], [[Yorktown]], and [[Hornet]] will gain bonus EXP from sorties and can be used during Phase II to complete event missions and earn Training Pts.
+<li>'''Limited Time Event: [[Blueprint Completion Plan#Hindenburg|Blueprint Completion Plan – Hindenburg]]'''
+*Event period: From December 11th 2025 to January 14th 2026, 11:59 P.M. (UTC-7)
+*During the event, earn up to a total of 30 bonus blueprints for Hindenburg when completing research projects.
+<li>'''Limited Time Event: [[To a Brighter World]]'''
+*Event period: From December 11th 2025 to January 7th 2026, 11:59 P.M. (UTC-7)
+*2 new missions are added every day until December 17th. Complete them all to get the limited gear, [[Director's Screenplay]].
+<li>'''New Character:'''
+*Obtainable from [[META Lab#META Showdown|META Showdown]] for a limited-time between December 11th 2025 and March 11th 2026, 11:59 P.M. (UTC-7)
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Yorktown META|CV||'''[[META Showdown]]'''}}
+</div>
+<li>'''Rerun Character:'''
+*Available permanently in [[META Showdown#Dossier Analysis|Dossier Analysis]]
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Wichita META|CA||'''[[META Showdown#Dossier Analysis|Dossier Analysis]]'''|||||y}}
+</div>
+<li>'''CV Update:'''
+*Characters
+**[[Yorktown META/Quotes|Yorktown META]] – Kana Yuuki
+</ol>
+
+===System Optimization===
+#'''General'''
+#*Fixed an issue where abnormal display occurred when challenging Helena META in Dossier Analysis under certain circumstances.
+#*Fixed an issue where the random secretary ship button would appear on the details page of some temporarily obtained characters under certain conditions.
+#*Fixed an issue where the Shop interface displayed abnormally under certain conditions.
+#*Fixed an issue where some Live2D skin resources appeared blurry.
+#*Fixed an issue where the chibi illustrations in the Dorm displayed abnormally under certain conditions.
+#*Fixed an issue where story cutscenes played abnormally under certain conditions.
+#*Fixed an issue where the barrage effect of Independence (Retrofit)'s skill "Knights of the Sky" was abnormal under certain conditions.
+#*Fixed an issue where visitors in the Island Planner failed to display correctly under certain conditions.
+#*Fixed an issue where the game would freeze when clicking "Claim All" in the Development Plan under certain conditions.
+#*Fixed some UI, text, and other bugs.

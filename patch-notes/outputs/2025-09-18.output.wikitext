@@ -1,0 +1,80 @@
+==September 19th 2025==
+=== New Contents ===
+<ol>
+<li>'''New [[Skins]]:'''
+*Available between September 19th and October 2nd, 11:59 P.M. (UTC-7):
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|6|Alsace|BB|Ninja|Tipsy Oni on a Sacred Night|{{Gem}} 1180|1|L2D|142}}
+{{ShipDisplay|6|Unzen|CA|Ninja|Arcane Ninja Knowledge|{{Gem}} 1180|1|L2D|190}}
+{{ShipDisplay|6|Guam|CB|Ninja|The Kunoichi's Dangerous Variety Show|{{Gem}} 1180|1|L2D|191}}
+{{ShipDisplay|6|Laffey II|DD|Festival|Lady Laffey's Languid Tour|{{Gem}} 980|1|DYN|552}}
+{{ShipDisplay|5|Tallinn|CA|Spring|Night of Full Moon and Overflowing Love|{{Gem}} 980|1|DYN|102}}
+{{ShipDisplay|5|Brennus|CA|Festival|Timeless Nocturne|{{Gem}} 900|1||143}}
+{{ShipDisplay|5|Gascogne|BB|Festival|Traveling Mood Mechanism|{{Gem}} 880|1||142}}
+{{ShipDisplay|4|Bolzano|CA|Spring|A Special Night Just for Us|{{Gem}} 780|1||302}}
+{{ShipDisplay|5|Warspite|BB|Ninja|The Grand Old Lady Sunders All|{{Gem}} 880|1||531}}
+</div>
+<li>'''Rerun [[Skins]]:'''
+*Available between September 19th and October 2nd, 11:59 P.M. (UTC-7):
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|6|Musashi|BB|Theme Park|The Purple Rabbit's Marksmanship|{{Gem}} 1200|1|L2D|181}}
+{{ShipDisplay|5|Sirius|CL|Theme Park|Rabbit of Paradise|{{Gem}} 1200|1|L2D|159}}
+{{ShipDisplay|5|Bremerton|CA|Theme Park|Pillowed Counseling|{{Gem}} 980|1|DYN|180}}
+{{ShipDisplay|4|Kashino|AE|Theme Park|Fresh and Sweet|{{Gem}} 900|1|DYN|181}}
+{{ShipDisplay|4|Gloucester|CL|Theme Park|Violet Enrapturement|{{Gem}} 900|1|DYN|182}}
+{{ShipDisplay|4|Ting An|AE|Theme Park|Undercover or Uncovered?!|{{Gem}} 780|1||145}}
+{{ShipDisplay|5|Prinz Rupprecht|BC|Theme Park|Midnight Pearl|{{Gem}} 880|1||180}}
+{{ShipDisplay|4|Ryuujou|CVL|Theme Park|The Dragon Slides In!|{{Gem}} 800|1||181}}
+{{ShipDisplay|4|Fubuki|DD|Spring|Caught Under the Lights|{{Gem}} 700|1||}}
+</div>
+*Available permanently:
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|6|Unzen|CA|Summer|Sojourn Through Clear Seas|{{Gem}} 1180|1|L2D|168|y}}
+{{ShipDisplay|6|Shinano|CV|Summer|Dreamy White Sands|{{Gem}} 1180|1|L2D|133|y}}
+{{ShipDisplay|4|Argus|CVL|Party|Cerulean Enthrallment|{{Gem}} 780|1||146|y}}
+{{ShipDisplay|5|Prince of Wales|BB|Party|A Knight's Song, a Lady's Night|{{Gem}} 900|1||161|y}}
+{{ShipDisplay|4|Z23|DD|Party2|Tanz der Blumen|{{Gem}} 780|1||136|y}}
+{{ShipDisplay|5|Sakawa|CL|Party|The Keys of Love|{{Gem}} 900|1||161|y}}
+{{ShipDisplay|6|Shimakaze|DD|Spring|Clumsy Moon Rabbit|{{Gem}} 880|1||165|y}}
+</div>
+<li>'''Rental Outfit System:'''
+*Available between September 19th and October 2nd, 11:59 P.M. (UTC-7):
+*Log in during the event period to earn 3 Rental Outfit Vouchers {{Skin ticket}}
+*Can be used to rent the following skins for a duration of 48 hours
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|6|Alsace|BB|Ninja|Tipsy Oni on a Sacred Night|{{Skin ticket}} 1|1|L2D|142}}
+{{ShipDisplay|6|Unzen|CA|Ninja|Arcane Ninja Knowledge|{{Skin ticket}} 1|1|L2D|190}}
+{{ShipDisplay|6|Guam|CB|Ninja|The Kunoichi's Dangerous Variety Show|{{Skin ticket}} 1|1|L2D|191}}
+</div>
+<li>'''New Items in [[Akashi's Shop]]:'''
+*Available between September 19th and October 2nd, 11:59 P.M. (UTC-7):
+**Ninja Castle Lucky Box B (1 purchase limited)
+**Dreamland Lucky Bag B Rerun (1 purchase limited)
+<li>'''New [[Memories|Memory]]:'''
+*[[Watarase/Questline#Character Story|Watarase]]
+<li>'''FleetChat:'''
+*Watarase
+<li>'''Juustagram:'''
+*Available between September 19th and October 2nd, 11:59 P.M. (UTC-7):
+**New content added
+<li>'''CV Update:'''
+*'''Skins'''
+**[[Alsace/Quotes|Alsace – Tipsy Oni on a Sacred Night (L2D)]] – Aki Toyosaki
+**[[Unzen/Quotes|Unzen – Arcane Ninja Knowledge (L2D)]] – Suzuko Mimori
+**[[Guam/Quotes|Guam – The Kunoichi's Dangerous Variety Show (L2D)]] – Karin Kagami
+**[[Laffey II/Quotes|Laffey II – Lady Laffey's Languid Tour (Dynamic)]] – Maria Naganawa
+**[[Tallinn/Quotes|Tallinn – Night of Full Moon and Overflowing Love (Dynamic)]] – Noriko Shitaya
+**[[Brennus/Quotes|Brennus – Timeless Nocturne]] – Sayaka Kikuchi
+**[[Gascogne/Quotes|Gascogne – Traveling Mood Mechanism]] – Mikako Komatsu
+**[[Bolzano/Quotes|Bolzano – A Special Night Just for Us]] – Ryouko Maekawa
+**[[Warspite/Quotes|Warspite – The Grand Old Lady Sunders All]] – Sumire Uesaka
+</ol>
+
+=== System Optimization ===
+#'''General'''
+#*Optimized the Live2D display effects for the following outfits:
+#**Sovetsky Soyuz – Stringed Interrogation
+#**Hakuhou – Floral Ninja Roleplay
+#**Fritz Rumey – Schwarzes Kaninchen
+#*Fixed an issue where the enhanced special barrage for Ying Swei's skill "Purge Evil+" and Chao Ho's skill "Cleanse Impurity+" were abnormal.
+#*Optimized and corrected some images, text, and other resources.

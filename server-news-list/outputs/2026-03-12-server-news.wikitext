@@ -1,0 +1,85 @@
+<div class="col col-8 col-special" style="margin-bottom:20px;">
+<!----- SECTION: Recent News ----->{{ServerNewsList
+| scheme = blue
+| logo = Home_head_enterprise.png
+| title = News
+| timeCurrent = <span class="time_title">Current Time</span><span class="time_values_box"><span>EN: <span class="js_time_placeholder" id="serverDateEN"></span> UTC-7</span><span>JP: <span class="js_time_placeholder" id="serverDateJP"></span> UTC+9</span><span>CN: <span class="js_time_placeholder" id="serverDateCN"></span> UTC+8</span></span>
+| content =
+{{NewsItemEN
+| type = update
+| link = Recent News#March 12th 2026
+| month = Mar
+| day = 12
+| title = March 12th Patch Notes
+| message = Snowrealm Peregrination rerun, new META shipgirl Regensburg META, returning characters, new Augment Modules, new Memory, returning skins, bug fixes and more.
+| image = [[File:AlbionBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Snowrealm Peregrination
+| month = Mar
+| day = 12
+| title = [ONGOING] Snowrealm Peregrination Rerun
+| message = (March 12th - March 18th) Northern Parliament rerun event. Sortie to event stages to earn PT and exchange them for rewards including the limited character Pamiat' Merkuria META and Svirepy.
+| image = [[File:Pamiat Merkuria METABanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Call to Arms: Antarctica
+| month = Mar
+| day = 12
+| title = [ONGOING] Call to Arms: Antarctica Rerun
+| message = (March 12th - March 18th) During the event, Saratoga, Clemenceau, Tallinn, and Königsberg will gain bonus EXP from sorties. Use these ships to complete event missions, earn enough Training Points to get the "Star of the Snowrealm" portrait frame.
+| image = [[File:ClemenceauBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Rental Outfits
+| month = Mar
+| day = 12
+| title = [ONGOING] Rental Outfits
+| message = (March 12th - March 18th) Log in during the event period to earn 3 rental outfit vouchers, which can be used on skins for Sovetsky Soyuz, Allen M. Sumner, and Ognevoy.
+| image = [[File:OgnevoyBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = META Showdown
+| month = Mar
+| day = 12
+| title = [ONGOING] META Showdown
+| message = (March 12th - June 4th) New META shipgirl Regensburg META available from META Showdown for a limited time.
+| image = [[File:Regensburg METABanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Springtide Inn Online
+| month = Feb
+| day = 26
+| title = [ENDED] Springtide Inn Online
+| message = (February 26th - March 11th) Northern Parliament event introducing Gangut META and Bogatyr.
+| image = [[File:Gangut METABanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Lantern Festival
+| month = Feb
+| day = 26
+| title = [ENDED] Lantern Festival
+| message = (February 26th - March 11th) A riddle attempt will be unlocked every day at midnight. Answer 7 correctly to earn rewards.
+| image = [[File:EssexSpringBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+}}</div>
