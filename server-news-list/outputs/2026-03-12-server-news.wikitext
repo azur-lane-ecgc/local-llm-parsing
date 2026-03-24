@@ -11,7 +11,7 @@
 | month = Mar
 | day = 19
 | title = March 19th Patch Notes
-| message = Project Identity 3.0 update, Today's Conducting Practice rerun, Party Dress Series Rerun Campaign, new skins, system optimizations and more.
+| message = Project Identity 3.0 update with Explorer, Today's Conducting Practice rerun, new permanent construction ships, new outfits, bug fixes and more.
 | image = [[File:ExplorerBanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
@@ -22,30 +22,8 @@
 | month = Mar
 | day = 19
 | title = [ONGOING] Today's Conducting Practice Rerun
-| message = (March 19th – April 1st) Clear Main Campaign stages after Chapter 3 to earn Trust. Accumulate enough Trust to complete milestone missions and have Little Friedrich permanently join your fleet.
+| message = (March 19th – April 1st) Complete event missions to earn great rewards and have Little Friedrich permanently join your fleet.
 | image = [[File:Little FriedrichBanner.png|x110px]]
-| imageTop = 0px
-| imageLeft = -160px
-}}
-{{NewsItemEN
-| type = event
-| link = Party Dress
-| month = Mar
-| day = 19
-| title = [ONGOING] Party Dress Series Rerun Campaign
-| message = (March 19th – April 8th) Purchase Party Dress series skins or skin packs at regular price to earn Coupons. Log in to the game to obtain rewards.
-| image = [[File:EnterpriseBanner.png|x110px]]
-| imageTop = 0px
-| imageLeft = -160px
-}}
-{{NewsItemEN
-| type = event
-| link = Project Identity
-| month = Mar
-| day = 19
-| title = [ONGOING] Project Identity 3.0 – Explorer
-| message = (March 19th) Project Identity 3.0 update featuring Explorer, a new Tarot Card system, Endless Mode and Hard Mode.
-| image = [[File:TBBanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
 }}
@@ -54,8 +32,8 @@
 | link = META Showdown
 | month = Mar
 | day = 12
-| title = [ONGOING] META Showdown – Regensburg META
-| message = (March 12th – June 4th) New META ship available from META Showdown.
+| title = [ONGOING] Regensburg META
+| message = (March 12th – June 4th) Obtainable from META Showdown.
 | image = [[File:Regensburg METABanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
@@ -66,8 +44,19 @@
 | month = Mar
 | day = 12
 | title = [ENDED] Snowrealm Peregrination Rerun
-| message = (March 12th – March 18th) Northern Parliament event rerun featuring Pamiat' Merkuria META and Svirepy.
-| image = [[File:Pamiat' Merkuria METABanner.png|x110px]]
+| message = (March 12th – March 18th) Northern Parliament rerun event featuring Pamiat' Merkuria META and Svirepy.
+| image = [[File:Pamiat Merkuria METABanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Springtide Inn Online
+| month = Feb
+| day = 26
+| title = [ENDED] Springtide Inn Online
+| message = (February 26th – March 11th) Northern Parliament event introducing Moskva, Ozornoy, Gangut META and Krasny Kavkaz.
+| image = [[File:MoskvaBanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
 }}
