@@ -1,0 +1,74 @@
+<div class="col col-8 col-special" style="margin-bottom:20px;">
+<!----- SECTION: Recent News ----->{{ServerNewsList
+| scheme = blue
+| logo = Home_head_enterprise.png
+| title = News
+| timeCurrent = <span class="time_title">Current Time</span><span class="time_values_box"><span>EN: <span class="js_time_placeholder" id="serverDateEN"></span> UTC-7</span><span>JP: <span class="js_time_placeholder" id="serverDateJP"></span> UTC+9</span><span>CN: <span class="js_time_placeholder" id="serverDateCN"></span> UTC+8</span></span>
+| content =
+{{NewsItemEN
+| type = event
+| link = A Dance for Amahara Above
+| month = Sep
+| day = 12
+| title = [ENDED] A Dance for Amahara Above
+| message = (September 12th - October 2nd) JP 8th Anniversary & New major Sakura Empire event introducing 6 new shipgirls.
+| image = [[File:HakuhouBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = update
+| link = Recent News#August 14th 2025
+| month = Aug
+| day = 14
+| title = September 12th Patch Notes
+| message = New  A Dance for Amahara Above event, Special Login Campaign, new Fate Simulation, new Outfits, bug fixes and more.
+| image = [[File:RoonWeddingBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Secrets of the Abyss
+| month = Aug
+| day = 14
+| title = [ENDED] Secrets of the Abyss
+| message = (August 14th – August 27th)EN 7th Anniversary & New major Iris Libre themed event introducing 5 new shipgirls. 
+| image = [[File:DuquesneBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = The Alchemist and the Archipelago of Secrets
+| month = Jul
+| day = 24
+| title = [ENDED] The Alchemist and the Archipelago of Secrets Rerun
+| message = (July 24th – August 6th) Atelier Ryza 2/3 rerun collab event.
+| image = [[File:Reisalin StoutBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = The After-School Wait
+| month = Jul
+| day = 17
+| title = [ENDED] The After-School Wait
+| message = (July 17th – July 31st) During the event, 2 new event missions will unlock every day. Complete them all to get a limited skin for Blücher, "The After-School Wait".
+| image = [[File:BlücherSchoolBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Shipyard#Series_8
+| month = Jul
+| day = 10
+| title = Priority Research – Series 8
+| message = New Priority Research Series introducing 5 new shipgirls, complete development process to obtain them.
+| image = [[File:Gouden LeeuwBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+}}</div>
