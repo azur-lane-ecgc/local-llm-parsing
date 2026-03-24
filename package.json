@@ -7,7 +7,6 @@
   "scripts": {
     "test": "vitest run",
     "scrape": "bun scrape/scrape.ts && bun check",
-    "process": "bun patch-notes/run.ts && bun check",
     "process:patch-notes": "bun patch-notes/run.ts && bun check",
     "process:server-news-list": "bun server-news-list/run.ts && bun check",
     "wiki:patch-notes": "bun patch-notes/wiki.ts",
