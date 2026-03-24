@@ -9,6 +9,7 @@ You can find more data in two files called ships.json and skins.json respectivel
 Do not output any comments, notes or anything other than the transformed news. For list items that look like historical navy battle equipment (e.g. "Quadruple 305mm (SK C39 Prototype)" or "Prototype Triple 283mm/54 Main Gun Mount") wrap those in double square brackets [[like this]]. Additionally regarding navy equipment strings specifically, omit anything in parentheses at the end, e.g. "(UR)" or "(SR)". Those substrings should NOT be included inside the square brackets. The gem prices of skins aren't specified in the attached file (in addition to several other details), but you can find that information in `AzurLaneData/data/skins.json` by grepping for their names and looking at the surrounding lines. Also pay attention to the rarities of each ship, they can be found in `AzurLaneData/data/ships.json`.
 
 Things to note:
+Ensure that all events that ended before today's date are not marked ongoing.
 "secrets" in the source file are called "memories" in our terminology, so when you look at the examples you should grep for memory or memories rather than secrets.
 Skins in the source are only ever specified under a new skins/rerun skins header, and won't appear anywhere else.
 Rental skins shouldn't be priced with their gem prices, their price should be one rental ticket.
@@ -18,3 +19,7 @@ For rerun events, the initial run of the event is guaranteed to be described in 
 The task is fundamentally natural language to natural language, so unless you possess incredible knowledge in heuristics I'd recommend doing this by hand rather than writing a python script. Never guess any information. You are writing for a wiki, all the text you write must be directly supported by the sources given.
 
 The data to transform is in the attached file, and the output path will be provided.
+
+You can guess what banners exist based on the example banner names.
+
+Do not use browser automation tools for any reason. If you can't find something or can't assume something, make an educated guess and move on.
