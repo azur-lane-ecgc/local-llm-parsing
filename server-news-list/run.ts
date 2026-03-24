@@ -18,7 +18,7 @@ const INPUT_DIR = "scrape/outputs"
 const INPUT_EXT = "md"
 const OUTPUT_DIR = "server-news-list/outputs"
 const OUTPUT_EXT = "wikitext"
-const PROMPT_FILE = "server-news-list/prompts/prompt.md"
+const PROMPT_FILE = "server-news-list/prompt.md"
 
 export const runServerNewsList = async () => {
   console.log("Starting server-news-list runner\n")

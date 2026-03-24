@@ -18,7 +18,7 @@ const INPUT_DIR = "scrape/outputs"
 const INPUT_EXT = "md"
 const OUTPUT_DIR = "patch-notes/outputs"
 const OUTPUT_EXT = "wikitext"
-const PROMPT_FILE = "patch-notes/prompts/prompt.md"
+const PROMPT_FILE = "patch-notes/prompt.md"
 
 export const runPatchNotes = async () => {
   console.log("Starting patch notes processing\n")
