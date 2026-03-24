@@ -9,16 +9,21 @@ Parses Azur Lane patch notes using AI. Scrapes official blog posts, processes wi
 
 ## Usage
 
+### Install
+
 ```bash
 bun install
-bun run scrape                        # Scrape patch notes from blog
-bun run process                       # Process patch notes (alias)
-bun run process:patch-notes           # Process patch notes
-bun run process:server-news-list      # Process server news list
-bun run wiki:patch-notes              # Publish patch notes to wiki
-bun run wiki:server-news-list         # Publish server news list to wiki
-bun run check                         # Lint + format
-bun run test                          # Run tests
+```
+
+### Scripts
+
+```bash
+bun run scrape                    # Scrape patch notes from blog
+bun run patch-notes:p             # Process patch notes
+bun run patch-notes:w             # Publish patch notes to wiki
+bun run server-news:p             # Process server news list
+bun run server-news:w             # Publish server news list to wiki
+bun run check                     # Lint + format
 ```
 
 ## Configuration
@@ -37,7 +42,6 @@ scrape/                  # Blog scraper
 patch-notes/             # Patch notes pipeline (run + wiki)
 server-news-list/        # Server news list pipeline (run + wiki)
 utils/                   # Shared code (config loader, helpers, LLM utilities)
-prompts/test/            # Shared test prompts
 ```
 
 Each domain contains its own `config.json`, `prompts/`, and `outputs/`.

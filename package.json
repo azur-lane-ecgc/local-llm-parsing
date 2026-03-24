@@ -8,7 +8,6 @@
     "prepare": "bun run submodule && lefthook install",
     "check": "oxlint --fix . && oxfmt --no-error-on-unmatched-pattern .",
     "submodule": "git submodule update --recursive --remote",
-    "test": "vitest run",
     "scrape": "bun scrape/scrape.ts && bun check",
     "patch-notes:p": "bun patch-notes/run.ts && bun check",
     "patch-notes:w": "bun patch-notes/wiki.ts",
@@ -27,8 +26,7 @@
     "@types/turndown": "^5.0.6",
     "lefthook": "^2.1.4",
     "oxfmt": "^0.41.0",
-    "oxlint": "^1.56.0",
-    "vitest": "^4.1.1"
+    "oxlint": "^1.56.0"
   },
   "peerDependencies": {
     "typescript": "^6.0.2"
