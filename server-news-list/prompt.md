@@ -2,7 +2,7 @@
 folder: server-news-list
 ---
 
-I want to transform some news to a given format. The news is for a mobile game about warships called Azur Lane. The given format is written in MediaWiki wiki markup. While I do not have concrete specifications for the output format, you can find many examples of what the output format should look like in `server-news-list/prompts/examples` (you can also also find some relevant data from there). Each file in the examples directory covers one 'server-news-list' from a snapshot of history.
+I want to transform some news to a given format. The news is for a mobile game about warships called Azur Lane. The given format is written in MediaWiki wiki markup. While I do not have concrete specifications for the output format, you can find many examples of what the output format should look like in `server-news-list/examples` (you can also also find some relevant data from there). Each file in the examples directory covers one 'server-news-list' from a snapshot of history.
 
 You can find more data in two files called ships.json and skins.json respectively, under `AzurLaneData/data/` (these are large though, I would recommend against loading both files entirely). One thing to note is that the order of the bullet points should be similar to previous patch notes, e.g. the "mainline event" should come first and the list of ship portraits ("shipdisplays") should be early.
 
