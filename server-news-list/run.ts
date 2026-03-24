@@ -8,8 +8,7 @@ import {
 } from "../utils"
 
 interface Config {
-  earliestDate: string
-  latestDate?: string | false
+  latestDate: string
   model: string
   wiki: { page: string }
 }
@@ -26,8 +25,7 @@ export const runServerNewsList = async () => {
   const config = await loadConfig<Config>("server-news-list/config.json")
   const prompt = await readFile(PROMPT_FILE, "utf-8")
 
-  const earliestDate = new Date(config.earliestDate)
-  const latestDate = config.latestDate ? new Date(config.latestDate) : null
+  const latestDate = new Date(config.latestDate)
 
   const ext = INPUT_EXT
   const files = await readdir(INPUT_DIR)
@@ -36,9 +34,7 @@ export const runServerNewsList = async () => {
     .filter((f) => {
       const dateStr = f.replace(`_content.${ext}`, "")
       const fileDate = new Date(dateStr)
-      if (fileDate < earliestDate) return false
-      if (latestDate && fileDate > latestDate) return false
-      return true
+      return fileDate <= latestDate
     })
     .sort()
     .reverse()
@@ -49,16 +45,17 @@ export const runServerNewsList = async () => {
   }
 
   const latestFiles = contentFiles.slice(0, 3)
-  console.log(
-    `Date range: ${earliestDate.toISOString().split("T")[0]} to ${latestDate?.toISOString().split("T")[0] ?? "now"}`,
-  )
+  console.log(`Latest date: ${latestDate.toISOString().split("T")[0]}`)
   console.log(
     `Found ${contentFiles.length} files, using latest ${latestFiles.length}\n`,
   )
 
   await mkdir(OUTPUT_DIR, { recursive: true })
 
-  const lastThursday = getLastThursday(earliestDate)
+  const latestFileDate = new Date(
+    latestFiles[0]!.replace(`_content.${ext}`, ""),
+  )
+  const lastThursday = getLastThursday(latestFileDate)
   const dateStr = lastThursday.toISOString().split("T")[0]
   const outputPath = `${OUTPUT_DIR}/${dateStr}-server-news.${OUTPUT_EXT}`
 

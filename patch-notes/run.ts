@@ -44,7 +44,7 @@ export const runPatchNotes = async () => {
     .reverse()
 
   if (contentFiles.length === 0) {
-    console.log("No content files found in date range. Run with -s first.")
+    console.log("No content files found in date range.")
     return
   }
 

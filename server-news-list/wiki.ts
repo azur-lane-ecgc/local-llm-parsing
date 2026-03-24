@@ -3,8 +3,7 @@ import { readFile, readdir } from "node:fs/promises"
 import { loadConfig } from "../utils"
 
 interface Config {
-  earliestDate: string
-  latestDate?: string | false
+  latestDate: string
   model: string
   wiki: { page: string }
 }
