@@ -1,7 +1,6 @@
-import { readFile, mkdir, readdir, writeFile } from "node:fs/promises"
-import { existsSync } from "node:fs"
+import { readFile, mkdir, readdir } from "node:fs/promises"
 import { join } from "node:path"
-import { withOpenCodeServer, processWithOpenCode } from "../utils"
+import { withOpenCodeServer, processWithOpenCode, emptyFile } from "../utils"
 import config from "./config.json" with { type: "json" }
 
 const INPUT_DIR = "scrape/outputs"
@@ -9,12 +8,6 @@ const INPUT_EXT = "md"
 const OUTPUT_DIR = "patch-notes/outputs"
 const OUTPUT_EXT = "wikitext"
 const PROMPT_FILE = "patch-notes/prompt.md"
-
-const emptyFile = async (filePath: string): Promise<void> => {
-  if (existsSync(filePath)) {
-    await writeFile(filePath, "")
-  }
-}
 
 export const runPatchNotes = async () => {
   console.log("Starting patch notes processing\n")

@@ -1,6 +1,6 @@
 import { readdir, readFile, mkdir } from "node:fs/promises"
 import { join } from "node:path"
-import { withOpenCodeServer, processWithOpenCode } from "../utils"
+import { withOpenCodeServer, processWithOpenCode, emptyFile } from "../utils"
 import config from "./config.json" with { type: "json" }
 
 const INPUT_DIR = "scrape/outputs"
@@ -64,6 +64,7 @@ export const runServerNewsList = async () => {
   console.log(`Output: ${outputPath}`)
   console.log(`Inputs: ${inputPaths.join(", ")}\n`)
 
+  await emptyFile(outputPath)
   await withOpenCodeServer(async () => {
     await processWithOpenCode(inputPaths, outputPath, prompt, config.model)
     console.log("\nDone!")
