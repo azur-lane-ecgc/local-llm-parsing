@@ -23,9 +23,11 @@ export const runServerNewsList = async () => {
   console.log("Starting server-news-list runner\n")
 
   const config = await loadConfig<Config>("server-news-list/config.json")
-  const prompt = await readFile(PROMPT_FILE, "utf-8")
+  const promptBase = await readFile(PROMPT_FILE, "utf-8")
 
   const latestDate = new Date(config.latestDate)
+  const todayDateStr = latestDate.toISOString().split("T")[0]
+  const prompt = `${promptBase}\n\nToday's date is ${todayDateStr}, for reference.`
 
   const ext = INPUT_EXT
   const files = await readdir(INPUT_DIR)
