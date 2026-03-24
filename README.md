@@ -6,6 +6,7 @@ Parses Azur Lane patch notes using AI. Scrapes official blog posts, processes wi
 
 - [Bun](https://bun.sh)
 - [OpenCode](https://github.com/opencode-ai/opencode) — AI orchestration CLI
+  - Ensure you are logged in to any providers you plan to use within the CLI directly.
 
 ## Usage
 
