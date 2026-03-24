@@ -19,11 +19,11 @@ Things to note:
 - Prioritize items from most recent -> oldest when deciding what to put in the server-news section. It's fine if older stuff is left out. Ensure most everything mentioned in the absolute latest patch notes file is included.
 - **LIMIT 6 ITEMS TOTAL**.
 - This should include at minimum:
-  - 1 major event that just ended recently
+  - 1 major event (either ongoing or just ended recently)
   - 1 major rerun event (either ongoing or just ended recently)
   - 1 new event / mechanic (either ongoing or just started)
 - This should include at maximum:
-  - 1 **specific character** skin-related event (either ended or just ended recently). If there is a general event aimed at skins (except Black Friday), it does not qualify under this.
+  - 1 **specific character** skin-related event (either ended or just ended recently). If there is a general event aimed at skins (except Black Friday), it does not qualify under this and should not be included at all in this section.
 - Project Identity events should NOT get their own section, they should only be mentioned within the description of the Patch Notes, similar to `example7.wikitext`.
 - Sort all events from latest to earliest.
 
