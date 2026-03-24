@@ -23,7 +23,7 @@ Things to note:
   - 1 major rerun event (either ongoing or just ended recently)
   - 1 new event / mechanic (either ongoing or just started)
 - This should include at maximum:
-  - 1 skin-related event (either ended or just ended recently).
+  - 1 **specific character** skin-related event (either ended or just ended recently). If there is a general event aimed at skins (except Black Friday), it does not qualify under this.
 - Project Identity events should NOT get their own section, they should only be mentioned within the description of the Patch Notes, similar to `example7.wikitext`.
 - Sort all events from latest to earliest.
 
