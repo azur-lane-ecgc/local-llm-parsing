@@ -14,7 +14,7 @@ Skins in the source are only ever specified under a new skins/rerun skins header
 Rental skins shouldn't be priced with their gem prices, their price should be one rental ticket.
 Pay attention to the rarity of different ships, their rarity number affects which background is used for their shipdisplay.
 For rerun events, the initial run of the event is guaranteed to be described in one of the three example files. In this case you can simply use the information from there instead, as rerun events change very little from their original runs. The same thing applies for events that have become permanent (i.e. "added to war archives").
-If information is not clearly specified, you might have to 'work for it'. All types are found in `AzurLaneData/types/*`, use them to create data mappings between files to search for the information as needed. If information truly cannot be found within `AzurLaneData/*` anywhere, it is fine to omit it or leave a CLEARLY placeholder value.
+If information is not clearly specified, you might have to 'work for it'. All types are found in `AzurLaneData/types/*` and documentation can be found within `AzurLaneData/docs*`, use them to create data mappings between files to search for the information as needed. If information truly cannot be found within `AzurLaneData/*` anywhere, it is fine to omit it or leave a CLEARLY placeholder value.
 
 The task is fundamentally natural language to natural language, so unless you possess incredible knowledge in heuristics I'd recommend doing this by hand rather than writing a python script. Never guess any information. You are writing for a wiki, all the text you write must be directly supported by the sources given.
 
