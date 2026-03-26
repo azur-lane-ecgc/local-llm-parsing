@@ -53,10 +53,7 @@ export const runServerNewsList = async () => {
 
   await mkdir(OUTPUT_DIR, { recursive: true })
 
-  const latestFileDate = new Date(
-    latestFiles[0]!.replace(`_content.${ext}`, ""),
-  )
-  const lastThursday = getLastThursday(latestFileDate)
+  const lastThursday = getLastThursday(latestDate)
   const dateStr = lastThursday.toISOString().split("T")[0]
   const outputPath = `${OUTPUT_DIR}/${dateStr}-server-news.${OUTPUT_EXT}`
 
