@@ -70,10 +70,13 @@ update_json_field "${CONFIG_SERVER_NEWS}" "latestDate" "${LATEST}"
 
 echo "Starting pipeline..."
 bun install
+
 bun run scrape
+
 bun run patch-notes:p
-bun run patch-notes:w
 bun run server-news:p
+
+bun run patch-notes:w
 bun run server-news:w
 
 trap - ERR INT TERM
