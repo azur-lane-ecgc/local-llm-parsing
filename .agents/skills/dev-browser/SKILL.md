@@ -10,7 +10,7 @@ A CLI for controlling browsers with sandboxed JavaScript scripts.
 ## Installation
 
 ```bash
-npm install -g dev-browser
+bun install -g dev-browser
 dev-browser install
 ```
 
