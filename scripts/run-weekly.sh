@@ -69,6 +69,7 @@ update_json_field "${CONFIG_PATCH_NOTES}" "earliestDate" "${EARLIEST}"
 update_json_field "${CONFIG_SERVER_NEWS}" "latestDate" "${LATEST}"
 
 echo "Starting pipeline..."
+bun install
 bun run scrape
 bun run patch-notes:p
 bun run patch-notes:w
