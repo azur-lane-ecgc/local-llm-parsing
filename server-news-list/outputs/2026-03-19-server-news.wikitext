@@ -7,23 +7,12 @@
 | content =
 {{NewsItemEN
 | type = update
-| link = Recent News#March 26th 2026
+| link = Recent News#March 19th 2026
 | month = Mar
-| day = 26
-| title = March 26th Patch Notes
-| message = The Vagabond's Recruitment Plan event, Cruise Missions, new characters Unryuu, Nayoro, L'Indomptable and Kizu, new outfits, bug fixes and more.
-| image = [[File:UnryuuBanner.png|x110px]]
-| imageTop = 0px
-| imageLeft = -160px
-}}
-{{NewsItemEN
-| type = event
-| link = The Vagabond's Recruitment Plan
-| month = Mar
-| day = 26
-| title = [ONGOING] The Vagabond's Recruitment Plan
-| message = (March 26th – April 8th) New event, sortie to event stages to accumulate event PTs and get great rewards, including the limited character Kizu.
-| image = [[File:KizuBanner.png|x110px]]
+| day = 19
+| title = March 19th Patch Notes
+| message = Project Identity 3.0 update with Explorer, Today's Conducting Practice rerun, new permanent construction ships, new outfits, bug fixes and more.
+| image = [[File:LoraBanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
 }}
@@ -35,17 +24,6 @@
 | title = [ONGOING] Today's Conducting Practice Rerun
 | message = (March 19th – April 1st) Complete event missions to earn great rewards and have Little Friedrich permanently join your fleet.
 | image = [[File:Little FriedrichBanner.png|x110px]]
-| imageTop = 0px
-| imageLeft = -160px
-}}
-{{NewsItemEN
-| type = event
-| link = Cruise Missions
-| month = Apr
-| day = 1
-| title = [UPCOMING] Cruise Missions
-| message = (April 1st – May 31st) During the campaign season, complete missions and accumulate progress points to earn rewards including the limited character Köln META.
-| image = [[File:Köln METABanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
 }}
@@ -68,6 +46,17 @@
 | title = [ENDED] Snowrealm Peregrination Rerun
 | message = (March 12th – March 18th) Northern Parliament rerun event featuring Pamiat' Merkuria META and Svirepy.
 | image = [[File:Pamiat' Merkuria METABanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Springtide Inn Online
+| month = Feb
+| day = 26
+| title = [ENDED] Springtide Inn Online
+| message = (February 26th – March 11th) Northern Parliament event introducing Moskva, Ozornoy, Gangut META and Krasny Kavkaz.
+| image = [[File:MoskvaBanner.png|x110px]]
 | imageTop = 0px
 | imageLeft = -160px
 }}
