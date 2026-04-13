@@ -1,0 +1,65 @@
+<div style="clear: right; margin-bottom: .5em; float: right; padding: .5em 0 .8em 1.4em; background: none; width: auto;">{{TOC Limit|2}}</div>
+==April 9th 2026==
+=== New Contents ===
+<ol>
+<li>'''Limited Time Rerun Event: Popularity Poll Special Vote Awards'''
+*Event period: From April 9th to May 6th, 11:59 P.M. (UTC-7):
+*During the event, log in to the game to get special gear themed after the Special Vote winners, [[Observer]], [[Taihou META]], and [[Little Prinz Eugen]].
+<li>'''New Addition to [[War Archives]]:'''
+*[[Operation Convergence]]
+<li>'''[[Construction]] Pool Update:'''
+*Available permanently in Light Construction Pool:
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|4|Z16|DD||'''Light Construction<br>00:28:00'''|||||y}}
+</div>
+*Available permanently in Heavy Construction Pool:
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Brünhilde|BC||'''Heavy Construction<br>05:05:00'''|||||y}}
+{{ShipDisplay|5|Blücher|CA||'''Heavy Construction<br>02:00:00'''|||||y}}
+</div>
+<li>'''New Gameplay – Tactical Simulation'''
+*Available for a limited-time between April 9th and April 29th, 11:59 P.M. (UTC-7):
+*Participate to earn great rewards. Rewards must be collected before May 6th, 11:59 P.M. (UTC-7).
+<li>'''Rerun [[Skins]]:'''
+*Available permanently:
+<div style="display:flex; flex-wrap:wrap; margin-left:15px">
+{{ShipDisplay|5|Blücher|CA|Sport|High-Altitude Head Over Heels|{{Gem}} 900|1||132|y}}
+{{ShipDisplay|5|Brünhilde|BC|Sport|Grain-Seizing Grani|{{Gem}} 880|1||112|y}}
+{{ShipDisplay|5|Kirov|CL|Sport|High Jump Star|{{Gem}} 880|1||112|y}}
+{{ShipDisplay|5|U-96|SS|Sport|How Heavy Are Those Barbells?|{{Gem}} 880|1||112|y}}
+{{ShipDisplay|4|Hornet|CV|Sport|Cheering Justice!|{{Gem}} 800|1||132|y}}
+{{ShipDisplay|4|Z16|DD|Sport|Guaranteed Grand Slam!|{{Gem}} 780|1||112|y}}
+{{ShipDisplay|4|Z24|DD|Sport|The Devil on the Court|{{Gem}} 780|1||112|y}}
+</div>
+<li>'''New Items in [[Akashi's Shop]]:'''
+*Available between April 9th and April 15th, 11:59 P.M. (UTC-7):
+**Limited Build Supplies (1 purchase limited)
+**Limited Strategic Supplies (5 purchases limited)
+**Decor Tokens Pack (2 purchases limited)
+**Cognitive Chip Pack (2 purchases limited)
+<li>'''Rerun [[List of Furniture Sets|Furniture Sets]]:'''
+*Available permanently:
+{| class="wikitable" style="text-align: center; margin-left:20px; margin-top:0px;"
+|{{Furniture|ssly2themeicon}}||'''[[Furniture Sets/Breezy Summer|Breezy Summer]]'''
+|}
+<li>'''[[Augmentation|Augment Modules]] Update:'''
+*Available permanently:
+**[[Nanotech Repulsor|Reno – Nanotech Repulsor]]
+**[[Totally Helpless Bunny Pouch|Matchless – Totally Helpless Bunny Pouch]]
+<li>'''New [[Memories|Memory]]:'''
+*[[Devonshire/Questline#Character Story|Devonshire]]
+<li>'''FleetChat Update:'''
+*[[Devonshire]]
+</ol>
+
+=== System Optimization ===
+#'''General'''
+#*Comics were updated.
+#*Juu Port Updates were updated.
+#*Made minor adjustments to the illustration for Unryuu's skin "Mirage in the Night".
+#*Fixed an issue where the Commander could clip through objects in Island Planner under certain conditions.
+#*Fixed an issue where the secretary ship would switch abnormally after returning to the main screen following combat under certain conditions.
+#*Fixed an issue where the Live2D resources for Takao's outfit "Inner Cultivation" displayed abnormally under certain conditions.
+#*Fixed an issue where an abnormal error would occur in Commemorative Album – Valentine under certain conditions.
+#*Fixed an issue where interactions with the Live2D resources for Ägir's outfit "One-on-One Leisure Time" behaved abnormally under certain conditions.
+#*Fixed minor issues with some interfaces, text, and other elements.

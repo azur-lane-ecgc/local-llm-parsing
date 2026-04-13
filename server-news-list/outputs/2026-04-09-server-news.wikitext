@@ -1,0 +1,74 @@
+<div class="col col-8 col-special" style="margin-bottom:20px;">
+<!----- SECTION: Recent News ----->{{ServerNewsList
+| scheme = blue
+| logo = Home_head_enterprise.png
+| title = News
+| timeCurrent = <span class="time_title">Current Time</span><span class="time_values_box"><span>EN: <span class="js_time_placeholder" id="serverDateEN"></span> UTC-7</span><span>JP: <span class="js_time_placeholder" id="serverDateJP"></span> UTC+9</span><span>CN: <span class="js_time_placeholder" id="serverDateCN"></span> UTC+8</span></span>
+| content =
+{{NewsItemEN
+| type = update
+| link = Recent News#April 9th 2026
+| month = Apr
+| day = 9
+| title = April 9th Patch Notes
+| message = Operation Convergence added to War Archives, new Tactical Simulation gameplay, new Memory for Devonshire, returning skins, new Augment Modules, bug fixes and more.
+| image = [[File:DevonshireBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Popularity Poll Special Vote Rewards
+| month = Apr
+| day = 9
+| title = [ONGOING] Popularity Poll Special Vote Rewards
+| message = (April 9th – May 6th) Receive special gear skins in commemoration of the 2025 Special Vote winners: Observer, Taihou META, and Little Prinz Eugen.
+| image = [[File:ObserverBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Tactical Simulation
+| month = Apr
+| day = 9
+| title = [ONGOING] Tactical Simulation
+| message = (April 9th – April 29th) New Island Planner gameplay — a card-based elimination game. Participate to earn great rewards.
+| image = [[File:TBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Cruise Missions
+| month = Apr
+| day = 1
+| title = [ONGOING] Cruise Missions
+| message = (April 1st – May 31st) During the campaign season, accumulate progress points to earn rewards, including the limited character Köln META.
+| image = [[File:Köln METABanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = The Vagabond's Recruitment Plan
+| month = Mar
+| day = 26
+| title = [ENDED] The Vagabond's Recruitment Plan
+| message = (March 26th – April 8th) New event featuring Kizu, Unryuu, Nayoro and L'Indomptable.
+| image = [[File:KizuBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+{{NewsItemEN
+| type = event
+| link = Today's Conducting Practice
+| month = Mar
+| day = 19
+| title = [ENDED] Today's Conducting Practice Rerun
+| message = (March 19th – April 1st) Complete event missions to earn great rewards and have Little Friedrich permanently join your fleet.
+| image = [[File:Little FriedrichBanner.png|x110px]]
+| imageTop = 0px
+| imageLeft = -160px
+}}
+}}</div>
