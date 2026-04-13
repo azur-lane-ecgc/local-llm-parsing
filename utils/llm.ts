@@ -1,10 +1,21 @@
 import { spawn, ChildProcess } from "node:child_process"
+import { resolve } from "node:path"
 
-export const OPCODE_SERVER_URL = "http://localhost:4096"
+const OPENCODE_PORT = 5641
+export const OPCODE_SERVER_URL = `http://localhost:${OPENCODE_PORT}`
+const OPENCODE_CONFIG_PATH = resolve(
+  import.meta.dir,
+  "..",
+  "pipeline-opencode.json",
+)
 
 export const startOpenCodeServer = async (): Promise<ChildProcess> => {
   console.log("Starting OpenCode server...")
-  const proc = spawn("opencode", ["serve"], { stdio: "inherit" })
+  const proc = spawn("opencode", ["serve", "--port", String(OPENCODE_PORT)], {
+    stdio: "inherit",
+    detached: true,
+    env: { ...process.env, OPENCODE_CONFIG: OPENCODE_CONFIG_PATH },
+  })
   await waitForOpenCodeServer()
   return proc
 }
@@ -34,7 +45,11 @@ export const waitForOpenCodeServer = async (
 
 export const stopOpenCodeServer = (proc: ChildProcess): void => {
   console.log("Stopping OpenCode server...")
-  proc.kill()
+  try {
+    process.kill(-proc.pid!)
+  } catch {
+    proc.kill()
+  }
 }
 
 export const withOpenCodeServer = async <T>(
@@ -75,12 +90,14 @@ export const processWithOpenCode = async (
       "--attach=" + OPCODE_SERVER_URL,
       "-m",
       model,
+      "--dangerously-skip-permissions",
       ...inputPaths.flatMap((p) => ["-f", p]),
       "--",
       fullPrompt,
     ],
     {
       stdio: "inherit",
+      env: { ...process.env, OPENCODE_CONFIG: OPENCODE_CONFIG_PATH },
     },
   )
 
