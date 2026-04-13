@@ -66,11 +66,11 @@ bun install
 
 bun run scrape
 
-bun run patch-notes:p
-bun run server-news:p
+bun run pn:p
+bun run sn:p
 
-bun run patch-notes:w
-bun run server-news:w
+bun run pn:w
+bun run sn:w
 
 bun check
 

@@ -9,10 +9,10 @@
     "check": "oxlint --fix . && oxfmt --no-error-on-unmatched-pattern .",
     "submodule": "git submodule update --recursive --remote",
     "scrape": "bun scrape/scrape.ts && bun check",
-    "patch-notes:p": "bun patch-notes/run.ts && bun check",
-    "patch-notes:w": "bun patch-notes/wiki.ts",
-    "server-news:p": "bun server-news-list/run.ts && bun check",
-    "server-news:w": "bun server-news-list/wiki.ts"
+    "pn:p": "bun patch-notes/run.ts && bun check",
+    "pn:w": "bun patch-notes/wiki.ts",
+    "sn:p": "bun server-news-list/run.ts && bun check",
+    "sn:w": "bun server-news-list/wiki.ts"
   },
   "dependencies": {
     "cheerio": "^1.2.0",

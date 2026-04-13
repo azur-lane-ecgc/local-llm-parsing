@@ -20,10 +20,10 @@ bun install
 
 ```bash
 bun run scrape                    # Scrape patch notes from blog
-bun run patch-notes:p             # Process patch notes
-bun run patch-notes:w             # Publish patch notes to wiki
-bun run server-news:p             # Process server news list
-bun run server-news:w             # Publish server news list to wiki
+bun run pn:p                      # Process patch notes
+bun run pn:w                      # Publish patch notes to wiki
+bun run sn:p                      # Process server news list
+bun run sn:w                      # Publish server news list to wiki
 bun run check                     # Lint + format
 ```
 
