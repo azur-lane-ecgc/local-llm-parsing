@@ -1,6 +1,6 @@
 {
-  "earliestDate": "2026-4-13",
-  "latestDate": false,
+  "earliestDate": "2026-4-10",
+  "latestDate": "2026-5-1",
   "model": "zai-coding-plan/glm-5-turbo",
   "wiki": {
     "page": "User:Samheart564/Recent_News"
